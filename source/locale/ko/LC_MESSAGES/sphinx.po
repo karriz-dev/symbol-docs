@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/_templates/catalog.html:3
+#: ../../source/_templates/catalog.html:7
+msgid "Guides"
+msgstr ""
+
+#: ../../source/_templates/catalog.html:8
+msgid ""
+"Step-by-step tutorials on how to use the tools, integrate Symbol with "
+"other technologies, and combine the built-in features to architect "
+"solutions."
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/collection.html:47
+#: ../../source/_templates/catalog.html:17
+#: ../../source/_templates/collection.html:19
+msgid "Read more ..."
+msgstr ""
+
+#: ../../source/_templates/collection.html:4
+msgid "guides"
+msgstr ""
+
+#: ../../source/_templates/globaltoc.html:2
+#: ../../source/_templates/navbar.html:28
+msgid "Navigation"
+msgstr ""
+
+#: ../../source/_templates/include/edit-github.html:3
+msgid "Improve this page"
+msgstr ""
+
+#: ../../source/_templates/include/footer.html:14
+#: ../../source/_templates/include/footer.html:33
+msgid "Did you find what you were looking for?"
+msgstr ""
+
+#: ../../source/_templates/include/footer.html:16
+#: ../../source/_templates/include/footer.html:35
+msgid "Give us your feedback."
+msgstr ""
+
+#: ../../source/_templates/include/navbar-right.html:4
+msgid "START"
+msgstr ""
+
+#: ../../source/_templates/include/navbar-right.html:7
+msgid "TECHNOLOGY"
+msgstr ""
+
+#: ../../source/_templates/include/navbar-right.html:10
+msgid "GUIDES"
+msgstr ""
+
+#: ../../source/_templates/include/navbar-right.html:13
+msgid "VISION"
+msgstr ""
+
+#: ../../source/_templates/include/navbar-right.html:16
+msgid "CONTRIBUTE"
+msgstr ""
+
+#: ../../source/_templates/include/navbar-right.html:19
+msgid "HANDBOOK"
+msgstr ""
+
+#: ../../source/_templates/layout.html:43
+#: ../../source/_templates/layout.html:61
+msgid "On this page"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/postcard2.html:12
+#: ../../source/_templates/post-meta.html:5
+msgid "Author"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/authors.html:2
+#: ../../source/_templates/post-meta.html:5
+msgid "Authors"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/archives.html:3
+msgid "Archives"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/categories.html:3
+msgid "Categories"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/languages.html:3
+msgid "Languages"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/locations.html:3
+msgid "Locations"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/postcard2.html:5
+msgid "Update"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/postcard2.html:24
+msgid "Location"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/postcard2.html:35
+msgid "Language"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/postcard2.html:46
+msgid "Category"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/postcard2.html:57
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/tagcloud.html:2
+msgid "Tags"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/postcard2.html:60
+msgid "Tag"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/postnavy.html:5
+msgid "Previous"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/postnavy.html:15
+msgid "Next"
+msgstr ""
+
+#: ../../../../../../../opt/homebrew/lib/python3.11/site-packages/ablog/templates/recentposts.html:3
+msgid "Recent Posts"
+msgstr ""
+

@@ -1,0 +1,526 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/handbook/doc-repos.rst:3
+msgid "Repository structure"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:5
+msgid ""
+"There are currently 3 sources of documentation for Symbol. Feel free to "
+"jump to the one you are interested in."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:7
+msgid ""
+"`Technical documentation <#technical-documentation>`__: Tool guides, "
+"developer tutorials, SDK reference guides and the Syndicate's handbook."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:8
+msgid ""
+"`NEM NIS1 documentation <#nis1-documentation>`__: Old NEM NIS1 guides, "
+"pending assimilation into the Symbol technical docs."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:9
+msgid ""
+"`Working documentation <#working-documentation>`__: Meeting minutes, "
+"Community logs, stuff that changes often."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:12
+msgid "Technical documentation"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**Site**"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "`docs.symbol.dev <https://docs.symbol.dev>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**Source repo**"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "`github.com/symbol/symbol-docs <https://github.com/symbol/symbol-docs>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**Host**"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "`GitHub pages <https://github.com/symbol/symbol-docs/tree/gh-pages>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**Engine**"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "`Sphinx <https://www.sphinx-doc.org>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**Format**"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "`reStructuredText <https://docutils.sourceforge.io/rst.html>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**Intended readers**"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "The world at large."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**Intended writers**"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "The Symbol technical writers."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**Editing workflow**"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid ""
+"Git-based: Check out the source repository, make modifications, check "
+"results by building the pages locally and submit pull requests."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**Localization**"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "`Transifex <https://www.transifex.com/nemtech/symboldocs/>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**Maintainers**"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "`Xavi <https://github.com/segfaultxavi>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:31
+#: ../../source/handbook/doc-repos.rst:129
+msgid "Content"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:33
+msgid ""
+"This is the main technical reference for **Symbol**. It contains (or will"
+" contain):"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:35
+msgid ""
+"**User guides** for the different tools (Wallet, CLI, Explorer, etc.), "
+"intended for non-heavily-technical readers, including screenshots and "
+"step-by-step instructions on how to solve common problems."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:36
+msgid ""
+"**Developer tutorials** with source code examples in different languages,"
+" organized by topics. Ranging from Getting Started to in-depth guides on "
+"specific topics."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:37
+msgid "**Concept definitions** required to understand the Symbol protocol."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:38
+msgid "**Technical reference** guides describing every API and REST endpoint."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:40
+msgid ""
+"Due to the complexity of the technical content, the `Sphinx <https://www"
+".sphinx-doc.org>`__ engine and `reStructuredText "
+"<https://docutils.sourceforge.io/rst.html>`__ is used instead of the "
+"simpler MarkDown format. This enables much more flexibility, so we can "
+"use multi-language (tabbed) code snippets, Python macros which "
+"automatically retrieve content from GitHub or have more formatting "
+"options for complex tables, for example."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:43
+#: ../../source/handbook/doc-repos.rst:142
+msgid "Editing"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:45
+#: ../../source/handbook/doc-repos.rst:144
+msgid ""
+"This repository follows the docs-as-code approach, meaning that you treat"
+" the documentation as if it was source code."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:47
+#: ../../source/handbook/doc-repos.rst:146
+msgid ""
+"To contribute you need to check out the Git repository, make your changes"
+" and submit a `Pull Request <https://docs.github.com/en/github"
+"/collaborating-with-pull-requests>`__ to GitHub. The repository "
+"maintainers will review your contribution, suggest changes if required "
+"and eventually merge it."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:50
+#: ../../source/handbook/doc-repos.rst:149
+msgid "Testing locally"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:52
+#: ../../source/handbook/doc-repos.rst:151
+msgid ""
+"Before submitting a pull request it is a good idea to test your changes "
+"locally, to ensure that everything shows as expected and nothing breaks."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:54
+msgid ""
+"You first need to `Install Sphinx <https://www.sphinx-"
+"doc.org/en/master/usage/installation.html>`__. Basically, you need to:"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:56
+msgid "Install Python 3.7"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:57
+msgid "Run ``pip install -r requirements.txt``"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:59
+msgid "After that you can trigger a build by running from the repository's root:"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:65
+msgid ""
+"This generates all HTML files in the ``build/html`` folder, including all"
+" assets like images, javascript, CSS, code snippets, etc. This also "
+"monitors your source folder and regenerates the output when changes are "
+"detected. It also instantiates a web server on ``localhost:8000`` for "
+"your convenience."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:69
+msgid ""
+"On Windows you have a handy ``make-win.bat`` that does the same thing but"
+" takes care of some Windows shenanigans like incorrect console output and"
+" filesystem monitoring."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:72
+#: ../../source/handbook/doc-repos.rst:156
+msgid "Deployment"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:74
+msgid ""
+"The GitHub repository is linked to `Jenkins "
+"<https://jenkins.symboldev.com/job/Symbol/job/Docs/job/symbol-docs>`__, "
+"so on every push to the ``main`` branch a full build is triggered (See "
+"``Jenkinsfile``). This involves several steps besides the generation of "
+"the output documentation:"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:78
+msgid ""
+"**Source snippets validation**: The guides include lots of source code "
+"examples which are actually snippets from complete programs. These "
+"programs must **compile** and pass **lint checks** at all times and "
+"Travis makes sure of this. Right now only the TypeScript programs are "
+"checked."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:79
+msgid ""
+"**Link checking**: All pages are examined to find broken links using "
+"``make linkcheck``."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:81
+msgid ""
+"Throttling is enabled to avoid pestering servers too much and getting "
+"``HTTP 429 Too Many Requests`` errors. Still, sometimes your build fails "
+"because of this. If you detect such error in the Travis logs just try "
+"again."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:83
+msgid ""
+"If you are sure a link is correct but linkcheck on Travis keeps failing, "
+"you can add this particular link to the ``linkcheck_ignore`` list in "
+"``conf.py`` to skip checking it. Please add a comment explaining the "
+"reason."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:84
+msgid ""
+"**Localization**: Text strings are extracted from every page using ``make"
+" gettext`` and uploaded to Transifex (see next section)."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:85
+msgid ""
+"**Publishing**: The built HTML pages are moved to the ``docs`` folder in "
+"the ``gh-pages`` branch and pushed. GitHub pages is configured to serve "
+"them from there."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:87
+msgid ""
+"Due to this process, pushes to ``main`` normally take up to 5 minutes to "
+"go live."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:90
+msgid "Localization"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:92
+msgid ""
+"Right now almost every page is available in Japanese besides the original"
+" English, but the repository is ready to accept more languages."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:94
+msgid ""
+"`Transifex <https://www.transifex.com/nemtech/symboldocs/>`__ is "
+"integrated in the deployment process, so after every push to ``main`` "
+"Travis extracts and sends all strings (``.pot`` files) to Transifex, "
+"which detects any new or updated text and notifies the translators."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:96
+msgid ""
+"Translators can log in to Transifex and provide the translations there. "
+"Developers can then download the updated text (``.po`` files) and commit "
+"them to the source repository."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:98
+msgid ""
+"So far this process has been entirely done by the Symbol community, even "
+"committing the updated texts and submitting pull requests."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:101
+msgid "NEM NIS1 documentation"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid ""
+"**Docs**: `nemproject.github.io/nem-docs <https://nemproject.github.io"
+"/nem-docs>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**API**: `nemproject.github.io <https://nemproject.github.io/>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid ""
+"**Docs**: `github.com/NemProject/nem-docs <https://github.com/NemProject"
+"/nem-docs/tree/gh-pages>`__ (``gh-pages`` branch)"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid ""
+"**API**: `https://github.com/NemProject/NemProject.github.io "
+"<https://github.com/NemProject/NemProject.github.io>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid ""
+"**Docs**: `GitHub pages <https://github.com/NemProject/nem-docs/tree/gh-"
+"pages>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid ""
+"**API**: `GitHub pages "
+"<https://github.com/NemProject/NemProject.github.io>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid ""
+"**Docs**: `GitHub Jekyll <https://docs.github.com/en/pages/setting-up-a"
+"-github-pages-site-with-jekyll>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**API**: Static HTML page"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**Docs**: `Markdown <https://www.markdownguide.org/>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "**API**: HTML"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "None"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:131
+msgid ""
+"These are the old NEM NIS1 docs, which were spread over several repos, "
+"blogs and forum posts, ported over a to single repository. This "
+"documentation is rather old and parts of it are still being figured out."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:133
+msgid ""
+"The old docs were mainly hosted at ``docs.nem.io`` from the "
+"`github.com/saulgray/nemioDev <https://github.com/saulgray/nemioDev>`__ "
+"repository using the `Grav Engine <https://getgrav.org/>`__."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:135
+msgid ""
+"A much simpler GitHub page is setup now, using the `Jekyll Engine "
+"<https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-"
+"jekyll>`__ provided by GitHub, using plain Markdown. All content is in "
+"the ``gh-pages`` branch."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:137
+msgid ""
+"There is still some placeholders left in the docs (like `the overview "
+"page <https://nemproject.github.io/nem-"
+"docs/pages/Overview/docs.en.html>`__) so a big **PREVIEW** banner is "
+"shown at the top of every page."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:139
+msgid ""
+"This banner is `hardcoded in the layout HTML file "
+"<https://github.com/NemProject/nem-docs/blob/gh-"
+"pages/_layouts/default.html#L45>`__ and can be removed once the docs are "
+"good to go public."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:153
+msgid ""
+"Follow `GitHub's instructions <https://docs.github.com/en/pages/setting-"
+"up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-"
+"locally-with-jekyll>`__ to install a local Jekyll instance and run it."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:158
+msgid ""
+"Deployment is straightforward since a standard GitHub pages setup is used"
+" (GitHub repo + Jekyll site + GitHub pages). Just push to the ``gh-"
+"pages`` branch and it will be published in seconds."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:161
+msgid "Working documentation"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "`hackmd.io/team/syndicate <https://hackmd.io/team/syndicate>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "HackMD"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "`Markdown <https://www.markdownguide.org/>`__"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "Syndicate members."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "Edit pages directly on HackMD."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:1
+msgid "Every syndicate member."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:179
+msgid ""
+"This is meant as a scratch pad for collaborative editing, or as a means "
+"of storage for documents that change too often or are too big or numerous"
+" to be in the Handbook."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:181
+msgid "Examples are:"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:183
+msgid ""
+"Documents being worked on (they are live, or waiting approval to go into "
+"the Handbook)"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:184
+msgid "Meeting minutes (there are too many of them)"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:185
+msgid "Test results (they change continuously)"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:187
+msgid ""
+"To keep this area organized all documents should be **tagged**. Please "
+"add this line at the bottom of your document:"
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:193
+msgid ""
+"Use any tag you want, but please look at the other documents and try to "
+"be consistent."
+msgstr ""
+
+#: ../../source/handbook/doc-repos.rst:195
+msgid ""
+"If you don't use a tag your document will appear in the **Untagged** "
+"section and you will be severely reprimanded."
+msgstr ""
+

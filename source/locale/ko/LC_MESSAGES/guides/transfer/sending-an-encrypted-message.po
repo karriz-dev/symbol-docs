@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:8
+msgid "Sending an encrypted message"
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:10
+msgid "Send an encrypted message that only can be read by the recipient account."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:14
+msgid "Use case"
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:16
+msgid ""
+"Imagine that Alice wants to timestamp a sensitive message to send to an "
+"account representing her academic certificate."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:18
+msgid ""
+"Alice knows that sending a TransferTransaction with a **plain message** "
+"to the public network will make the content of the message publicly "
+"available."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:20
+msgid ""
+"Thus, Alice sends an **encrypted message** that is only readable by "
+"herself and those with access to the academic certificate."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:24
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:26
+msgid ""
+"Complete the :doc:`getting started section <../../getting-started/setup-"
+"workstation>`."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:27
+msgid ""
+"Complete :doc:`sending mosaics and messages between two accounts "
+"<sending-a-transfer-transaction>` guide."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:28
+msgid ""
+"Create :ref:`accounts <setup-creating-a-test-account>` for Alice to "
+"represent the certificate."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:29
+msgid ""
+"Load the Alice's account with enough |networkcurrency| to pay for "
+"transaction fees."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:33
+msgid "Setting up the use case"
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:35
+msgid ""
+"Create two accounts: one for Alice and another for the certificate with "
+"the :ref:`CLI tool <wallet-cli>`."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:37
+msgid "Enter the :term:`NODE_URL` to use to access the network."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:59
+msgid "Method #01: Using the SDK"
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:62
+msgid "Encrypt the message"
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:64
+msgid ""
+"Create an **encrypted message** for the certificate, signing it with "
+"Alice's account."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:68
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:82
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:98
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:112
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/SendingATransferTransactionEncryptedMessage.ts`"
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:73
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:87
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:103
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:117
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/SendingATransferTransactionEncryptedMessage.js`"
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:78
+msgid ""
+"Attach the encrypted message to a **TransferTransaction**, setting the "
+"certificate address as the recipient."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:92
+msgid "Sign the transaction with Alice's account."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:94
+msgid ""
+"To make the transaction only valid for your network, include the network "
+"generation hash. Open :term:`NODE_URL` ``/node/info`` in a new browser "
+"tab and copy the ``meta.networkGenerationHash`` value."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:108
+msgid ""
+"Once signed, :doc:`announce the transaction <../../concepts/transaction>`"
+" to the network."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:123
+msgid "Decrypt the message"
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:125
+msgid ""
+"After the transaction gets confirmed, fetch it using the transaction hash"
+" output from (3). You can now **decrypt the message** using either the "
+"certificate account or address account."
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:130
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/DecodingAnEncryptedMessage.ts`"
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:135
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/DecodingAnEncryptedMessage.js`"
+msgstr ""
+
+#: ../../source/guides/transfer/sending-an-encrypted-message.rst:140
+msgid ""
+"If you managed to read the message, try to decrypt it using another "
+"unrelated account to ensure that only the defined participants can read "
+"the encrypted content."
+msgstr ""
+

@@ -1,0 +1,298 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:6
+msgid "How to keep your Symbol node up and running healthily."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:10
+msgid "Maintaining a Node"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:12
+msgid ""
+"Once you have created a |codename| node, be it :doc:`manually <running-a"
+"-symbol-node-manually>` or :doc:`using Symbol bootstrap <running-a"
+"-symbol-node>`, the node is **mostly autonomous**. But there is still a "
+"little bit of maintenance required, explained in this guide."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:14
+msgid ""
+"Regular nodes only need to take care of the :ref:`maintain-client-"
+"version` section."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:16
+msgid ""
+":ref:`Voting nodes <voting-node-program>` also need to read the :ref"
+":`maintain-voting-keys` section."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:21
+msgid "Client updates"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:23
+msgid ""
+"New |codename| client versions will be released **periodically**. If you "
+"want to benefit from the added features and bugfixes you will need to "
+"**update your node** to use the latest client version."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:25
+msgid ""
+"Additionally, if your node's client version falls too far behind, other "
+"nodes might refuse to connect to it."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:27
+msgid ""
+"The main version to keep track of is the **Catapult client version**, "
+"since this component is used by all :ref:`peer nodes <peer-node>`. "
+"Additionally, :ref:`API nodes <api-node>` need to keep track of the "
+"**REST component version** too."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:29
+msgid "**Finding out what are the latest versions**:"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:31
+msgid ""
+"Whenever there is a new client version released it will be announced "
+"through the Symbol |twitter| and the |discord| channel. You can also keep"
+" an eye on the different |github| repositories and :doc:`the "
+"compatibility matrix page <../../compatibility>` to know the latest "
+"client and REST versions."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:33
+msgid "**Finding out your node versions**:"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:35
+msgid ""
+"You can find the versions used by your node in the `Symbol Explorer nodes"
+" list <https://symbol.fyi/nodes>`__."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:37
+msgid ""
+"Additionally, if your node is an :ref:`API node <api-node>`, you can also"
+" query it directly:"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:39
+msgid "**Client version**: ``/node/info`` endpoint, ``version`` property."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:43
+msgid ""
+"The ``version`` is encoded as a single 4-byte integer, where the Most-"
+"Significant Byte encodes the Major version, and the rest of bytes are the"
+" Minor, the Micro and the Patch version."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:45
+msgid ""
+"For example, version **16777472** (decimal) is **01000100h** (hex), which"
+" corresponds to version **1.0.1.0**."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:47
+msgid "**REST version**: ``/node/server`` endpoint, ``restVersion`` property."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:49
+msgid "``restVersion`` is a version string like **\"2.3.6\"**, for example."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:51
+msgid ""
+"The exact procedure to update your node depends on how you created it. "
+"Read the appropriate section below."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:56
+msgid "Update nodes created with Bootstrap"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:58
+msgid ""
+"If you used Symbol Bootstrap to create your node (following the "
+":doc:`running-a-symbol-node` guide), keeping it up to date is very "
+"simple."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:60
+msgid ""
+"**Update Symbol Bootstrap** first (see the :doc:`using-symbol-bootstrap` "
+"guide for more details):"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:66
+msgid ""
+"Then **move to the folder** where the node's data folder is (typically "
+"``target``) and **stop the node**."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:68
+msgid ""
+"The exact stop command depends on whether your node was running in "
+"detached mode or not:"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:70
+msgid ""
+"**If you started in detached mode** with ``symbol-bootstrap start "
+"--detached``:"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:72
+msgid "From the folder containing the ``target`` folder type:"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:78
+msgid "**If you did not start in detached mode**:"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:80
+msgid ""
+"You must have a terminal running somewhere with all the output from the "
+"client. Stop it by pressing ``Ctrl+C``."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:82
+msgid "Next **make a backup copy** of the node's data folder:"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:88
+msgid ""
+"Finally, **restart the node** with the ``--upgrade`` flag to update all "
+"necessary component versions."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:90
+msgid "Add also the ``--detached`` flag to start in detached mode if you need it."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:96
+msgid ""
+"Once the node is up and running again, and you **verify that the "
+"component versions have been updated**, you can **remove the backup "
+"copy**."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:99
+msgid "Update nodes created manually"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:101
+msgid ""
+"If you followed the :doc:`running-a-symbol-node-manually` guide, you need"
+" to rebuild the Catapult client and keep the previous data folder so the "
+"same accounts and cached data is reused."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:103
+msgid "In summary, you need to:"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:105
+msgid "Stop the running Catapult client with ``Ctrl+C``."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:106
+msgid ""
+"Update the Catapult client source repository with the latest version and "
+"build it again following the `Catapult client "
+"<https://github.com/symbol/symbol/tree/main/client/catapult/docs>`__ "
+"instructions."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:107
+msgid ""
+"Restart the client from the same folder it was initially launched. Data "
+"and configuration files will be reused."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:111
+msgid ""
+"The above procedure works but brings the client offline while the new "
+"version is being built, which could be a lengthy process."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:113
+msgid ""
+"If you **install** the client (with ``make install``) instead of running "
+"it from the same folder where it is built, though, you have the option to"
+" build the new version while the previous one is still running. In this "
+"way the service interruption should be minimal."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:115
+msgid "The steps then would be:"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:117
+msgid "Update the Catapult client source repository and build it again."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:118
+msgid "Stop the running Catapult client."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:119
+msgid "Install the new version of the client."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:120
+msgid "Restart the client."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:125
+msgid "Voting key renewal"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:127
+msgid ""
+"If your node is a :ref:`Voting node <voting-node-program>` it requires a "
+"valid voting key to operate. For security these keys expire after 6 "
+"months, so you need to renew them as part of the regular node "
+"maintenance."
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:129
+msgid ""
+"Read the appropriate section about renewing the voting keys depending on "
+"whether you used Symbol Bootstrap or not to build your node:"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:131
+msgid ":ref:`Voting key renewal using Bootstrap <bootstrap-voting-key-renewal>`"
+msgstr ""
+
+#: ../../source/guides/network/maintaining-a-symbol-node.rst:132
+msgid ":ref:`Manual voting key renewal <manual-voting-key-renewal>`"
+msgstr ""
+

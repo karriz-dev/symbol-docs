@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:9
+msgid "Creating a multi-level multisig account"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:11
+msgid ""
+"This guide will show you how to connect multiple multisig accounts to "
+"achieve advanced on-chain authorization logic."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:15
+msgid "Use case"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:17
+msgid ""
+":doc:`Multisig accounts <../../concepts/multisig-account>` can have as "
+"cosignatories other multisig accounts and add “AND/OR” logic to multi-"
+"signature transactions."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:19
+msgid ""
+"In this guide, we are going to create a complex **3-level multisig "
+"account**."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:25
+msgid "3-level multisig account example"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:27
+msgid ""
+"For example, if the **account #5** initiates an "
+"**AggregateBondedTransaction** involving the **account #1**, the accounts"
+" **#7 or #8** and **#4** should cosign the transaction in order to be "
+"included in a block."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:33
+msgid "Sending an AggregateBondedTransaction from a MLMA"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:38
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:40
+msgid ""
+"Complete :doc:`converting an account to multisig <creating-a-multisig-"
+"account>` guide."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:41
+msgid ""
+"Create :doc:`accounts <../account/creating-an-account>` for every "
+"multisig level."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:42
+msgid ""
+"Load the root multisig account with enough |networkcurrency| to pay for "
+"the transaction fee."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:46
+msgid "Method #1: Using the SDK"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:48
+msgid "Define the **multisig account #2**."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:52
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:66
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:80
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:95
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/multisig/CreatingAMultilevelMultisigAccount.ts`"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:57
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:71
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:85
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:100
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/multisig/CreatingAMultilevelMultisigAccount.js`"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:62
+msgid "Define the **multisig account #3**."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:76
+msgid "Define the **multisig account #1**."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:90
+msgid ""
+"4. Announce the transactions together using an "
+":ref:`aggregatebondedtransaction`. The **account #1** must lock ``10`` "
+"|networkcurrency| to announce the transaction."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multi-level-multisig-account.rst:105
+msgid ""
+"5. The potential cosignatories must opt-in to become cosignatories. "
+":doc:`Cosign the announced AggregateTransaction <../aggregate/signing-"
+"announced-aggregate-bonded-transactions>` with the accounts **#5**, "
+"**#6**, **#7**, **#8,** and **#4**."
+msgstr ""
+

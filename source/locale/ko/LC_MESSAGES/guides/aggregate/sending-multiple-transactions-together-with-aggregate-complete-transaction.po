@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:9
+msgid "Sending multiple transactions together"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:11
+msgid ""
+"Send transactions to different accounts at the same time, using aggregate"
+" transactions."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:15
+msgid "Use case"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:17
+msgid ""
+"Dan wants to send mosaics to Alice and Bob. He could achieve this sending"
+" a couple of **TransferTransactions**. However, to make sure Alice and "
+"Bob receive the funds at the same time, he decides to use an :ref"
+":`aggregate-transaction`."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:25
+msgid "Sending transactions to different recipients atomically"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:29
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:31
+msgid ""
+"Complete :doc:`sending mosaics and messages between two accounts "
+"<../transfer/sending-a-transfer-transaction>` guide."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:32
+msgid ""
+"Create :ref:`accounts <setup-creating-a-test-account>` for Alice, Bob, "
+"and Dan."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:33
+msgid "Load Dans's account with at least 200 |networkcurrency| units."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:37
+msgid "Method #01: Using the SDK"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:39
+msgid ""
+"Open a new file, and define two :ref:`transfertransaction` to send 10 "
+"|networkcurrency| to different recipients."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:43
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:63
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:82
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/SendingMultipleTransactionsTogetherWithAggregateCompleteTransaction.ts`"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:48
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:68
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:87
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/SendingMultipleTransactionsTogetherWithAggregateCompleteTransaction.js`"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:53
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:73
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:92
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/aggregate/SendingMultipleTransactionsTogetherWithAggregateCompleteTransaction.java`"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:59
+msgid ""
+"Wrap both transactions in an :ref:`aggregate-transaction`, adding Dan's "
+"public account as the required signer. As one private key—Dan's "
+"account—can sign all the transactions in the aggregate, we can define the"
+" transaction as *complete*."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-multiple-transactions-together-with-aggregate-complete-transaction.rst:78
+msgid "Sign and announce the transaction with Dan's account."
+msgstr ""
+

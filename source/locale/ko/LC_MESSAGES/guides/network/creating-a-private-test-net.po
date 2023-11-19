@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:8
+msgid "Private test networks"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:10
+msgid ""
+"This guide will walk you through the process of setting up your own "
+"private network using |codename|."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:12
+msgid ""
+"To run the network, we are going to use the package |symbol-bootstrap|. "
+"To better understand how this package works it is recommended to read the"
+" :doc:`Using Symbol Bootstrap<using-symbol-bootstrap>` guide."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:16
+msgid "The ``bootstrap`` preset"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:18
+msgid ""
+"|symbol-bootstrap| has a preset called ``bootstrap`` which instantiates a"
+" network with multiple nodes with the following architecture:"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:24
+msgid "Bootstrap network architecture"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:26
+msgid ""
+"The nodes labelled \"Internal\" are the ones created by |symbol-"
+"bootstrap|, and are accessible through the REST API:"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:28
+msgid ""
+"**peer-node (1 and 2)**: Peer nodes verify transactions once the API "
+"pushes them into the P2P network. They run the consensus algorithm, "
+"create new blocks, and propagate the changes through the network."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:29
+msgid ""
+"**api-node**: The API node stores data in the MongoDB database once "
+"transactions are validated. They also identify and store partial "
+"aggregate bonded transactions."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:30
+msgid ""
+"**rest-gateway**: Combines HTTP and WebSockets to perform read and write "
+"actions on the blockchain."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:34
+msgid "Instantiate the network"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:36
+msgid ""
+"Use the ``start`` command (explained in the :ref:`Using Symbol Bootstrap "
+"<symbol-bootstrap-all-in-one>` guide) using the ``bootstrap`` preset:"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:42
+msgid ""
+"With a single command the network is created and booted. Now check that "
+"it is up and running by opening a new browser tab and going to:"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:44
+msgid "``localhost:3000/chain/info``"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:46
+msgid "You should get a response from the API node."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:50
+msgid "Retrieving the node accounts"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:52
+msgid ""
+"|symbol-bootstrap| has created multiple nodes with corresponding "
+"accounts. To interact with any of these accounts (to transfer mosaics "
+"**to** it, for example) you need its address or its public key. To fully "
+"control an account (to transfer mosaics **from** it, for example) you "
+"need its private key."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:54
+msgid ""
+"All this information can be retrieved from a YAML file in the ``target`` "
+"folder:"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:56
+msgid "``target/addresses.yml``"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:58
+msgid "As an example:"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:86
+msgid "Keep your Secret Keys secret at all times!"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:88
+msgid ""
+"You can now import any of these accounts using the |symbol-cli| command-"
+"line tool for ease of access (Read :doc:`the symbol-cli guide "
+"<../../cli>` for more details):"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:94
+msgid ""
+"After giving this new profile a name you will be ready to use it, for "
+"example, to retrieve the account's balance:"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:100
+msgid ""
+"You should see that the nodes that |symbol-bootstrap| has created for you"
+" already contain some currency (in different :doc:`mosaics "
+"<../../concepts/mosaic>`) to start experimenting with them:"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:115
+msgid "Retrieving the test accounts"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:117
+msgid ""
+"|symbol-bootstrap| has also created several test accounts preloaded with "
+":doc:`mosaics <../../concepts/mosaic>`. These accounts exist solely for "
+"development and learning purposes."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:119
+msgid ""
+"The keys to these accounts can be found in the ``target/addresses.yml`` "
+"file as described above, in the ``mosaics`` section:"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:153
+msgid ""
+"Use the Private Keys to access these accounts, for example, using the "
+"|symbol-cli| command-line tool as described above."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:157
+msgid "Voting nodes"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:159
+msgid ""
+"The :ref:`block finalization <finalization>` process requires that "
+"network nodes vote about the correctness of blocks before they are added "
+"to the blockchain. Each node can decide whether to register as a voter or"
+" not."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:161
+msgid ""
+"All nodes created by the ``bootstrap`` preset are voters by default. If "
+"you don't want this, provide a custom preset with these lines to disable "
+"voting for each node:"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:170
+msgid ""
+"Without ANY voting node no finalization can occur. By taking a look at "
+"``localhost:3000/chain/info`` you will see you chain height grow but the "
+"``latestFinalizedBlock``'s height will remain at zero."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:174
+msgid "Configuring network properties"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:176
+msgid ""
+"Read the :doc:`Configuring network properties <configuring-network-"
+"properties>` guide for a list of network-related settings that can be "
+"customized."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:180
+msgid "Next steps"
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:182
+msgid ""
+"You now have a test network running and access to each node's account. "
+"You can also interact with it through the API node serving at "
+"``localhost:3000``."
+msgstr ""
+
+#: ../../source/guides/network/creating-a-private-test-net.rst:184
+msgid ""
+"We recommend you continue reading the rest of :ref:`the guides <blog-"
+"categories>` to keep learning more |codename|'s features!"
+msgstr ""
+

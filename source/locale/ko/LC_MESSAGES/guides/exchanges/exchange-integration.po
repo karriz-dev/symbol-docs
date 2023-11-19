@@ -1,0 +1,1018 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/exchanges/exchange-integration.rst:3
+msgid "Integrating with an Exchange"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:5
+msgid ""
+"This document is intended to **guide developers** through the integration"
+" of the ``XYM`` token into an **Exchange platform**. It contains "
+"recommendations on how to set up accounts, listen for deposits, and "
+"create withdrawals as well as code examples ready to be adopted."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:7
+msgid ""
+"The code examples shared use the `Symbol SDK for TypeScript "
+"<https://github.com/symbol/symbol-sdk-typescript-javascript>`__, but can "
+"be ported to other :doc:`available SDKs <../../sdk>` since all of them "
+"share the same design principles. If there is no SDK supported for a "
+"required programming language, you may still be able to integrate by "
+"connecting directly via Symbol's :doc:`REST API <../../api>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:10
+msgid "Integration overview"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:12
+msgid ""
+"There are many ways to design an exchange. This guide is based on how to "
+"support ``XYM`` deposits and withdrawals in an exchange that follows a "
+"**central wallet approach**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:14
+msgid ""
+"Please note that this design is not particularly recommend over others. "
+"However, its **simplified architecture** is a good showcase for Symbol's "
+"set of features involved in integrating with an Exchange. A different "
+"approach, for example, would be to use a different wallet for each user."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:21
+msgid "**Fig. 1**: General design diagram of the central wallet approach."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:23
+msgid "The main components of this architecture are described next."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:26
+msgid "Components"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:29
+msgid "Central wallet"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:31
+msgid ""
+"The exchange owns a Symbol account where all the user's deposits and "
+"withdrawals occur. The keys to this account need to be on an online "
+"machine, so this is also commonly called the **Hot** wallet. This account"
+" only has the necessary amount of XYM for daily use (withdrawals and "
+"deposits), since it is the account most exposed to attacks."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:34
+msgid "Cold wallet"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:36
+msgid ""
+"Cold wallet(s) hold a certain threshold for the pool of XYM. These "
+"accounts should be created and remain in a setup with no internet "
+"connection. Transactions issued from cold wallets must be signed offline "
+"and announced to the network using another device. It is advisable as "
+"well that cold wallets are set up with :doc:`multisig accounts "
+"<../../concepts/multisig-account>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:39
+msgid "Unique User ID"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:41
+msgid ""
+"In the proposed architecture, each user is identified by a Unique User "
+"IDentifier (UUID) on the exchange's database. A user will deposit to the "
+"central wallet with their UUID attached as the :doc:`message "
+"<../../concepts/transfer-transaction>` of the transaction (called "
+"sometimes the **memo**). The UUID is only shown in the user's dashboard "
+"during the deposit confirmation."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:43
+msgid ""
+"One of the drawbacks of this design is that many users are not used to "
+"having a message attached to their transactions. If they forget to attach"
+" the UUID or attach a wrong UUID, it will lead to receiving lots of "
+"support tickets concerning \"lost funds\"."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:47
+msgid ""
+"Symbol's :doc:`Transfer transactions <../../concepts/transfer-"
+"transaction>` can hold an arbitrary message up to 1023 bytes long but "
+"**the first byte is treated specially by the** :doc:`Symbol SDK "
+"<../../sdk>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:49
+msgid ""
+"This can be a source of confusion because the receiver of a transaction "
+"does not know if the message was generated by the Symbol SDK or otherwise"
+" (for example accessing the :doc:`REST gateway <../../api>`), so it does "
+"not know if the first byte must be treated specially or not."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:51
+msgid "To avoid any issue, the following measures **must always be enforced**:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:53
+msgid ""
+"**Always** start messages with a byte in the 32 to 128 range (this is the"
+" standard ASCII printable range)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:54
+msgid "**Always** ignore any received initial byte outside the 32 to 128 range."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:56
+msgid ""
+"Follow these rules, regardless of whether you use the Symbol SDK or not "
+"to generate and parse transfer transactions."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:59
+msgid "Exchange Server"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:61
+msgid ""
+"This machine is constantly listening for user's withdraw requests, and "
+"monitors the blockchain to detect user deposits into the Exchange Central"
+" Wallet. As explained in the rest of this document, it maintains the "
+"database updated and announces any required transaction."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:64
+msgid "Exchange Database"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:66
+msgid ""
+"All the user's funds are merged together in the Exchange's wallets. This "
+"database keeps track of the amount of tokens each individual user holds. "
+"It also records all processed transactions, for record-keeping and to "
+"avoid processing the same transaction more than once."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:69
+msgid "Running a node"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:71
+msgid ""
+"Although not absolutely necessary, it is **recommended** that Exchanges "
+"deploy **their own Symbol node** to communicate with the rest of the "
+"network. Since each node automatically connects to **several other "
+"nodes** on the network, this approach is more robust than accessing the "
+"network always through the same public node, which **might become "
+"unavailable**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:73
+msgid ""
+"If you are unable to run your own node, you can choose one from the list "
+"provided by the `Statistics Service <https://symbol.services/nodes>`__."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:75
+msgid ""
+"See the :doc:`different guides about deploying Symbol nodes "
+"<../network/index>` and make sure you create an :ref:`API node <api-"
+"node>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:78
+msgid "Accounts setup"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:80
+msgid ""
+"Exchanges can create the central and cold wallets by :doc:`downloading "
+"the official Symbol Desktop Wallet <../../wallets>` for **Windows**, "
+"**Linux** or **Mac**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:82
+msgid ""
+"Every wallet has assigned an :doc:`account <../../concepts/account>` (a "
+"deposit box that holds tokens, which can only be transferred with the "
+"appropriate private key)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:84
+msgid ""
+"The **private key must be kept secret at all times** and must not be "
+"shared. Losing the private key means losing access to an account's funds,"
+" so make sure it is **securely backed up**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:86
+msgid ""
+"It is advisable to turn central and cold wallets into :doc:`multisig "
+"accounts <../../concepts/multisig-account>` to add **two-factor "
+"authentication**. The cosignatories of the multisig account become the "
+"account managers, so no transaction can be announced from the multisig "
+"account without the cosignatories' approval. Symbol's current "
+"implementation of multisig is **“M-of-N”** meaning that *M* out of the "
+"total *N* cosignatories of an account need to approve a transaction for "
+"it to be announced."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:88
+msgid ""
+"Multisig accounts are a **powerful** yet **dangerous** tool. If access to"
+" some cosignatory account is lost and the minimum approval is not reached"
+" (the *M* above), access to the multisig account can be permanently lost."
+" **Always configure multisig accounts with caution**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:90
+msgid ""
+"To strengthen security, :doc:`extra account restrictions <../../concepts"
+"/account-restriction>` can be added to the Exchange's accounts, like "
+"blocking announcing or receiving transactions given a series of rules."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:78
+#: ../../source/guides/exchanges/exchange-integration.rst:233
+#: ../../source/guides/exchanges/exchange-integration.rst:344
+msgid "Related links"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:94
+msgid ":doc:`Download the Symbol client <../../wallets>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:95
+msgid ":doc:`How to create a new account <../account/creating-an-account>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:96
+msgid ""
+":doc:`How to turn an account into a multisig account "
+"<../multisig/creating-a-multisig-account>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:97
+msgid ""
+":doc:`How to set account restrictions <../restriction/preventing-spam-"
+"attacks-with-account-restrictions>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:100
+msgid "The XYM token"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:102
+msgid ""
+"The native currency of the Symbol network is named ``XYM``. The token is "
+"used to pay for transactions and service :doc:`fees "
+"<../../concepts/fees>`, which are used as well to provide an incentive "
+"for those :doc:`participants <../../concepts/harvesting>` who secure the "
+"network and run the infrastructure."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:104
+msgid ""
+"Tokens can be divided up to ``divisibility`` decimal places. Amounts "
+"given without decimals are called **absolute**, whereas when decimals are"
+" used amounts are called **relative**. For example, when divisibility is "
+"6, 1 relative token corresponds to 1'000'000 absolute tokens, and the "
+"smallest token is 0.000001 relative units. The smallest absolute unit is "
+"always 1, regardless of the divisibility."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:106
+msgid "These are the properties of ``XYM``:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Property"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Value"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "ID"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "``0x6BED913FA20223F8``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Token unique identifier"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Alias"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "``symbol.xym``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Friendly name for the token"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Initial supply"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "7'842'928'625 (relative)"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Initial amount of token units in circulation"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Max supply"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "8'999'999'999 (relative)"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid ""
+"Maximum amount of token units in circulation after :doc:`inflation "
+"<../../concepts/inflation>` is applied"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Divisibility"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "6"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "This means that the smallest fraction of the token is 0.000001 (relative)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Duration"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "0"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Token does not expire"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Supply mutable"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "False"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Token supply cannot be altered"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Transferable"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "True"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Token can be transferred between arbitrary accounts"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Restrictable"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:1
+msgid "Token creator cannot restrict which accounts can transact with the mosaic"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:125
+msgid ""
+"The ``XYM`` token can be referred to through its **native token ID** or "
+"its **friendlier alias** ``symbol.xym``, which has an ID on itself."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:127
+msgid ""
+"On MAINNET, these IDs are ``0x6BED913FA20223F8`` (mosaic ID) and "
+"``0xE74B99BA41F4AFEE`` (alias ID)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:129
+msgid "**Always treat these two IDs as equivalent.**"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:134
+msgid "Aggregates"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:136
+msgid ""
+"Symbol has a novel feature called :ref:`aggregate-transaction` which "
+"allows bundling multiple inner transactions into a single one."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:138
+msgid ""
+"Therefore, when monitoring incoming **Transfer** transactions you must "
+"remember to also look inside all **Aggregate** transactions (Both "
+"**Aggregate Complete** and **Aggregate Bonded** transactions). The "
+":ref:`example code given below <exchanges-monitoring>` shows a way of "
+"achieving this."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:142
+msgid ""
+"When Aggregate transactions are **not** monitored, inner transfer "
+"transactions **are not detected**, leading to lots of **reports of lost "
+"funds**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:144
+msgid ""
+"This is specially relevant for :doc:`multi-signature accounts "
+"<../../concepts/multisig-account>`, where all transactions are wrapped in"
+" an Aggregate."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:149
+msgid "Avoiding rollbacks"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:151
+msgid ""
+"This is a **classic conflict** in blockchain technology: On one hand, if "
+"transactions are accepted too quickly, they might need to be **reverted**"
+" later on in the event of a :ref:`network fork <rollbacks>`. On the other"
+" hand, waiting for too long is **inconvenient** for users."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:153
+msgid "There are two ways of dealing with this in Symbol:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:156
+msgid "Using Finalization"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:158
+msgid ""
+"Symbol implements :ref:`Finalization <finalization>`, a process that "
+"**guarantees** that blocks are **immutable** and therefore transactions "
+"are secure."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:160
+msgid ""
+"To know if a block has been finalized, check the ``latestFinalizedBlock``"
+" property in the `/chain/info <https://symbol.github.io/symbol-"
+"openapi/v1.0.1/#operation/getChainInfo>`__ endpoint. All blocks with a "
+"**height** lower than (or equal to) ``latestFinalizedBlock.height`` are "
+"**finalized** and are therefore **immutable**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:162
+msgid ""
+"**On average**, blocks are finalized after 5 minutes, in the absence of "
+"network problems."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:165
+msgid "Using a fixed wait"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:167
+msgid ""
+"To have faster response times, one must ignore finalization and **accept "
+"the risk** that comes with this: **Unfinalized blocks have a probability "
+"of being reverted**, which decreases over time but is never zero until "
+"the block is finalized."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:169
+msgid ""
+"The procedure, which is common in blockchains which do not support "
+"finalization, is to **wait for a few blocks** to be validated (added to "
+"the blockchain) before accepting a transaction."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:171
+msgid ""
+"The amount of blocks to wait for depends on the risk one wants to accept."
+" The recommendation for Symbol is **20 blocks** (about 10 minutes, "
+"regardless of network conditions, because Finalization will almost always"
+" happen during this time)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:165
+msgid "In summary"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:175
+msgid ""
+"Waiting for a **fixed amount** of blocks leads to consistent confirmation"
+" times, but has the risk that confirmed transactions might be "
+"**reverted**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:176
+msgid ""
+"Waiting for **finalization** has variable confirmation times (5 minutes "
+"on average) but has **zero rollback risk**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:179
+msgid "Deadlines"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:181
+msgid ""
+"An added problem caused by rollbacks is that **transactions might "
+"expire** in the process of resolving a network fork."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:183
+msgid ""
+"A bit of context is required here. Transactions are not allowed to remain"
+" unconfirmed in the network forever, as this would pose a significant "
+"strain on the network's resources. Instead, **all transactions have a "
+"deadline**, and are automatically disposed of when the deadline arrives."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:185
+msgid ""
+"Users are free to use any deadline they want for their transactions, "
+"between now and 6h into the future (48h for :ref:`aggregate-bonded` "
+"transactions)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:187
+msgid ""
+"Transactions which are about to expire are delicate because, even if they"
+" get confirmed and are added to the blockchain, **a rollback could send "
+"them back to the unconfirmed state** and their deadline could expire "
+"before they are confirmed again."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:179
+msgid "Therefore, it is recommended that:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:191
+msgid ""
+"Incoming transactions with a deadline **less than 1h into the future** "
+"are rejected with a warning message, for example:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:193
+msgid "``Transaction is too close to expiration to be safely accepted.``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:195
+msgid "Exchanges avoid using transactions with short lifespans."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:197
+msgid ""
+"Exchanges actively encourage their customers to avoid using transactions "
+"with short lifespans."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:200
+msgid "The example code"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:202
+msgid ""
+"This guide shows snippets of code to exemplify the different processes. "
+"All snippets are based on the same program that `can be found here "
+"<https://github.com/symbol/symbol-"
+"docs/tree/main/source/resources/examples/typescript/exchanges>`__. A few "
+"notes on this example program:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:204
+msgid ""
+"It uses a fake ``DBService`` object that simulates the Exchange database."
+" Calls to this object should obviously be replaced by the actual Exchange"
+" infrastructure in production code. For simplicity these calls are "
+"synchronous but they could be made asynchronously too."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:206
+msgid ""
+"No error handling is performed at all. Use mechanisms like ``try {} "
+"catch`` where appropriate in production code."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:208
+msgid ""
+"Finally, besides the snippets shown in the guide, the complete program "
+"also contains auxiliary code (like polling loops) in order to make it "
+"runnable and self-sufficient. This auxiliary code is not meant to be used"
+" as an inspiration at all, it is just there for convenience."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:213
+msgid "Deposits"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:220
+msgid "**Fig. 2**: Deposit process."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:222
+msgid ""
+"Users perform deposits by announcing a regular transfer transaction using"
+" their wallet, moving the funds from their account directly to the "
+"Exchange Central Wallet. Since the transfer is handled entirely by the "
+"blockchain, the funds will be added to the Exchange Central Wallet "
+"without the Exchange's mediation, and this poses some problems:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:224
+msgid ""
+"The **intended recipient** of the transaction must be determined. This is"
+" done by attaching the user's UUID as the transaction's message."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:225
+msgid ""
+"The fact that a transaction has happened must be timely detected to "
+"update the user's account on the Exchange."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:226
+#, python-format
+msgid ""
+"Transactions must be **finalized** to be 100% sure that they will not be "
+":ref:`rolled back <rollbacks>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:228
+msgid ""
+"The code proposed next addresses all these issues by monitoring the "
+"blockchain."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:233
+msgid "Monitoring"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:235
+msgid ""
+"The blockchain is polled periodically and all incoming transactions since"
+" last poll are processed in a batch:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:237
+msgid ""
+"All **Transfer** transactions added to the blockchain **since** the last "
+"check and **up to** the latest finalized block are examined, looking for "
+"the ones destined to the Central Exchange Wallet. This can be done "
+"efficiently with a single Symbol API call."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:239
+msgid ""
+"Transfer transactions embedded in **Aggregate Complete** and **Aggregate "
+"Bonded** transactions must also be examined (see the :ref:`exchange-"
+"aggregate-transactions` section above). This is handled in the example "
+"code by the ``embedded: true`` parameter in the "
+"`searchConfirmedTransactions <https://symbol.github.io/symbol-"
+"openapi/v1.0.4/#operation/searchConfirmedTransactions>`__ call."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:241
+msgid ""
+"If Finalization is not desired (see the :ref:`exchange-avoid-rollbacks` "
+"section above) you can search up to 20 blocks before the current chain "
+"height, for example."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:243
+msgid "Filter out transactions that:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:245
+msgid "Have no message or the message does not correspond to an existing UUID."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:247
+msgid "Do not contain tokens, or the token is not ``symbol.xym``."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:249
+msgid "Have already been processed (as a security measure)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:251
+msgid "The remaining transactions are then processed:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:253
+msgid "The tokens are added to the user's account in the database."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:255
+msgid "The transaction is marked as processed by adding its hash to the database"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:257
+msgid ""
+"Store the last height that has been processed and wait for the next "
+"polling period."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:259
+msgid ""
+"The code snippet, using `Symbol's TypeScript SDK "
+"<https://symbol.github.io/symbol-sdk-typescript-javascript/1.0.0/>`__ is "
+"this:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:263
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/exchanges/ProcessDeposits.ts`"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:268
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/exchanges/ProcessDeposits.js`"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:273
+msgid ""
+"All configuration data is held in the ``ExchangeSymbolConfig`` object "
+"including the selection of the finalization mechanism."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:275
+msgid ""
+"The above code snippet should be called **in a loop** every minute, for "
+"example, and it will process **all new valid transactions** that have "
+"already been finalized (or that have waited enough blocks, depending on "
+"the chosen method)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:277
+msgid ""
+"However, **transactions will not be reported immediately**, and this "
+"might be annoying for users. Using :ref:`WebSockets <websockets>` "
+"transactions can be monitored in real-time and a notification can be "
+"shown to the user as soon as a transaction is **confirmed** on the "
+"network (or even as soon as it is **announced** on the network)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:279
+msgid ""
+"These transactions, though, should be clearly marked as **pending** and "
+"**not acted upon** until verified by the above code, to :ref:`avoid "
+"rollbacks <exchange-avoid-rollbacks>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:283
+msgid ""
+":doc:`Transfer Transaction reference <../../concepts/transfer-"
+"transaction>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:284
+msgid ":doc:`Mosaic (token) reference <../../concepts/mosaic>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:285
+msgid ":doc:`Symbol API reference <../../api>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:286
+msgid ":ref:`WebSockets reference <websockets>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:291
+msgid "Withdrawals"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:298
+msgid "**Fig. 3**: Withdrawal process."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:300
+msgid ""
+"Users send withdrawal requests to the Exchange Server, via a web page or "
+"mobile app, for example. If the database indicates that the user has "
+"enough funds to perform the withdrawal, a :doc:`transfer transaction "
+"<../../concepts/transfer-transaction>` is announced from the Exchange "
+"Central Wallet to the Symbol address indicated in the request."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:302
+msgid ""
+"Announcing the transaction has a :doc:`fee <../../concepts/fees>`, which "
+"is paid by the Exchange Central Wallet but can be deduced from the user's"
+" account. Regardless of the token being transferred, fees are always paid"
+" in XYM tokens."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:304
+msgid ""
+"The withdrawal process requires two steps: First the transaction "
+"transferring the funds is **announced** and confirmed (added to the "
+"blockchain). Afterwards, the exchange needs to wait for the transaction "
+"to be **finalized**, as explained in the :ref:`exchange-avoid-rollbacks` "
+"section above."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:307
+msgid "Announcing"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:309
+msgid ""
+"The withdrawal transaction is just a regular Symbol :doc:`transfer "
+"transaction <../../concepts/transfer-transaction>`. The code looks long "
+"because it contains a lot of repeated boilerplate, to make it self-"
+"contained:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:311
+msgid "Configuration is stored in the ``ExchangeSymbolConfig`` object."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:312
+msgid ""
+"A number of repositories are instantiated via the "
+"``RepositoryFactoryHttp`` class."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:313
+msgid ""
+"The withdrawal details are retrieved from environment variables in this "
+"example."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:315
+msgid "Then:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:317
+msgid "The actual transaction is created using ``TransferTransaction.create``."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:318
+msgid "The transaction is signed."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:319
+msgid ""
+"The signed transaction is announced using the ``TransactionService`` to "
+"simplify waiting for its confirmation."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:323
+#: ../../source/guides/exchanges/exchange-integration.rst:354
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/exchanges/SendWithdrawal.ts`"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:328
+#: ../../source/guides/exchanges/exchange-integration.rst:359
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/exchanges/SendWithdrawal.js`"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:307
+msgid "Multi-signature accounts"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:335
+msgid ""
+"When the Exchange Central Wallet is a :doc:`multi-signature account "
+"<../../concepts/multisig-account>` announcing the transaction is slightly"
+" more complex, as it involves the central wallet and its cosignatories. "
+"See the following resources:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:337
+msgid ":doc:`../aggregate/sending-a-multisig-transaction`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:338
+msgid ":doc:`../aggregate/signing-announced-aggregate-bonded-transactions`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:339
+msgid ""
+":doc:`../aggregate/signing-announced-aggregate-bonded-transactions-"
+"automatically`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:341
+msgid ""
+"Once the transaction is confirmed, the next step is to wait for it to be "
+"**finalized** to make sure it cannot be reverted. Until then, it should "
+"be marked as **pending** and **not acted upon**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:344
+msgid "Finalization"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:346
+msgid ""
+"Waiting for finalization is performed in a manner very similar to how "
+"incoming deposits are monitored (see :ref:`exchange-deposits` above): The"
+" blockchain is polled periodically and all transactions since the last "
+"check are processed in a batch, looking for outgoing transfers which have"
+" already been finalized."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:348
+msgid ""
+"The following code snippet should be run in a loop every minute, for "
+"example, and it will search for finalized withdrawal operations from the "
+"Exchange and record them in the Exchange's database."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:350
+msgid ""
+"This snippet can be run in the same loop as the deposits monitor "
+":ref:`described above <exchange-deposits>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:366
+msgid ":doc:`Transaction life-cycle <../../concepts/transaction>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:367
+msgid ":doc:`Fees reference <../../concepts/fees>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:368
+msgid ""
+":doc:`How to announce a transfer transaction programmatically "
+"<../transfer/sending-a-transfer-transaction>`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:371
+msgid "Further information"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:373
+msgid "Read the following pages for more information:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-integration.rst:375
+msgid ":doc:`../blockchain/global-mosaic-supply`."
+msgstr ""
+

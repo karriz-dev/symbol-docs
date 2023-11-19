@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/data-validation.rst:3
+msgid "Data Validation"
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:5
+msgid ""
+"|codename| uses tree structures to store large data associated with a "
+"block that cannot be retrieved directly from the :doc:`block header "
+"<block>`. This allows light clients to verify if an element (e.g. "
+":doc:`transaction <transaction>`, :doc:`receipt statement <receipt>`) "
+"exists without demanding the entire ledger history."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:10
+msgid "Merkle tree"
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:16
+msgid ""
+"A Merkle tree is a structure of nodes labeled by hashes. Pictured above "
+"is the simplest form of a Merkle tree, the binary Merkle tree. In "
+"particular, |codename| generates two Merkle Trees per block:"
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:20
+msgid ""
+"**Transactions Merkle Tree**: Stores all the transactions included in the"
+" block."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:21
+msgid ""
+"**Receipts Merkle Tree**: Stores all the receipt statements linked to a "
+"block."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:24
+msgid "Leaf nodes"
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:26
+msgid ""
+"A leaf node of the tree contains the **SHA3-256** hash of an element "
+"attached to the block. The leaves are ordered by index as they appear on "
+"the block. A Merkle tree is built by hashing together two hashes, from "
+"left to right, repeating the process until a singular hash is created."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:30
+msgid ""
+"If there is a layer with an odd number of hashes (and the number is "
+"different to 1), the last hash is doubled."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:33
+msgid "Merkle root"
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:35
+msgid ""
+"The hash at the bottom of the tree is called the Merkle root. The Merkle "
+"root hashes for receipts and transactions are included in block headers "
+"to summarize the data linked."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:38
+msgid ""
+"The following example shows how to verify that a block is composed of all"
+" its transactions:"
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:40
+#: ../../source/concepts/data-validation.rst:62
+msgid "Obtain HRoot; in |codename|, this is stored in the block header."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:41
+msgid ""
+"Calculate HRoot' creating a Merkle tree with all the transactions within "
+"the block in natural order."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:42
+msgid "Compare HRoot and HRoot'."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:44
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/blockchain/CalculatingMerkleRootFromBlockTransactions.ts`"
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:50
+msgid "Merkle proof"
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:52
+msgid ""
+"A Merkle proof (also known as **Merkle path**) is the minimum number of "
+"nodes required to calculate the Merkle root again."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:58
+msgid ""
+"The following steps are taken to validate if an element belongs to a "
+"given block:"
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:60
+msgid ""
+"Calculate H(B); the hash of the element you want to validate if exists "
+"within a block."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:64
+msgid "Request the merkleProof: H1, H7, H10."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:66
+msgid ""
+"Calculate HRoot'. Concatenate H(B) with the first unprocessed item from "
+"the merkleProof list as follows:"
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:68
+msgid "If item.position == left -> proofHash = sha_256(item.hash + proofHash)."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:70
+msgid "If item.position == right -> proofHash = sha_256(proofHash+ item.hash)."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:72
+msgid "Repeat 4. for every item in the MerkleProof list."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:74
+msgid "Compare if the HRoot' equals to HRoot."
+msgstr ""
+
+#: ../../source/concepts/data-validation.rst:76
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/blockchain/ValidatingTransactionWithinBlock.ts`"
+msgstr ""
+

@@ -1,0 +1,475 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/getting-started/first-application.rst:3
+msgid "Writing your first application"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:5
+msgid "This guide will take you through the |codename| development cycle."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:7
+msgid ""
+"First, we will architect our solution combining some built-in features "
+"available in |codename|, such as :doc:`mosaics <../concepts/mosaic>` and "
+":doc:`accounts <../concepts/account>`. By the end of this guide, you will"
+" know how to issue and monitor transactions on the blockchain."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:12
+msgid "Use case"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:14
+msgid ""
+"The secondary ticket market, also known as the resale market, is the "
+"exchange of tickets that happens between individuals after they have "
+"purchased a ticket from an initial vendor. The initial vendor could be "
+"the event website, an online ticket vending platform, a shop, or a stall "
+"at the entrance of the event."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:17
+msgid ""
+"Buying a ticket from someone that is not the initial vendor does not "
+"necessarily mean paying more for the ticket. There is the chance to be a "
+"victim of buying a fake or duplicate ticket, where the initial original "
+"vendor can't do anything to solve the issue."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:21
+msgid "What do we want to solve?"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:27
+msgid "Authorization model"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:29
+msgid "A ticket vendor wants to set up a system to:"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:31
+msgid "Identify each ticket and customer."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:32
+msgid "Avoid ticket reselling."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:33
+msgid "Avoid non-authentic tickets and duplicate ones."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:36
+msgid "Why Symbol is the right choice?"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:38
+msgid "Blockchain technology makes sense in cases where:"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:40
+msgid "There are different participants involved."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:41
+msgid "These participants need to trust each other."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:42
+msgid "There is a need to keep track of an immutable set of events."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:44
+msgid ""
+"|codename| is a **flexible blockchain** technology. Instead of uploading "
+"all the application logic into the blockchain, you can use its tested "
+"features through **API calls** to transfer and store value, "
+"authorization, traceability, and identification."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:47
+msgid ""
+"The rest of the code will remain **off-chain**. This reduces the inherent"
+" immutability risk, as you could change the process when necessary."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:52
+msgid "Creating an account for each participant"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:54
+msgid ""
+"First, let's identify the actors involved in the use case we want to "
+"solve:"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:56
+msgid "The ticket vendor."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:57
+msgid "The customer."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:59
+msgid ""
+"We have decided to represent the ticket vendor and customer as separate "
+":doc:`accounts <../concepts/account>`. Think of accounts as deposit boxes"
+" on the blockchain, which can be modified with an appropriate private "
+"key. Each account is unique and identified by an address."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:63
+msgid ""
+"Have you loaded an account with test |networkcurrency|? In the "
+":ref:`previous guide <setup-creating-a-test-account>`, you have learned "
+"how to create an account with |cli|. This account will represent the "
+"**ticket vendor** account."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:67
+msgid ""
+"Run the following command to verify if the ticket vendor account has "
+"|networkcurrency| units."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:73
+msgid "You should see on your screen a line similar to:"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:101
+msgid ""
+"This account owns 750 |networkcurrency| relative units. If your row after"
+" \"Balance Information\" is empty, follow the :doc:`previous guide "
+"<setup-workstation>` to get test currency."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:104
+msgid "Create a second account with the CLI to identify the **customer**."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:125
+msgid "Monitoring the blockchain"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:127
+msgid ""
+"Accounts change the blockchain state through transactions. Once an "
+"account announces a transaction, the server will return an OK response if"
+" it is properly formed."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:130
+msgid ""
+"However, receiving an OK response does not mean the transaction is valid "
+"or included in a block. For example, the transaction could be rejected "
+"because the issuer does not have enough |networkcurrency|, the message "
+"set is too large, or the fee set is too low."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:133
+msgid ""
+"A good practice is to **monitor transactions** before being announced to "
+"know when they get confirmed or rejected by the network."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:135
+msgid ""
+"In a new terminal, monitor the transactions involving the ticket vendor's"
+" account to know if they are confirmed or rejected by the network."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:143
+msgid "Creating the ticket"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:145
+msgid ""
+"We are representing the ticket with |codename| :doc:`mosaics "
+"<../concepts/mosaic>`. This feature can be used to represent any asset on"
+" the blockchain, such as objects, tickets, coupons, stock share "
+"representation, and even your cryptocurrency."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:148
+msgid ""
+"Mosaics have configurable properties, which are defined at the moment of "
+"their creation. For example, we opt to set **transferable property to "
+"false**. This means that the customer can only send the ticket back to "
+"the mosaic's creator, avoiding the ticket reselling."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:152
+msgid ""
+"Use the CLI with the ticket vendor account to create a new mosaic that "
+"will represent the ticket. This new mosaic can be configured as follows:"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Property"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Value"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Divisibility"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "0"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid ""
+"The mosaic units must not be divisible. No one should be able to send "
+"\"0.5 tickets\"."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Duration"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "1000"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "The mosaic will be registered for 1000 blocks."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Amount"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "99"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "The number of tickets you are going to create."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Supply mutable"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "True"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "The mosaic supply can change at a later point."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Transferable"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "False"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "The mosaic can be only transferred back to the mosaic creator."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:172
+msgid ""
+"After announcing the transaction, copy the mosaic id displayed in the "
+"terminal."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:178
+msgid ""
+"The transaction should appear as confirmed after 30 seconds at most. If "
+"the terminal raises an error, you can check the error code description "
+"`here <https://github.com/symbol/symbol-"
+"openapi/blob/main/spec/core/transaction/schemas/TransactionStatusEnum.yml>`_."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:183
+msgid "Sending the ticket"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:185
+msgid ""
+"Now that we have defined the mosaic, we will send one ticket unit to a "
+"customer announcing a :ref:`transfertransaction`."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:187
+msgid ""
+"Open a new file, and define a **TransferTransaction** with the following "
+"values."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Deadline"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Default (2 hours)"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid ""
+"The maximum amount of time to wait for the transaction to be included on "
+"the blockchain. A transaction will be dropped if it stays unconfirmed "
+"after this amount of time. The parameter is defined in hours and must be "
+"in the 1 to 6 range (1 to 48 for :ref:`aggregate-bonded` transactions)."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Recipient"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "TCHBDE...32I"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "The recipient account address. In this case, the customer's address."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Mosaics"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "[1 ``7cdf3b117a3c40cc``]"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "The array of mosaics to send."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Message"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "enjoy your ticket"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "The attached message."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "Network"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "TEST_NET"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:1
+msgid "The network type."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:202
+#: ../../source/getting-started/first-application.rst:225
+#: ../../source/getting-started/first-application.rst:244
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/FirstApplication.ts`"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:207
+#: ../../source/getting-started/first-application.rst:230
+#: ../../source/getting-started/first-application.rst:249
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/FirstApplication.js`"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:212
+#: ../../source/getting-started/first-application.rst:235
+#: ../../source/getting-started/first-application.rst:254
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/transfer/FirstApplication.java`"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:217
+msgid ""
+"Although the transaction is defined, it has not been announced to the "
+"network yet."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:219
+msgid ""
+"Sign the transaction with the **ticket vendor account**, so that the "
+"network can verify the authenticity of the transaction."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:221
+msgid ""
+"Include the network generation hash to make the transaction only valid "
+"for your network. Open :term:`NODE_URL` ``/node/info`` in a new browser "
+"tab and copy the ``meta.networkGenerationHash`` value."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:240
+msgid "Once signed, announce the transaction to the network."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:263
+msgid ""
+"Look at the terminal window where you are monitoring transactions. When "
+"the transaction appears as confirmed, you can check if the customer has "
+"received the ticket with the following command."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:271
+msgid "Did we solve the use case?"
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:273
+msgid "✅ Identify each customer: Creating |codename| accounts for each customer."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:275
+msgid "✅ Avoid ticket reselling: Creating a non-transferable mosaic."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:277
+msgid ""
+"✅ Avoid non-authentic tickets and duplicate ones: Creating a unique "
+"mosaic."
+msgstr ""
+
+#: ../../source/getting-started/first-application.rst:279
+msgid ""
+"Continue learning about more about |codename| :doc:`built-in features "
+"<../concepts/overview>`."
+msgstr ""
+

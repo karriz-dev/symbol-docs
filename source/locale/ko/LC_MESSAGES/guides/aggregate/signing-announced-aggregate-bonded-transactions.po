@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:9
+msgid "Cosigning aggregate bonded transactions"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:11
+msgid ""
+"Cosign :ref:`aggregate <aggregate-bonded>` transactions pending to be "
+"signed."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:15
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:17
+msgid ""
+"This guide assumes that you have received an aggregate transaction. You "
+"can follow the guide :doc:`creating an escrow contract<creating-an-"
+"escrow-contract-with-aggregate-bonded-transaction>` to announce an "
+"aggregate transaction."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:22
+msgid "Method #01: Using the Desktop Wallet"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:24
+msgid ""
+"Log in to a cosignatory account that has an impending aggregate bonded "
+"transaction waiting to be signed."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:26
+msgid ""
+"At the home page, click on the “partial” tab. Click on the listed "
+"transaction and enter your wallet password to sign the transaction."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:34
+msgid "Method #02: Using the SDK"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:36
+msgid ""
+"1. First, check if your account has incoming aggregate transactions that "
+"have not been signed. Use the ``TransactionHttp`` repository to search "
+"all the incoming aggregate transactions pending to be signed by your "
+"account."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:41
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/GettingPartialTransactions.ts`"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:46
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/GettingPartialTransactions.js`"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:51
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/aggregate/GettingPartialTransactions.java`"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:56
+msgid "Copy and save the transaction hash you want to cosign with your account."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:58
+msgid "Create a function to cosign any **AggregateBondedTransaction**."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:62
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:82
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:104
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/CosigningAggregateBondedTransactions.ts`"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:67
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:87
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:109
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/CosigningAggregateBondedTransactions.js`"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:72
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:92
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:114
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/aggregate/CosigningAggregateBondedTransactions.java`"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:77
+msgid ""
+"3. Define the transaction hash to cosign and the signer account. If you "
+"want to cosign a transaction involving a multisig account, you should be "
+"using the cosignatory account instead."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:97
+msgid ""
+"4. Retrieve the complete transaction object from the node using the "
+"``TransactionHttp`` repository. At this point, you might want to do some "
+"extra checks, like verifying the contents of the transaction. If "
+"everything looks ok, cosign the transaction with the signer account. "
+"Finally, announce the cosignature to network with "
+"``transactionHttp.announceAggregateBondedCosignature``."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:119
+msgid ""
+"Once all the participants cosign the transaction, the transaction will be"
+" included in a block."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:123
+msgid "Method #03: Using the CLI"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:125
+msgid "Get all aggregate transactions pending to be cosigned by your account."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:127
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/bash/aggregate/GettingPartialTransactions.sh`"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:131
+msgid ""
+"Cosign the aggregate bonded transaction. Replace the hash for the "
+"transaction hash retrieved from (1)."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions.rst:133
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/bash/aggregate/CosigningAggregateBondedTransactions.sh`"
+msgstr ""
+

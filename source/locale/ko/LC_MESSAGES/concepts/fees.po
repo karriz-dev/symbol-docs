@@ -1,0 +1,222 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/fees.rst:3
+msgid "Fees"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:5
+msgid ""
+"Announcing :doc:`transactions <transaction>` has an associated cost. This"
+" cost is necessary to provide an incentive for the :doc:`harvesters "
+"<harvesting>` who secure the network and run the infrastructure."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:9
+msgid "Network currency"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:11
+msgid ""
+"By default, fees are paid in the underlying currency of the |codename| "
+"network."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:13
+msgid "Default network currency per network type"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:1
+msgid "Network type"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:1
+msgid "Mosaic name"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:1
+msgid "PRIVATE"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:1
+msgid "|privatenetworkcurrency|"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:1
+msgid "MAINNET, TESTNET"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:1
+msgid "|networkcurrency|"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:20
+msgid ""
+"Private chains :ref:`can edit the network configuration <config-network-"
+"properties>` to eliminate fees or use another :doc:`mosaic <mosaic>` that"
+" better suits their needs."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:24
+msgid "Transaction fee"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:26
+msgid ""
+"The fee associated with a transaction primarily depends on the size (in "
+"bytes) of the transaction. The effective fee deducted from the account "
+"sending the transaction is calculated as the product of the size of the "
+"transaction and a fee multiplier set by the node that harvests the block."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:29
+msgid "effectiveFee = transaction::size * block::feeMultiplier"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:33
+msgid ""
+"A node owner :ref:`can configure the fee multiplier <node-properties>` to"
+" all positive values, including zero. The ``fee_multiplier`` is stored in"
+" the :ref:`block header <block-header>` when the node harvests a new "
+"block, determining which was the effective fee paid for every transaction"
+" included."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:36
+msgid ""
+"Before announcing the transaction, the sender must specify during the "
+"transaction definition a ``max_fee``, indicating the maximum fee the "
+"account allows to spend for this transaction."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:38
+msgid ""
+"If the ``effective_fee`` is smaller or equal to the ``max_fee``, a "
+"harvester could opt to include the transaction in the block. The "
+"harvesting nodes :ref:`can set their transaction inclusion strategy "
+"<node-properties>`:"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:41
+msgid ""
+"**Prefer-oldest**: Preferred for networks with high transaction "
+"throughput requirements. Include first the oldest transactions."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:42
+msgid ""
+"**Minimize-fees**: Philanthropic nodes. Include first the transactions "
+"that other nodes do not want to include."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:43
+msgid ""
+"**Maximize-fees**: Most common in public networks. Include first "
+"transactions with higher fees."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:45
+msgid ""
+"To ensure that the transaction will get included without setting a "
+"``max_fee`` unnecessarily high, the sender of the transaction can ask the"
+" :doc:`REST Gateway <../api>` for the median, average, highest, or lowest"
+" multiplier of the network over the last 60 blocks "
+"(:ref:`maxDifficultyBlocks <config-network-properties>`)."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:48
+msgid "A quick way of retrieving this information is pointing your browser to:"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:50 ../../source/concepts/fees.rst:101
+msgid ":term:`NODE_URL` ``/network/fees/transaction``"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:52
+msgid "For example, the sender could set the transaction max_fee as follows:"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:54
+msgid "maxFee = transaction::size ∗ network::medianFeeMultiplier"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:60 ../../source/concepts/fees.rst:76
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/DefiningMaxFee.ts`"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:65 ../../source/concepts/fees.rst:81
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/DefiningMaxFee.js`"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:70
+msgid ""
+"It is not guaranteed that the transaction will get confirmed if the "
+"multiplier used is too low. To have better chances, the sender of the "
+"transaction could opt to use any value between "
+"``medianNetworkFeeMultiplier`` and ``highestFeeMultiplier`` instead."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:72
+msgid ""
+"To determine an :doc:`aggregate bonded transaction <aggregate-"
+"transaction>` size, it is required to know beforehand the number of "
+"participant accounts that will need to cosign the transaction."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:90
+msgid "Dynamic fee multiplier"
+msgstr ""
+
+#: ../../source/concepts/fees.rst:92
+msgid ""
+"Each block added to the blockchain has a different fee multiplier, set by"
+" the node that harvested it. The network also defines the **dynamic fee "
+"multiplier** as the **median** of the last :ref:`maxDifficultyBlocks "
+"<config-network-properties>` harvested blocks (60 by default)."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:94
+msgid ""
+"This value approximates the most common fee multiplier that nodes and "
+"transaction creators have agreed upon in the most recent blocks, and is "
+"used in the calculation of :ref:`namespace <namespace-rental-fee>` and "
+":ref:`mosaic <mosaic-rental-fee>` rental fees."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:96
+msgid ""
+"If a block did not include any transaction, a value of "
+":ref:`defaultDynamicFeeMultiplier <config-network-properties>` (100 by "
+"default) is used to avoid 0 multipliers."
+msgstr ""
+
+#: ../../source/concepts/fees.rst:99
+msgid ""
+"The current value of the dynamic fee multiplier can be found in the "
+"``medianFeeMultiplier`` property returned by the :doc:`REST Gateway "
+"<../api>`:"
+msgstr ""
+

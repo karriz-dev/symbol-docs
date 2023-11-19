@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:9
+msgid "Cosigning aggregate bonded transactions automatically"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:11
+msgid ""
+"Create a bot to cosign automatically transactions that require your "
+"account's signature."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:15
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:17
+msgid ""
+"Complete :doc:`creating an escrow contract<creating-an-escrow-contract-"
+"with-aggregate-bonded-transaction>` guide."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:21
+msgid "Developing the bot"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:23
+msgid "Create a function to cosign any **AggregateBondedTransaction**."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:27
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:58
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/CosigningAggregateBondedTransactionsAutomatically.ts`"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:32
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:63
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/CosigningAggregateBondedTransactionsAutomatically.js`"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:37
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:68
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/aggregate/CosigningAggregateBondedTransactionsAutomatically.java`"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:42
+msgid ""
+"Create a new **Listener** to get notified every time a new "
+"**AggregateBondedTransaction** requires the signature of your account."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:44
+msgid ""
+"Open the connection. You only need to open the connection once and then "
+"connect to all desired channels."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:46
+msgid ""
+"Start listening for new transactions, subscribing to the "
+"``aggregateBondedAdded`` channel using your account's address."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:48
+msgid ""
+"To automatically sign aggregate bonded transactions that must be signed "
+"by multisig cosignatories, refer to the multisig address instead.See "
+":ref:`how to get multisig accounts where an account is cosignatory<guide-"
+"get-multisig-account-info>`."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:50
+msgid ""
+"5. For each received transaction, check if you have signed it. At this "
+"point, you might want to do some extra checks, like verifying the "
+"contents of the transaction. Cosign each pending "
+"**AggregateBondedTransaction** using the previously created function."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:54
+msgid ""
+"Announce ``CosignatureSignedTransaction`` to the network using the "
+"``TransactionHttp`` repository."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:75
+msgid "What's next?"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:77
+msgid ""
+"Extend the previous function to cosign transactions if they follow some "
+"constraints. For example, adapt your bot to only cosign aggregate "
+"transactions matching the following conditions:"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:79
+msgid "The aggregate has **two inner transactions**."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:80
+msgid "The inner transactions must be **transfer transactions.**"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:81
+msgid "The transaction sending funds must have **yourself as the signer**."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:82
+msgid ""
+"The transaction sending funds should have **only one mosaic**, being this"
+" **less than** 100 |networkcurrency|."
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:84
+msgid "Here you have a possible implementation:"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:88
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/CosigningAggregateBondedTransactionsAutomaticallyWithConstraints.ts`"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:93
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/CosigningAggregateBondedTransactionsAutomaticallyWithConstraints.js`"
+msgstr ""
+
+#: ../../source/guides/aggregate/signing-announced-aggregate-bonded-transactions-automatically.rst:98
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/aggregate/CosigningAggregateBondedTransactionsAutomaticallyWithConstraints.java`"
+msgstr ""
+

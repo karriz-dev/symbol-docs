@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:9
+msgid "Reading transactions from an account"
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:11
+msgid "Get the complete list of transactions involving an account."
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:15
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:17
+msgid ""
+"Complete the :doc:`getting started section <../../getting-started/setup-"
+"workstation>`."
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:21
+msgid "Method #01: Using the SDK"
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:23
+msgid "Open a new file and define the account address."
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:27
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:47
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/account/GettingConfirmedTransactions.ts`"
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:32
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:52
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/account/GettingConfirmedTransactions.js`"
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:37
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:57
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/account/GettingConfirmedTransactions.java`"
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:42
+msgid ""
+"2. Define a new ``TransactionHttp`` repository and the search criteria. "
+"In this example, we will retrieve all account-related transactions with "
+"at least one confirmation, but you could also query the unconfirmed and "
+"partial collections."
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:64
+msgid ""
+"3. The API returns pages with up to 100 transactions. The `page object "
+"<https://symbol.github.io/symbol-sdk-typescript-"
+"javascript/0.20.3/classes/_infrastructure_page_.page.html>`_ contains "
+"meta information about the total amount of transactions and pages "
+"available."
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:67
+msgid ""
+"To get more transactions, you will have to make further requests "
+"iteratively. For each extra call, increase the ``pageNumber`` by one "
+"unit."
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:74
+msgid ""
+"4. Since the transaction collection might grow while paginating, it's "
+"advised to set the first transaction you want to start pagination. Set an"
+" ``offset`` value with the first transaction internal identifier."
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:83
+msgid "Method #02: Using the CLI"
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:85
+msgid "Open a terminal window and run the following command."
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:87
+msgid ""
+"Replace ``TCHBDE-NCLKEB-ILBPWP-3JPB2X-NY64OE-7PYHHE-32I`` with the "
+"address you want to query."
+msgstr ""
+
+#: ../../source/guides/account/reading-transactions-from-an-account.rst:89
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/bash/account/GettingConfirmedTransactions.sh`"
+msgstr ""
+

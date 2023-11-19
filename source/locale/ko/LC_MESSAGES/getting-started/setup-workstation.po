@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/getting-started/setup-workstation.rst:8
+msgid "Setting up your workstation"
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:10
+msgid ""
+"This first guide will walk you through a step-by-step installation of the"
+" required tools to **start developing applications** on |codename|."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:12
+msgid ""
+"We will be using the **test network**, which uses the same technology and"
+" features of the **main network**. The testnet allows developers to "
+"experiment with the offered |codename|'s transaction set in a live "
+"network without the loss of valuable assets."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:15
+msgid ""
+"Not a developer? Download our :doc:`client <../wallets>` to manage "
+"``XYM`` and issue transactions."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:21
+msgid "Creating an account"
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:23
+msgid ""
+"An :doc:`account <../concepts/account>` is a deposit box where you can "
+"hold :doc:`mosaics <../concepts/mosaic>` (tokens) and interact with them "
+"by :doc:`announcing transactions <../concepts/transaction>`."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:25
+msgid ""
+"We are creating a new account with the :doc:`Symbol CLI <../cli>`, a "
+"command-line tool designed to architect solutions and interact with "
+"Symbol networks in an efficient manner."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:27
+msgid ""
+"Symbol CLI requires **Node.js 12 LTS** to execute. Open a new terminal "
+"and check the version installed with:"
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:33
+msgid ""
+"If you get an error or the version returned does not match v12.X, visit "
+"|node-js| to install the requirement (Although it is recommended to "
+"install through `nvm <https://github.com/nvm-sh/nvm>`__)."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:35
+msgid "To install |cli|, run the next command."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:41
+msgid "Then, generate a new account and save it as a **profile**."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:54
+msgid ""
+"If everything goes well, you should see the account credentials displayed"
+" in the terminal."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:69
+msgid ""
+"Make sure to keep the private key secret and backed up safely somewhere "
+"offline."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:71
+msgid ""
+"If you get the error ``The CLI cannot reach the node``, the most common "
+"causes are:"
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:73
+msgid ""
+"**Incorrect node URL**: The URL used does not belong to an active node. "
+"Open the URL provided in a new browser tab and check if you get a "
+"response. If the test network node is not working, you can **use another "
+"node url** from |network-list| or **run your own testnet node** by "
+"following :doc:`the next guide <../guides/network/running-a-symbol-"
+"node>`."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:75
+msgid ""
+"**Internet connection**: The CLI resolves some values from the node. If "
+"you decide to use the tool without being connected to the internet, you "
+"will have to pass the options ``--network``, ``--generation-hash``, "
+"``--namespace-id``, and ``divisibility``. Type ``symbol-cli account "
+"generate --help`` to know more about each parameter."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:81
+msgid "Getting test currency"
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:83
+msgid ""
+"To announce a transaction, the sender should pay a :doc:`fee "
+"<../concepts/fees>` to provide an incentive to those who validate and "
+"secure the network and run the infrastructure. This cost is paid in "
+"|networkcurrency| mosaics, the default network currency of the public "
+"network."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:86
+msgid ""
+"Now that you have created your first account, let's request "
+"|networkcurrency| units from the **testnet faucet**. |faucet|, indicate "
+"the amount of |networkcurrency| you want to receive and the address, and "
+"click \"**CLAIM!**\"."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:92
+msgid ""
+"After the transaction gets confirmed, check if your account has received "
+"|networkcurrency| using the command-line tool."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:105
+msgid ""
+"The faucet has a limited amount of |networkcurrency| and must be "
+"replenished before it dries out. If you don’t need your test "
+"|networkcurrency| units anymore, please send them back to the account "
+"indicated in the faucet's page."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:111
+msgid "Creating a project"
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:113
+msgid ""
+"Now that you have your account filled with |networkcurrency| units, it is"
+" time to **choose a programming language**. Pick the one you feel most "
+"comfortable with, or follow your project requirements."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:116
+msgid ""
+"Then, **create a folder for your new project** and run the instructions "
+"for the selected language. If none of the languages fits your project, "
+"you can always query the blockchain directly using the :doc:`REST gateway"
+" <../api>`."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:121
+msgid "TypeScript"
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:123
+#: ../../source/getting-started/setup-workstation.rst:152
+msgid "Symbol SDK requires Node.js 12 LTS to execute."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:125
+#: ../../source/getting-started/setup-workstation.rst:154
+msgid "Create a ``package.json`` file."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:131
+#: ../../source/getting-started/setup-workstation.rst:160
+msgid "Install |sdk| and RxJS library."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:137
+msgid "Install globally TypeScript dependency:"
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:144
+msgid "Install `ts-node`_ to execute TypeScript files with node."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:150
+msgid "JavaScript"
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:166
+msgid "Java"
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:168
+msgid "Symbol SDK requires JDK 8 to execute."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:170
+msgid ""
+"Open a new Java `gradle`_ project.  Use your favourite IDE or create a "
+"project from the command line."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:176
+msgid "Edit ``build.gradle`` to use Maven central repository."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:184
+msgid "Add ``symbol-sdk`` as a dependency."
+msgstr ""
+
+#: ../../source/getting-started/setup-workstation.rst:192
+msgid "Execute ``gradle build`` and ``gradle run`` to run your program."
+msgstr ""
+

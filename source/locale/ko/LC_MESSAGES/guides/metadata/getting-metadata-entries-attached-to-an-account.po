@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/metadata/getting-metadata-entries-attached-to-an-account.rst:9
+msgid "Getting metadata entries attached to an account"
+msgstr ""
+
+#: ../../source/guides/metadata/getting-metadata-entries-attached-to-an-account.rst:11
+msgid "Get the list of metadata entries attached to an account."
+msgstr ""
+
+#: ../../source/guides/metadata/getting-metadata-entries-attached-to-an-account.rst:15
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/metadata/getting-metadata-entries-attached-to-an-account.rst:17
+msgid ""
+"Complete :doc:`assigning metadata entries to an account <assigning-"
+"metadata-entries-to-an-account>` guide."
+msgstr ""
+
+#: ../../source/guides/metadata/getting-metadata-entries-attached-to-an-account.rst:21
+msgid "Method #01: Using the SDK"
+msgstr ""
+
+#: ../../source/guides/metadata/getting-metadata-entries-attached-to-an-account.rst:25
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/metadata/GettingMetadataEntriesAccount.ts`"
+msgstr ""
+
+#: ../../source/guides/metadata/getting-metadata-entries-attached-to-an-account.rst:30
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/metadata/GettingMetadataEntriesAccount.js`"
+msgstr ""
+
+#: ../../source/guides/metadata/getting-metadata-entries-attached-to-an-account.rst:35
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/metadata/GettingMetadataEntriesAccount.java`"
+msgstr ""
+
+#: ../../source/guides/metadata/getting-metadata-entries-attached-to-an-account.rst:42
+msgid "Method #02: Using the CLI"
+msgstr ""
+
+#: ../../source/guides/metadata/getting-metadata-entries-attached-to-an-account.rst:44
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/bash/metadata/GettingMetadataEntriesAccount.sh`"
+msgstr ""
+

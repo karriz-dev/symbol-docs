@@ -1,0 +1,1020 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:3
+msgid "Commands"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:6
+msgid "Table of Contents"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:9
+msgid "`Account <#account>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:11
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:17
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:55
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:59
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:65
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:87
+msgid "`info <#info>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:12
+msgid "`generate <#generate>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:14
+msgid "`Block <#block>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:16
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:54
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:86
+msgid "`search <#search>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:18
+msgid "`receipts <#receipts>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:20
+msgid "`Chain <#chain>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:22
+msgid "`height <#height>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:23
+msgid "`score <#score>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:25
+msgid "`Converter <#converter>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:27
+msgid "`base32ToHexAddress <#base32ToHexAddress>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:28
+msgid "`hexToBase32Address <#hexToBase32Address>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:29
+msgid "`namespaceNameToId <#namespaceNameToId>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:30
+msgid "`numericStringToUInt64 <#numericStringToUInt64>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:31
+msgid "`payloadToTransaction <#payloadToTransaction>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:32
+msgid "`privateKeyToPublicKey <#privateKeyToPublicKey>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:33
+msgid "`publicKeyToAddress <#publicKeyToAddress>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:34
+msgid "`stringToKey <#stringToKey>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:36
+msgid "`Metadata <#metadata>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:38
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:80
+msgid "`account <#account>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:39
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:97
+msgid "`mosaic <#mosaic>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:40
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:104
+msgid "`namespace <#namespace>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:42
+msgid "`Monitor <#monitor>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:44
+msgid "`block <#block>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:45
+msgid "`confirmed <#confirmed>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:46
+msgid "`unconfirmed <#unconfirmed>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:47
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:88
+msgid "`status <#status>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:48
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:49
+msgid "`cosignature <#cosignature>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:50
+msgid "`all <#all>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:52
+msgid "`Mosaic <#mosaic>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:57
+msgid "`Namespace <#namespace>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:60
+msgid "`alias <#alias>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:61
+msgid "`owned <#owned>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:63
+msgid "`Node <#node>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:66
+msgid "`health <#health>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:67
+msgid "`serverinfo <#serverinfo>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:68
+msgid "`storageinfo <#storageinfo>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:70
+msgid "`Profile <#profile>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:72
+msgid "`create <#create>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:73
+msgid "`decrypt <#decrypt>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:74
+msgid "`import <#import>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:75
+msgid "`list <#list>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:76
+msgid "`setdefault <#setdefault>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:78
+msgid "`Restriction <#restriction>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:81
+msgid "`mosaicaddress <#mosaicaddress>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:82
+msgid "`mosaicglobal <#mosaicglobal>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:84
+msgid "`Transaction <#transaction>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:89
+msgid "`uri <#uri>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:90
+msgid "`accountaddressrestriction <#accountaddressrestriction>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:91
+msgid "`accountkeylink <#accountkeylink>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:92
+msgid "`accountmetadata <#accountmetadata>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:93
+msgid "`accountmosaicrestriction <#accountmosaicrestriction>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:94
+msgid "`accountoperationrestriction <#accountoperationrestriction>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:95
+msgid "`addressalias <#addressalias>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:96
+msgid "`cosign <#cosign>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:98
+msgid "`mosaicaddressrestriction <#mosaicaddressrestriction>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:99
+msgid "`mosaicalias <#mosaicalias>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:100
+msgid "`mosaicglobalrestriction <#mosaicglobalrestriction>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:101
+msgid "`mosaicmetadata <#mosaicmetadata>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:102
+msgid "`mosaicsupplychange <#mosaicsupplychange>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:103
+msgid "`multisigmodification <#multisigmodification>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:105
+msgid "`namespacemetadata <#namespacemetadata>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:106
+msgid "`nodekeylink <#nodekeylink>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:107
+msgid "`persistentharvestdelegation <#persistentharvestdelegation>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:108
+msgid "`secretlock <#secretlock>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:109
+msgid "`secretproof <#secretproof>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:110
+msgid "`transfer <#transfer>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:111
+msgid "`votingkeylink <#votingkeylink>`__"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:112
+msgid "`vrfkeylink <#vrfkeylink>`__ ## Account"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:116
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:204
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:735
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:761
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:834
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1169
+msgid "info"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:118
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:141
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:177
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:206
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:229
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:255
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:277
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:475
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:498
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:521
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:547
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:569
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:592
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:615
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:638
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:661
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:684
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:710
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:737
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:763
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:787
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:810
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:836
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:858
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:880
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:902
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:927
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:959
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:981
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1017
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1039
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1064
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1087
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1111
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1137
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1171
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1194
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1217
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1249
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1283
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1316
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1350
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1384
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1418
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1452
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1486
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1524
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1559
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1593
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1629
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1664
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1698
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1736
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1772
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1807
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1840
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1874
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1911
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1946
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1982
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:2017
+msgid "Failed to initialize libusb."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:120
+msgid "Get account information"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:122
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:145
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:181
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:210
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:233
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:259
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:281
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:304
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:325
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:346
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:367
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:388
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:409
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:431
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:453
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:479
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:502
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:525
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:551
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:573
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:596
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:619
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:642
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:665
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:688
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:714
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:741
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:767
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:791
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:814
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:840
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:862
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:884
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:906
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:931
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:963
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:985
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1021
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1043
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1068
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1091
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1115
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1141
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1175
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1198
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1221
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1253
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1287
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1320
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1354
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1388
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1422
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1456
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1490
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1528
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1563
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1597
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1633
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1668
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1702
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1740
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1776
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1811
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1844
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1878
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1915
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1950
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1986
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:2021
+msgid "USAGE"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:139
+msgid "generate"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:143
+msgid "Generate new accounts"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:172
+msgid "Block"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:175
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:708
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1135
+msgid "search"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:179
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1139
+msgid "Search transactions"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:208
+msgid "Get block header by height"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:227
+msgid "receipts"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:231
+msgid "Get the receipts triggered for a given block height"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:250
+msgid "Chain"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:253
+msgid "height"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:257
+msgid "Get the current height of the chain"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:275
+msgid "score"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:279
+msgid "Gets the current score of the chain"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:297
+msgid "Converter"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:300
+msgid "base32ToHexAddress"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:302
+msgid "Address Base 32 -> Address hex converter."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:321
+msgid "hexToBase32Address"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:323
+msgid "Address hex -> Address Base 32 converter."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:342
+msgid "namespaceNameToId"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:344
+msgid "Namespace name -> NamespaceId converter."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:363
+msgid "numericStringToUInt64"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:365
+msgid "Numeric string -> UInt64 converter."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:384
+msgid "payloadToTransaction"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:386
+msgid "Payload -> Transaction converter."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:405
+msgid "privateKeyToPublicKey"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:407
+msgid "Private key -> Public key converter."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:427
+msgid "publicKeyToAddress"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:429
+msgid "Public key -> Address converter."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:449
+msgid "stringToKey"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:451
+msgid "String -> UInt64 converter."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:470
+msgid "Metadata"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:473
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1062
+msgid "account"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:477
+msgid "Fetch metadata entries from an account"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:496
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1484
+msgid "mosaic"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:500
+msgid "Fetch metadata entries from an mosaic"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:519
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1734
+msgid "namespace"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:523
+msgid "Fetch metadata entries from an namespace"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:542
+msgid "Monitor"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:545
+msgid "block"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:549
+msgid "Monitor new blocks"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:567
+msgid "confirmed"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:571
+msgid "Monitor confirmed transactions added"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:590
+msgid "unconfirmed"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:594
+msgid "Monitor unconfirmed transactions added"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:613
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1192
+msgid "status"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:617
+msgid "Monitor transaction status error"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:636
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:659
+msgid "cosignature"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:640
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:663
+msgid "Monitor cosignatures added"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:682
+msgid "all"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:686
+msgid ""
+"Monitors new blocks, confirmed, aggregate bonded added, and status errors"
+" related to an account."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:705
+msgid "Mosaic"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:712
+msgid "Search mosaics"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:739
+msgid "Fetch mosaic info"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:758
+msgid "Namespace"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:765
+msgid "Fetch namespace info"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:785
+msgid "alias"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:789
+msgid "Get mosaicId or address behind an namespace"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:808
+msgid "owned"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:812
+msgid "Get owned namespaces"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:831
+msgid "Node"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:838
+msgid "Get the REST server components versions"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:856
+msgid "health"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:860
+msgid "Get information about the connection and services status"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:878
+msgid "serverinfo"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:882
+msgid "Get information about the REST instance"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:900
+msgid "storageinfo"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:904
+msgid "Get diagnostic information about the node storage"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:922
+msgid "Profile"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:925
+msgid "create"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:929
+msgid "Create a new profile"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:957
+msgid "decrypt"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:961
+msgid "View profile credentials"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:979
+msgid "import"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:983
+msgid "Create a new profile with existing private key"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1015
+msgid "list"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1019
+msgid "Display the list of stored profiles"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1037
+msgid "setdefault"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1041
+msgid "Change the default profile"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1059
+msgid "Restriction"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1066
+msgid "Fetch account restrictions assigned to an address"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1085
+msgid "mosaicaddress"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1089
+msgid "Fetch mosaic restrictions assigned to an address"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1109
+msgid "mosaicglobal"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1113
+msgid "Fetch global restrictions assigned to a mosaic"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1132
+msgid "Transaction"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1173
+msgid "Fetch transaction info"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1196
+msgid "Fetch transaction status"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1215
+msgid "uri"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1219
+msgid "Announce transaction from URI"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1247
+msgid "accountaddressrestriction"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1251
+msgid ""
+"Allow or block incoming and outgoing transactions for a given a set of "
+"addresses"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1281
+msgid "accountkeylink"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1285
+msgid ""
+"Delegate the account importance to a proxy account. Required for all "
+"accounts willing to activate delegated harvesting."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1314
+msgid "accountmetadata"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1318
+msgid "Add custom data to an account (requires internet)"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1348
+msgid "accountmosaicrestriction"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1352
+msgid "Allow or block incoming transactions containing a given set of mosaics"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1382
+msgid "accountoperationrestriction"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1386
+msgid "Allow or block outgoing transactions by transaction type"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1416
+msgid "addressalias"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1420
+msgid "Set an alias to an address"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1450
+msgid "cosign"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1454
+msgid "Cosign an aggregate bonded transaction"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1488
+msgid "Create a new mosaic"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1522
+msgid "mosaicaddressrestriction"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1526
+msgid "Set a mosaic restriction to an specific address (requires internet)"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1557
+msgid "mosaicalias"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1561
+msgid "Set an alias to a mosaic"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1591
+msgid "mosaicglobalrestriction"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1595
+msgid "Set a global restriction to a mosaic (requires internet)"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1627
+msgid "mosaicmetadata"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1631
+msgid "Add custom data to a mosaic (requires internet)"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1662
+msgid "mosaicsupplychange"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1666
+msgid "Change a mosaic supply"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1696
+msgid "multisigmodification"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1700
+msgid "Create or modify a multisig account"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1738
+msgid "Register a namespace"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1770
+msgid "namespacemetadata"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1774
+msgid "Add custom data to a namespace (requires internet)"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1805
+msgid "nodekeylink"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1809
+msgid ""
+"Link an account with a public key used by TLS to create sessions. "
+"Required for node operators."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1838
+msgid "persistentharvestdelegation"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1842
+msgid "Requests a node to add a remote account as a delegated harvester"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1872
+msgid "secretlock"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1876
+msgid "Announce a secret lock transaction"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1909
+msgid "secretproof"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1913
+msgid "Announce a secret proof transaction"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1944
+msgid "transfer"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1948
+msgid "Send transfer transaction"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1980
+msgid "votingkeylink"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:1984
+msgid ""
+"Link an account with a BLS public key. Required for node operators "
+"willing to vote finalized blocks."
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:2015
+msgid "vrfkeylink"
+msgstr ""
+
+#: ../../source/_static/retired/symbol-cli/1.0.2.md:2019
+msgid ""
+"Link an account with a VRF public key. Required for all harvesting "
+"eligible accounts."
+msgstr ""
+

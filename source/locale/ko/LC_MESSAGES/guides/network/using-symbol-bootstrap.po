@@ -1,0 +1,501 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:6
+msgid "How to use this handy node deployment tool."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:10
+msgid "Using Symbol Bootstrap"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:14
+msgid "On Linux systems using ``apt``:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:23
+msgid ""
+"If the obtained node version is high enough (see :ref:`symbol-bootstrap-"
+"requirements`), then you can install Symbol Bootstrap:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:29
+msgid ""
+"This guide explains the concepts behind |symbol-bootstrap|, a program "
+"that allows quickly configuring and running |codename| nodes on multiple "
+"operating systems (Windows, Linux and Mac)."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:31
+msgid "It can also deploy several nodes at once to quickly create a test network."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:33
+msgid ""
+"After reading this you will be able to better understand the "
+":doc:`running-a-symbol-node` and :doc:`creating-a-private-test-net` "
+"guides."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:35
+msgid ""
+"**This program replaces the previous tools** ``catapult-service-"
+"bootstrap`` **and** ``symbol-testnet-bootstrap``."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:41
+msgid "Requirements"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:45
+msgid "Environment"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:47
+msgid ""
+"The setup scripts are automated using **Docker**. To run a node or test "
+"network, you will need to have installed the following tools:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:49
+msgid ""
+"`node.js <https://nodejs.org/en/download>`__ version 12 or higher (**It "
+"is recommended that you install node.js using** `nvm <https://github.com"
+"/nvm-sh/nvm>`__)"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:50
+msgid "`docker <https://docs.docker.com/install/>`__"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:51
+msgid "`docker-compose <https://docs.docker.com/compose/install/>`__"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:55
+msgid "Ports"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:57
+msgid ""
+"Make sure that the client's host is accessible from the internet and that"
+" **the following ports are open and available**:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:59
+msgid "Port ``7900`` is used by catapult-client to communicate between nodes."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:60
+msgid ""
+"Port ``3000`` is used by the REST Gateway to expose the endpoints to "
+"interact with the node."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:61
+msgid "Port ``3001`` is used by the REST Gateway in HTTPS mode."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:65
+msgid "Installation"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:67
+msgid ""
+"|symbol-bootstrap| is provided as an installable tool, there is no need "
+"to clone a repository and build it. Just run this from a terminal or "
+"command prompt:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:65
+msgid "Notes:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:75
+msgid ""
+"You can run the above command again to install a newer version of "
+"``symbol-bootstrap`` every time one becomes available."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:77
+msgid ""
+"Remember to stop ``symbol-bootstrap`` before upgrading and then start it "
+"again afterwards, as shown below."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:79
+msgid ""
+"If you get permission errors read nodejs's guide to `Resolving EACCES "
+"permissions errors when installing packages globally "
+"<https://docs.npmjs.com/resolving-eacces-permissions-errors-when-"
+"installing-packages-globally>`__."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:83
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:89
+msgid "Presets"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:91
+msgid ""
+"Node configuration is done through a **YAML configuration file** which "
+"specifies every possible network parameter. Since the complete file can "
+"be several hundred lines long, a number of **presets** are available to "
+"simplify its handling. Specify the preset with the ``‑‑preset`` or ``‑p``"
+" parameters."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid "Preset"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid "``mainnet``"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid ""
+"A **single node** that connects to the current public **main** network. "
+"Nemesis block is copied over. Requires an ``assembly``, as shown below "
+"(`configuration file <https://github.com/fboucquez/symbol-"
+"bootstrap/blob/main/presets/mainnet/network.yml>`__)."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid "``bootstrap``"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid ""
+"**Autonomous network** with 1 mongo database, 2 peers, 1 api and 1 rest "
+"gateway. Nemesis block is generated (`configuration file "
+"<https://github.com/fboucquez/symbol-"
+"bootstrap/blob/main/presets/bootstrap/network.yml>`__). This is the "
+"default preset."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid "``testnet``"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid ""
+"A **single node** that connects to the current public **test** network. "
+"Nemesis block is copied over. Requires an ``assembly``, as shown below "
+"(`configuration file <https://github.com/fboucquez/symbol-"
+"bootstrap/blob/main/presets/testnet/network.yml>`__)."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:102
+msgid ""
+"Presets can be further customized by indicating an **assembly** (or "
+"flavor) which provides additional parameters. Specify the assembly with "
+"the ``‑‑assembly`` or ``‑a`` parameters."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid "Available assemblies"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid "``peer``"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid ""
+"The node is a :ref:`peer-node` (`configuration file "
+"<https://github.com/fboucquez/symbol-"
+"bootstrap/blob/main/presets/assemblies/assembly-peer.yml>`__)."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid "``api``"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid ""
+"The node is an :ref:`api-node` (`configuration file "
+"<https://github.com/fboucquez/symbol-"
+"bootstrap/blob/main/presets/assemblies/assembly-api.yml>`__)."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid "``dual``"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid ""
+"The node is both a :ref:`peer-node` and an :ref:`api-node` "
+"(`configuration file <https://github.com/fboucquez/symbol-"
+"bootstrap/blob/main/presets/assemblies/assembly-dual.yml>`__)."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:1
+msgid ""
+"The node runs is an :ref:`api-node` (`configuration file "
+"<https://github.com/fboucquez/symbol-"
+"bootstrap/blob/main/presets/assemblies/assembly-api.yml>`__)."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:118
+msgid "Custom presets"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:120
+msgid ""
+"Furthermore, if additional configuration is required, a **custom preset "
+"file** can be provided. Any value in this file overrides the default "
+"values set by the preset or the assembly so it can be combined on top of "
+"them. All properties in the :doc:`configuring-network-properties` or :doc"
+":`configuring-node-properties` guides can be set through this file, for "
+"example."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:122
+msgid ""
+"Specify a custom preset file with the ``‑‑customPreset`` or ``‑c`` "
+"parameters."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:126
+msgid ""
+"If you ever change your custom preset file once your node is already "
+"running you will need to upgrade the node as explained in the :ref"
+":`update-bootstrap-nodes` guide."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:130
+msgid "The ``config`` command"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:132
+msgid ""
+"Before building the node or network a full configuration file has to be "
+"created by using the `symbol-bootstrap config "
+"<https://github.com/fboucquez/symbol-"
+"bootstrap/blob/main/docs/config.md>`_ command:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:138
+msgid "For example:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:147
+msgid ""
+"This will create a folder, called ``target`` by default (it can be "
+"changed with the ``‑‑target`` or ``‑t`` parameters), containing among "
+"other things the generated complete configuration file "
+"(``target/preset.yml``) ready to be used to build the node or network."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:149
+msgid ""
+"On Linux, if you get the error ``Permission denied while trying to "
+"connect to the Docker daemon socket`` it means that your user does not "
+"belong to the ``docker`` group. Add it with:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:157
+msgid "The ``compose`` command"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:159
+msgid ""
+"This command prepares the necessary Docker files based on the provided "
+"configuration:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:165
+msgid "Just like the config step, this only needs to be run once."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:169
+msgid "The ``run`` command"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:171
+msgid ""
+"Finally, execute this command to start the necessary Docker instances and"
+" boot your node or network:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:177
+msgid "Stop the process by pressing ``Ctrl+C``."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:181
+msgid ""
+"To run the Docker containers in the background of your terminal, you can "
+"run the service in detached mode using the ``‑‑detached`` or ``‑d`` "
+"parameters."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:183
+msgid "You then have to stop them with ``symbol-bootstrap stop``."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:189
+msgid "The all-in-one ``start`` command"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:191
+msgid ""
+"The above three commands (``config``, ``compose`` and ``run``) can be "
+"merged into one:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:197
+msgid ""
+"That's right, a |codename| node (or test network with many nodes) can be "
+"instantiated and booted with a single command!"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:199
+msgid ""
+"Steps that only need to be done once (``config`` and ``compose``) will "
+"not be repeated, so you can use this command every time."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:203
+msgid "Providing HTTPS access"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:205
+msgid ""
+":ref:`API nodes <api-node>` created using the ``api`` or ``dual`` "
+"assemblies accept HTTP commands through port 3000. HTTPS access can also "
+"be enabled, as described in the next two sections."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:207
+msgid ""
+"The certificates used below will **only** be used for HTTPS communication"
+" with the REST API, **not** as :ref:`node certificates <manual-node-"
+"certificates>` for inter-node communication."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:211
+msgid "Use your own certificate"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:213
+msgid ""
+"If you already have an SSL for your host you can pass it onto Symbol "
+"Bootstrap inside a custom preset file."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:215
+msgid ""
+"In order for the custom preset file to be self-contained, though, your "
+"certificate's **Key** and **Crt** files must be converted to a `Base64 "
+"<https://en.wikipedia.org/wiki/Base64>`__ string and copied into the "
+"preset file:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:222
+msgid ""
+"Copy the output of these commands into the preset file, in a section like"
+" this:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:237
+msgid ""
+"The provided certificate needs to be valid for the hostname "
+"``awesomenode.mycompany.net``. The domain needs to resolve the IP address"
+" of your node."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:239
+msgid ""
+"When the certificates eventually expire you need to update the custom "
+"preset file and then upgrade the node as explained in the :ref:`update-"
+"bootstrap-nodes` guide."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:241
+msgid ""
+"This option only leaves HTTPS port 3001 open, not HTTP 3000. **Remember "
+"to open port 3001 in your firewall or security group**. Port 3000 can be "
+"closed as it is not used anymore."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:245
+msgid "Automatic Let's Encrypt certificate"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:247
+msgid ""
+"Bootstrap can also take care of obtaining the necessary SSL certificates "
+"through the public and free `Let's Encrypt <https://letsencrypt.org/>`__ "
+"service."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:249
+msgid ""
+"To enable it, just opt-in by adding an ``httpsProxies`` section to your "
+"custom preset file:"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:259
+msgid ""
+"You need to own the domain ``awesomenode.mycompany.net`` and it needs to "
+"resolve the IP address of your node. The Let’s Encrypt service will "
+"handle the certificate creation and renewals for you."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:261
+msgid ""
+"**Remember to open ports 3001 and 80 in your firewall or security "
+"group**. Port 3000 may or may not be closed. `Port 80 is needed by Let's "
+"Encrypt <https://letsencrypt.org/docs/challenge-"
+"types/#http-01-challenge>`__."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:265
+msgid ""
+"This option has been heavily inspired by the community and Symbol "
+"Bootstrap simply bundles this solution, streamlining the process."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:269
+msgid "Next steps"
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:271
+msgid ""
+"Read the `complete list <https://github.com/fboucquez/symbol-bootstrap"
+"#user-content-command-topics>`_ of ``symbol-bootstrap`` commands."
+msgstr ""
+
+#: ../../source/guides/network/using-symbol-bootstrap.rst:273
+msgid ""
+"Go ahead and create a node following the :doc:`running-a-symbol-node` "
+"guide."
+msgstr ""
+

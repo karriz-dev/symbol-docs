@@ -1,0 +1,501 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:8
+msgid "Migrating from NIS1 to Symbol"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:10
+msgid ""
+"With |codename|, most of the previously available NIS1 features have "
+"evolved. This document will help you **upgrade your application**'s "
+"previous NIS1 features to the newly available |codename| technology."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:13
+msgid ""
+"You can move your NIS1 assets to a Symbol account by **Opting-in**. For "
+"more information, see :doc:`Retrieving your XYM from a post-launch opt-in"
+" <post-launch-optin-xym-retrieval>`."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:16
+msgid "Feature comparison between NIS1 and Symbol"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "NEM NIS1"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Symbol"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "**Built-in features**"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:120
+msgid "Mosaics"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:135
+msgid "Namespaces"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Delegated Harvesting"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Multisig Accounts"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Multi-level Multisig Accounts"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Mosaic Restrictions"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Advanced Mosaic Restrictions"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "—"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Account Restrictions"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Metadata Controls"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Aggregated Transactions"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Inflation"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Cross-Chain Swaps"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Plug-Ins"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "**Protocol**"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Coded in Java"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Coded in C++"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "POI (Proof of Importance)"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "POS+ (Proof of Stake Plus)"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Keccak-SHA3-512"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "SHA-512"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Fixed Fees"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Dynamic Fees"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Receipts"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:1
+msgid "Merkle Proofs"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:42
+msgid "Test network"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:44
+msgid ""
+"Right now, there are two options to start testing Symbol which do not "
+"involve spending funds."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:46
+msgid ""
+"**Public test network** The public test network uses the same technology "
+"and features of the main public network. You can use the testnet to "
+"experiment with the offered transaction set in a live network without the"
+" loss of valuable assets. To start using the test net, follow :doc:`this "
+"guide <../../getting-started/setup-workstation>`."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:48
+msgid ""
+"**Private test network**: To run a private test network, use the package "
+"|symbol-bootstrap|. This tool contains the necessary setup scripts to "
+"build a network for development and learning purposes with just one "
+"command."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:52
+msgid "Legacy API incompatibility"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:54
+msgid ""
+"Legacy API calls that used to work for NIS1 network nodes are **not "
+"compatible** with |codename|. Now, API requests mostly happen with REST "
+"API nodes usually on port **3000**."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:57
+msgid ""
+"There are several **Software Development Kits** that have been—and some "
+"that are—under development for |codename| distributed ledgers consumer "
+"applications. As of now, the :doc:`planned SDKs <../../sdk>` to be "
+"supported are written in: Typescript / Javascript / NodeJS, Java, C#, Go,"
+" Python and Swift."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:60
+msgid ""
+"As a starting point, we suggest reviewing the |ts-js-sdk| as it is the "
+"most used SDK and leads in |ts-js-sdk-docs|. The architecture of the TS "
+"SDK is inspired by |nem-library| from NIS1."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:63
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:80
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:99
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:114
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:129
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:149
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:185
+msgid "**See also**:"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:65
+msgid "Protocol: :doc:`Nodes Architecture <../../concepts/node>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:67
+msgid "Reference: :doc:`REST Gateway <../../api>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:69
+msgid ""
+"Reference: `REST API contract <https://symbol.github.io/symbol-"
+"openapi/v0.11.3/>`_"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:73
+msgid "Accounts management"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:75
+msgid ""
+"Both platforms use the digital signature algorithm named Ed25519, but "
+"with different hashing algorithms. While NIS1 uses **Keccak-SHA3-512**, "
+"|codename| changed to **SHA-512** to support TLS."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:78
+msgid ""
+"The change in the hashing algorithm used leads to have, for the same "
+"private key in NIS1 and |codename|, different public keys, and addresses."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:82
+msgid ""
+"Guide: :doc:`Creating and opening an account  <../account/creating-an-"
+"account>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:83
+msgid ""
+"Guide: :doc:`Getting the account information <../account/getting-account-"
+"information>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:87
+msgid "Legacy transactions"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:89
+msgid ""
+"NIS1 transactions **serialization format is not compatible** with "
+"|codename|. Yet, most of the transaction types have only evolved and none"
+" have been removed. This implies a possible upgrade to |codename| "
+"transactions that involve fewer changes."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:92
+msgid ""
+"The first notable change about transactions is that the status response "
+"is received through :ref:`WebSocket channels <websockets>`. In NIS1, the "
+"client received the response of the API call right after announcing a "
+"transaction. |codename| receives the response of the call "
+"**asynchronously**, eliminating blocking calls."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:96
+msgid ""
+"Additionally, |codename| only has one version of "
+":doc:`TransferTransaction <../../concepts/transfer-transaction>`. The "
+"native currency is now pushed as a regular :doc:`mosaic "
+"<../../concepts/mosaic>` in the mosaics array of the transaction."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:101
+msgid "Protocol: :doc:`Transaction life-cycle <../../concepts/transaction>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:102
+msgid "Protocol: |catapult-schemas|"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:106
+msgid "Transaction fees"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:108
+msgid ""
+"|codename| transaction fees are dynamic and decided by the network "
+"participants. Each transaction **effective fee** is calculated by "
+"multiplying a **fee multiplier** by the **transaction size**. The fee "
+"multiplier is attached in the block where the transaction gets confirmed,"
+" and it is defined by the node owner harvesting the block."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:112
+msgid ""
+"During the transaction definition, the sender limits the maximum fee "
+"authorized to include the transaction in a block."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:116
+msgid "Protocol: :doc:`Transaction fees <../../concepts/fees>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:122
+msgid ""
+"Notable changes have happened at protocol level with regards to "
+":doc:`mosaics <../../concepts/mosaic>` management as they are now "
+"**independent** of :doc:`namespaces <../../concepts/namespace>`."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:124
+msgid ""
+"In fact, NIS1 namespaces expire altogether with assets linked to them. "
+"|codename| mosaics are configured to have their own ``duration``, as well"
+" as being assigned a unique ``nonce`` value."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:127
+msgid "Lastly, levies are not available on |codename|."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:131
+msgid "Guide: :doc:`Creating a mosaic  <../mosaic/creating-a-mosaic>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:137
+msgid ""
+"Namespaces can still refer to mosaics using "
+":ref:`mosaicaliastransaction`. A namespace owner can attach either of an "
+"account or a mosaic id to one of its namespaces. The namespace "
+"information endpoint will return the linked object in the alias field."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:141
+msgid ""
+"Also, |codename| root namespaces have a ``duration`` field that is "
+"**expressed in a count of blocks** which means yearly renewal is not "
+"mandatory anymore."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:143
+msgid ""
+"In order to facilitate the transfer of mosaics, a mosaic creator should "
+"register a namespace and alias the mosaic with that namespace. End-users "
+"can **send transactions using the alias** to refer to the mosaic."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:146
+msgid ""
+"When a transaction includes an alias, a **resolution** reflects the "
+"resolved value of that alias in the block. To get the real identifier "
+"behind an aliased address or mosaic, the client application needs to "
+"fetch the related :doc:`resolution receipt <../../concepts/receipt>` "
+"linked to the block where the transaction gets included."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:151
+msgid ""
+"Guide: :doc:`Registering a namespace  "
+"<../namespace/registering-a-namespace>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:152
+msgid ""
+"Guide: :doc:`Creating a subnamespace  "
+"<../namespace/registering-a-subnamespace>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:153
+msgid ""
+"Guide: :doc:`Linking a namespace to a mosaic <../namespace/link-a"
+"-namespace-to-a-mosaic>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:154
+msgid ""
+"Guide: :doc:`Linking a namespace to an address <../namespace/link-a"
+"-namespace-to-an-address>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:155
+msgid ""
+"Guide: :ref:`Sending a TransferTransaction with an aliased mosaic "
+"<sending-a-transfer-transaction-with-an-aliased-mosaic>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:156
+msgid ""
+"Guide: :ref:`Sending a TransferTransaction to an aliased address "
+"<sending-a-transfer-transaction-to-an-aliased-address>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:157
+msgid ""
+"Guide: :doc:`Getting the asset identifier behind a namespace with "
+"receipts <../blockchain/getting-the-mosaic-identifier-behind-a-namespace-"
+"with-receipts>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:161
+msgid "Multisignature management"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:163
+msgid ""
+"With multisignature accounts managed on-chain, |codename|'s "
+"multisignature implementation is different from many other—so-called "
+"client-side—multisignature implementations."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:165
+msgid ""
+"Creating a :doc:`multisignature account <../../concepts/multisig-"
+"account>`."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:167
+msgid ""
+"Different to NIS1, the account modification entries now hold fields for "
+"``minimum approval`` and ``minimum removal``:"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:169
+msgid ""
+"**Minimum removal**: Defines how many cosignatories are required to "
+"broadcast transactions removing cosignatories from the multisignature "
+"account."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:171
+msgid ""
+"**Minimum approval**: Defines how many cosignatories are required for any"
+" other type of transaction."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:173
+msgid ""
+"Additionally, cosignatories that are added to multisignature accounts now"
+" have to confirm the modification by sending a **cosignature** (opt-in "
+"process). In order to facilitate this process, transactions with type "
+":ref:`multisigaccountmodificationtransaction` must be wrapped in an :ref"
+":`aggregate-transaction`."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:176
+msgid ""
+"Multi-Signature transactions work with :doc:`aggregate transactions "
+"<../../concepts/aggregate-transaction>`."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:178
+msgid ""
+"The new AggregateTransaction permits to wrap multiple transactions "
+"together involving different participants. If all the participants cosign"
+" the aggregate, the inner transactions are included atomically in the "
+"block. Otherwise, none of the transactions will get confirmed."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:182
+msgid ""
+"To send a multisig transaction as in NIS1, the initiator of the "
+"transaction has to add it **as an inner transaction of the aggregate**. "
+"Then, the minimum number of cosignatories defined in the multisignature "
+"will have to cosign the aggregate to allow announcing transactions from "
+"the shared account."
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:187
+msgid ""
+"Guide: :doc:`Creating a multisig account <../multisig/creating-a"
+"-multisig-account>`"
+msgstr ""
+
+#: ../../source/guides/migration/migrating-from-nem-to-symbol.rst:188
+msgid ""
+"Guide: :doc:`Sending a multisignature transaction <../aggregate/sending-a"
+"-multisig-transaction>`"
+msgstr ""
+

@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guidelines/writing-a-schema.rst:3
+msgid "Writing a Schema"
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:5
+msgid ""
+"Are you writing a new catapult plugin that includes a new transaction "
+"type?"
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:7
+msgid ""
+"In this guide, we examine how the `transfer.cats "
+"<https://github.com/symbol/blob/main/catbuffer/schemas/symbol/transfer/transfer.cats>`_"
+" was constructed. You can adapt the same steps to define a new schema."
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:12
+msgid "Instructions"
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:14
+msgid "Clone the catbuffer-schemas repository."
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:20
+msgid ""
+"Create a new file under the ``catbuffer/schemas`` folder. In our case, we"
+" have named the file ``transfer.cats``."
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:22
+msgid "Define the struct for the transaction body."
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:24
+msgid ""
+"Think of a struct as a set of properties that we want to store in the "
+"same block of memory."
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:26
+msgid ""
+"The transaction body contains the extra properties which differ from a "
+"basic transaction. Each attribute can have one of the types defined in "
+"`types.cats "
+"<https://github.com/symbol/blob/main/catbuffer/schemas/symbol/types.cats>`_."
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:44
+msgid "Define a second transaction struct in the same file."
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:46
+msgid ""
+"This will contain information about the version of the entity and its "
+"identifier. The underlying transaction properties and the particular "
+"transaction body are appended as inlines."
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:60
+msgid ""
+"Define an ``EmbeddedTransaction`` struct to serialize the inner "
+"transactions within an aggregate."
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:62
+msgid "The embedded transaction and the body transaction are added as inlines."
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:72
+msgid ""
+"The catbuffer library allows you to generate the transaction builders "
+"from the schema we have defined."
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:74
+msgid "For example, run the following command to generate C++ code:"
+msgstr ""
+
+#: ../../source/guidelines/writing-a-schema.rst:80
+msgid ""
+"The generator creates the transaction builders file under the "
+"``_generated/cpp_builder`` folder."
+msgstr ""
+

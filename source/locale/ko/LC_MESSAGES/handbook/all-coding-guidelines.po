@@ -1,0 +1,285 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/handbook/all-coding-guidelines.rst:3
+msgid "Symbol Coding Guidelines"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:5
+msgid ""
+"Symbol uses multiple languages in its development, each with its own "
+"coding standards. Nonetheless, we have some common principles we use "
+"across all languages."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:9
+msgid "Regions"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:11
+msgid ""
+"In long files, we use ``region`` and ``endregion`` tags to group related "
+"code. This makes these files easier to navigate."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:14
+msgid ""
+"``region`` tags should always be surrounded by blank lines with one "
+"exception. If they are the first line of a new indent level, a preceding "
+"blank line is not required. ``endregion`` tags should always be "
+"surrounded by blank lines."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:17
+#: ../../source/handbook/all-coding-guidelines.rst:43
+#: ../../source/handbook/all-coding-guidelines.rst:119
+msgid "For example,"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:34
+msgid ""
+"In C style languages, the tags are opened and closed with ``//`` single "
+"line comments instead of ``#``."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:37
+msgid "Unit Testing"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:39
+msgid ""
+"We prefer to structure unit tests in the Arrange / Act / Assert form in "
+"order to clearly delineate the code under test and the assertions being "
+"tested. Unit tests should contain comments breaking tests into the three "
+"sections when they are present. This is somewhat of a judgement call as "
+"some tests will not have all three sections."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:57
+msgid ""
+"For a more thorough discussion, please review this blog post: "
+"https://symbolblog.com/developer-guides/how-to-write-good-unit-tests."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:60
+msgid "Commenting / Documentation"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:62
+msgid ""
+"Include a copyright statement at the top of each file. For new projects, "
+"use the default copyright contents. Copyright and all related rights "
+"should be waived for all contributions and via CC0 for all written works."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:65
+msgid ""
+"We document all public methods and classes with at least a sentence or "
+"two. For projects intended to be used as libraries by external "
+"developers, like SDKs, it's recommended to document all parameters. For "
+"other projects, it's often enough to just reference the parameters "
+"without documenting each in detail."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:69
+msgid ""
+"We believe that code should be for the most part self-documenting so use "
+"inline comments sparingly. Prefer well structured code and good names to "
+"inline comments. For example, Instead of using comments to delineate the "
+"steps of a complicated process, we prefer to refactor the code to have a "
+"well-named function per step. Inline comments can be used where the "
+"purpose of the code is not immediately clear to the reader."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:75
+msgid "Naming"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:77
+msgid ""
+"Avoid unpronounceable names and abbreviations. Use a spell checker! "
+"``codespell`` is recommended."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:80
+msgid ""
+"User defined types (``class``, ``struct``, ``enum``) should be "
+"UpperCamelCase and be nouns. [e.g. ``MyEnum``, ``NodeEndpoint``]"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:82
+msgid ""
+"Function names should contain verbs [e.g. ``DoSomething``, "
+"``TryDoSomething`]"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:84
+msgid ""
+"Functions that fail by throwing exceptions should be optimistically named"
+" [e.g. `DoSomething`]."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:86
+msgid ""
+"Functions that fail by returning error codes should be prefixed with "
+"`Try` to indicate that something needs to be checked by the caller [e.g. "
+"`TryDoSomething`]."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:88
+msgid ""
+"Boolean properties should generally begin with ``is``, ``has`` or "
+"``should``."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:90
+msgid "``isOpen()`` instead of ``open()``"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:92
+msgid ""
+"Non-boolean properties should generally avoid ``get`` and ``set`` "
+"prefixes:"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:94
+msgid "``value(12)`` instead of ``setValue(12)``"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:96
+msgid "``value()`` instead of ``getValue()``"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:99
+msgid "Logging"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:101
+msgid ""
+"Not all frameworks support the full spectrum of logging levels. A "
+"description of logging levels from most to least severe follows:"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:104
+msgid ""
+"**FATAL** - Critical error that will require the immediate exit of the "
+"program."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:105
+msgid ""
+"**ERROR** - Serious error that the node operator might need to act on but"
+" will not terminate the program."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:106
+msgid ""
+"**WARNING** - Error of which the node operator should be made aware but "
+"unlikely requires action."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:107
+msgid "**IMPORTANT** - Informational message with additional emphasis."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:108
+msgid "**INFO** - Informational message logged by default."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:109
+msgid ""
+"**DEBUG** - Verbose informational message that might be disabled by "
+"default."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:110
+msgid ""
+"**TRACE** - Low level debugging information that will almost always be "
+"disabled."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:114
+msgid "Vertical Spacing"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:116
+msgid ""
+"Generally, there should be a blank line after any de-indentation. One "
+"exception is the closing of braces."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:130
+msgid "Trim trailing whitespace from all lines. End every file with a newline."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:134
+msgid "Horizontal Line Length"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:136
+msgid "Maximum line length is 140 characters."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:139
+msgid "Token Spacing"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:141
+msgid "Always put a space after commas ',', like:"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:147
+msgid "Not:"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:153
+msgid "Always put a space after semicolons ';' in for, that is ok:"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:159
+msgid "This one's not:"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:166
+msgid "Operators"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:168
+msgid ""
+"In case of operators please put additional space before and after them. "
+"This makes code much more readable."
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:170
+msgid ""
+"This should be always used in case of binary operators, including ``=``, "
+"``==``, ``!=``, ``&&``, ``||``. So this one's ok:"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:176
+msgid "While this one is not:"
+msgstr ""
+
+#: ../../source/handbook/all-coding-guidelines.rst:183
+msgid "Language Specific Guides"
+msgstr ""
+

@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/reward-programs.rst:3
+msgid "Reward Programs"
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:5
+msgid ""
+":doc:`Nodes <node>` **are the backbone of any blockchain**, since they "
+"are the ones creating and storing the blocks, among other things. It is "
+"therefore **critical** that as many nodes as possible are active in the "
+"network at all times."
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:7
+msgid ""
+"Beyond the direct **block rewards** (:doc:`fees` and :doc:`inflation`) "
+"that nodes obtain for producing blocks, |codename| **provides a series of"
+" special Reward Programs** aimed at further encouraging users to create "
+"and maintain nodes."
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:9
+msgid "Each of these programs rewards **a different aspect of the network**:"
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:11
+msgid ""
+":ref:`voting-node-program`: For nodes supporting Finalization, "
+"|codename|'s fork resolution mechanism."
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:12
+msgid "*More programs might be added in the future*."
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:14
+msgid ""
+"In most cases, node owners wishing to benefit from these programs must "
+"explicitly **enroll** to them. The descriptions below contain **guides** "
+"explaining how to enroll to each program."
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:20
+msgid "Voting Node Program"
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:22
+msgid ""
+"|codename| provides **fast response times** even when **network "
+"disconnections** isolate some of the nodes. When connectivity is restored"
+" any **conflicts** which might have arisen (network forks) are resolved "
+"by the :ref:`finalization` process. This process requires some nodes to "
+"periodically **vote** on which branches are valid according to their "
+"records. Blocks deemed invalid are then :ref:`rolled back <rollbacks>`."
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:24
+msgid ""
+"This program aims at ensuring that enough **voting nodes** are always "
+"present in the network so fork resolution is conducted reliably."
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:27
+msgid "Requirements"
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:29
+msgid ""
+"Voting nodes are regular nodes meeting the following additional "
+"requirements:"
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:1
+msgid "Parameter"
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:1
+msgid "Requirement"
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:1
+msgid "**Bonded Deposit**"
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:1
+msgid "At least **3 million** |networkcurrency| must be stacked on the node."
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:1
+msgid "**Voting keys**"
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:1
+msgid ""
+"The node must signal its interest in becoming a voting node by "
+"registering its :ref:`votingkeylinktransaction`."
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:40
+msgid "Rewards"
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:42
+#, python-format
+msgid ""
+"**5% of all block harvesting rewards** is set aside for voting nodes. "
+"After each :ref:`finalization round <finalization>` these rewards are "
+"**evenly distributed** among all nodes that participated in that round "
+"(and paid on a daily basis). There is **no explicit enrollment required**"
+" for this program."
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:46
+msgid ""
+"If you created your node using Symbol Bootstrap, :ref:`follow this guide "
+"to enable voting <bootstrap-enable-voting>`."
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:48
+msgid ""
+"Otherwise, :ref:`follow this guide to enable voting manually <manual-"
+"enable-voting>`."
+msgstr ""
+
+#: ../../source/concepts/reward-programs.rst:50
+msgid ""
+"See the complete `Terms & Conditions <https://drive.google.com/file/d/1Q-"
+"Ph2KGKN3Vr6GVampFvlfitZHirhthA/view?usp=sharing>`__."
+msgstr ""
+

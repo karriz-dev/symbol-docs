@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/multisig-account.rst:3
+msgid "Multisig Account"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:5
+msgid ""
+"Multisig :doc:`accounts <account>` require additional signatures to "
+"initiate actions/transfers."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:9
+msgid "Cosignatories"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:11
+msgid ""
+"|codename| :doc:`accounts <account>` can be :doc:`converted to multisig "
+"<../guides/multisig/creating-a-multisig-account>`. The "
+"cosignatories—other accounts—of the multisig will become the account "
+"managers."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:14
+msgid ""
+"From that moment on, the multisig account cannot announce transactions by"
+" itself. A multisig cosignatory has to propose a transaction involving "
+"the multisig, wrapping it in an :doc:`AggregateTransaction <aggregate-"
+"transaction>`."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:17
+msgid ""
+"To record the transaction in the block, the other cosignatories will have"
+" to agree."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:21
+msgid "Minimum approval and removal"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:23
+msgid ""
+"It is not always necessary to require all cosignatories to cosign "
+"transactions associated with the multisig account. |codename| allows to "
+"set up the minimum number of cosignatory agreements. These properties can"
+" be :ref:`edited <guide-modify-a-multisig-account-min-approval>` "
+"afterward to suit almost all needs."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:31
+msgid "2-of-3 multisignature account"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:33
+msgid ""
+"|codename|'s current implementation of multisig is *\"M-of-N\"*, where M "
+"is the number of cosignatories required to announce a transaction and N "
+"is the total amount of cosignatories for that particular multisig "
+"account. This means that M can be any number equal to or less than N, "
+"i.e., 1-of-4, 2-of-2, 4-of-9, 9-of-10 and so on."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:36
+msgid ""
+"Similarly, cosignatories can :ref:`invite other accounts to take part in "
+"the multisig <guide-modify-a-multisig-account-add-new-cosignatory>`, or  "
+":ref:`propose to remove others <guide-modify-a-multisig-account-"
+"removing-a-cosignatory>` when the defined conditions are fulfilled."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:38
+msgid ""
+"Multisig accounts are a powerful tool, but please use this tool with "
+"caution.  If the cosignatories keys get lost and minimum approval is not "
+"reached, it would result in the permanent loss of access to the funds "
+"held by the multisig account. Choose ``minimum removal`` parameter wisely"
+" to avoid this situation."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:42
+msgid "Constraints"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:44
+msgid ""
+"The public network defines the following constraints for multisig "
+"accounts, being the values presented :ref:`configurable per network "
+"<config-network-properties>`."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:46
+msgid "Multisig accounts can have up to ``25`` cosignatories."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:48
+msgid "An account can be cosigner of up to ``25`` multisig accounts."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:50
+msgid ""
+"Multisig account can be a cosigner for another multisig account, up to "
+"``3`` levels. Multi-level multisig accounts add “AND/OR” logic to multi-"
+"signature transactions."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:52
+msgid ""
+":ref:`Multisig modification transactions "
+"<multisigaccountmodificationtransaction>` must be wrapped in an "
+":doc:`AggregateTransaction <aggregate-transaction>`. New cosignatories "
+"added to the multisig must opt-in by cosigning the aggregate."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:56
+msgid "Examples"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:58
+msgid ""
+"There is a broad range of useful applications for multisig accounts. "
+"Let's take a look at some of the most common use cases."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:62
+msgid "Shared accounts"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:64
+msgid ""
+"Several families are members of the local philatelist society and use a "
+"shared account to buy stamps."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:66
+msgid ""
+"To ensure that all agree on which old stamps they should buy and on the "
+"right price, they use a multisig account. This way, all members of the "
+"society need to approve the transaction before it is included on the "
+"blockchain."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:70
+msgid "Multi-factor authorization"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:72
+msgid ""
+"Alice wants to make sure her funds are not compromised in any way. "
+"Therefore she sets up a multisig account with her funds and attaches two "
+"accounts (signer accounts) to control her multisig account as a form of "
+"2-factor authentication."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:75
+msgid ""
+"Both of her signer accounts need to approve the transaction, and her "
+"signer accounts are located on different computer platforms with "
+"different passwords. This means that even if an evil hacker or virus "
+"should compromise one of her accounts, the funds are still kept secure."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:81
+msgid "Multi-factor authorization using multisig accounts"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:84
+msgid "Assets ownership"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:86
+msgid "Multisig accounts can be used to represent the ownership of assets."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:88
+msgid ""
+"A company could create a 1-of-1 multisig account for each of their "
+"products, adding themselves as the cosignatory. When the company sells "
+"the product to Alice, she becomes the owner through the action of being "
+"added as the cosigner, and the company is removed in the same "
+"transaction."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:95
+msgid "Transferring an account"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:98
+msgid "Manufacturing and supply chains"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:100
+msgid "In this example, a manufacturer is shipping a pharmaceutical product."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:102
+msgid ""
+"The product receives its quality approval :doc:`mosaic <mosaic>` only "
+"when its blockchain record shows it has a production date, safety "
+"inspection, and was shipped at the correct temperature."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:104
+msgid ""
+"Sensors in the shipping container report temperature data every 5 minutes"
+" and consolidate it into a daily report."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:110
+msgid "Manufacturing and Supply Chains"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:113
+#: ../../source/concepts/multisig-account.rst:124
+msgid "Fraud Detection"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:115
+msgid "This example shows how a high-security account can be made easier to use."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:117
+msgid ""
+"Transactions are only approved from a hardware wallet OR your phone AND a"
+" fraud detection AI. MLMA allows a variety of security configurations at "
+"the protocol level to keep businesses and their customers hack-free."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:128
+msgid "Related transactions"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:1
+msgid "Id"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:1
+msgid "Type"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:1
+msgid "0x4155"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:1
+msgid ":ref:`multisigaccountmodificationtransaction`"
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:1
+msgid "Create or modify a multisig contract."
+msgstr ""
+
+#: ../../source/concepts/multisig-account.rst:139
+msgid "Related guides"
+msgstr ""
+

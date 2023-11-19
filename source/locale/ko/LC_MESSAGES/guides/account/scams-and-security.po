@@ -1,0 +1,330 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/account/scams-and-security.rst:9
+msgid "Common Hacks and Scams"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:11
+msgid ""
+"It should come as no surprise that cryptocurrency users are targeted by a"
+" wide variety of scammers, hackers, and thieves. While some attempts may "
+"come in familiar forms such as impersonation or misinformation, the "
+"digital nature of cryptocurrencies opens the door to a number of novel "
+"approaches. This page is intended to help you ensure the security of your"
+" assets by explaining a number of common scams and security "
+"considerations. This list is by no means comprehensive, and you are "
+"strongly encouraged to research the topic further for the sake of your "
+"wallet's security."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:15
+msgid "Key Points"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:17
+msgid ""
+"**Be extremely cautious signing transactions when activating delegated "
+"harvesting**. A Sweeping scam has actively targeted users in the process "
+"of activating delegated harvesting, so make sure to carefully review any "
+"transactions you are prompted to sign and diligently check for any "
+"included asset transfers to unfamiliar addresses. Never sign a "
+"transaction that you do not completely understand."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:18
+msgid ""
+"**Never share your private key or mnemonic phrase** (also known as your "
+"secret recovery phrase or seed phrase) with anyone, and never enter them "
+"on any website or potentially malicious wallet. Anyone with your private "
+"key or mnemonic phrase has full and unrestrained access to the contents "
+"of your wallet."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:19
+msgid ""
+"**The Symbol Syndicate will never directly message you for customer "
+"support** and will never ask for your private key or mnemonic phrase."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:20
+msgid ""
+"**Blockchain transactions are irreversible**; it is not feasible to undo "
+"a transaction or retrieve your funds once they are sent to a malicious "
+"address."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:21
+msgid ""
+"**Ensure any backups of your private keys or mnemonic phrases are stored "
+"safely and offline** in order to ensure that no one is able to access "
+"them and compromise your accounts."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:25
+msgid "Sweeping with Aggregate Bonded Transactions"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:28
+msgid "What is an Aggregate transaction?"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:30
+msgid ""
+"Aggregate transactions can include a variety of elements such as multiple"
+" signers, messages, and transfers. New Symbol users may not be familiar "
+"with the complex nature of Aggregate Bonded transactions, and must take "
+"great care to fully understand the full scope of any transactions they "
+"are asked to sign. For more information see :doc:`Aggregate Transaction "
+"<../../concepts/aggregate-transaction>`"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:33
+msgid "What is sweeping?"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:35
+msgid ""
+"Sweeping involves a malicious script that monitors certain types of "
+"transactions, then initiates a malicious Aggregate Bonded transaction "
+"disguised to appear related to the targeted transaction (i.e. by "
+"including a relevant message), but which also include a transfer of XYM "
+"or other mosaics to the bad actor's wallet. Signing these transactions "
+"can completely empty a user's wallet, so please make sure you carefully "
+"review before signing any transactions that you did not initiate."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:37
+msgid ""
+"It may not be immediately apparent that you've been hacked. The sweeper's"
+" goal is that you assume that the transaction you signed was part of a "
+"process you were completing, and you may also assume that your balance "
+"has been reduced by a stuck transaction, pending activation of delegated "
+"harvesting, or that your balance was transferred to a delegated "
+"harvesting address linked to your account."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:40
+msgid "What could a sweeping attack look like?"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:42
+msgid ""
+"You begin Delegated Harvesting activation by propagating the 'Link all "
+"keys' transaction to the network."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:43
+msgid ""
+"The bad actor's script detects this transaction and sends you an "
+"Aggregate Bonded transaction. This transaction might include a message "
+"related to harvesting such as \"Delegated-№234567\" as well as a transfer"
+" of XYM to an address controlled by the bad actor."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:44
+msgid ""
+"Your wallet sees the Aggregate Bonded transaction included in a "
+"subsequent block and prompts you with the option to review and sign it."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:45
+msgid ""
+"You choose to sign the transaction, and your XYM balance is reduced by "
+"the transaction amount (typically all or nearly all of your XYM)."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:47
+msgid ""
+"Every Symbol wallet is different; some may not permit users to sign "
+"aggregate transactions, others may hide aggregate transactions "
+"originating from addresses outside a predefined whitelist (i.e. their "
+"contacts), and others may prompt users for their signature without "
+"revealing the full contents of what they are signing. Reviewing aggregate"
+" transactions using the `Symbol Explorer "
+"<https://testnet.symbol.fyi/nodes>`__ before signing them can provide "
+"additional security and peace of mind. Below is an example of a malicious"
+" aggregate transaction that contains a message to a trusted address in "
+"the first transaction and an asset transfer to the scammer's address in "
+"the second transaction."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:57
+msgid "Spoofing"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:60
+msgid "What is spoofing?"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:62
+msgid ""
+"Spoofing involves hiding or disguising identity to enable malicious "
+"activity, literally spoofing the identity of the malicious party to make "
+"it believable and appear trustworthy."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:65
+msgid "What could a spoofing attack look like?"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:67
+msgid ""
+"A spoofing hack will target private key or mnemonic phrase (also known as"
+" your secret recovery phrase or seed phrase), as this can be used to "
+"restore your wallet and will provide a hacker with access to your private"
+" keys and the wallet's contents. Symbol wallets are a non-custodial, "
+"meaning you are responsible for keeping your private keys and mnemonic "
+"phrase secure."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:69
+msgid "A spoofing attack might go something like this:"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:71
+msgid "You ask a question on Twitter or in the XYMCity Discord server."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:72
+msgid ""
+"A malicious account identifies you as a target due to your request for "
+"support and sends you a DM. The account will be configured to resemble an"
+" official support resource and could include a relevant logo, a "
+"convincing username, and a professional sounding dialogue."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:73
+msgid ""
+"The bad actor will rely on your belief that they are an official support "
+"resource, and try to convince you to provide your private key or mnemonic"
+" phrase key to resolve your problem. This could also involve directing "
+"you to a website that requests these details."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:74
+msgid ""
+"If successful, the bad actor can gain full access to your address and "
+"transfer your assets to an address of their choosing."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:76
+msgid ""
+"This scenario is just an example, and similar events could play out "
+"across any social media platform, messaging service, forum, or otherwise "
+"on which you share information publicly."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:79
+msgid "How can I protect myself from spoofing attacks?"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:81
+msgid ""
+"The Symbol Syndicate will never directly message you for customer "
+"support, and will never ask for your private key or mnemonic phrase. "
+"Anyone asking you for contact information, your secret recovery phrase or"
+" details of your support issue outside of the Discord helpdesk channel is"
+" a potential scammer and should be ignored and/or reported. Be vigilant. "
+"If it looks like it might be a scam, it probably is. Always be observant "
+"and keep a lookout for suspicious, telltale signs. These could include:"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:84
+msgid ""
+"Requesting personal information, including anything from your name, the "
+"value of your wallet's holdings, or even your private key, which you "
+"should never, ever give to anyone."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:85
+msgid ""
+"Unofficial-looking Twitter handles using underscores, doubled-up letters,"
+" and numbers to mimic official accounts."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:86
+msgid ""
+"Official-looking Discord 'about me' details or handles (i.e. "
+"SUPPORT_TEAM)."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:87
+msgid ""
+"Providing links to websites purported to 'validate your wallet' or assist"
+" with troubleshooting (excepting known-good sources such as the official "
+"Symbol documentation or articles written by Syndicate members)."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:88
+msgid "Requests to reach out for support, get in touch, or send a DM."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:90
+msgid ""
+"Most importantly, **never share your private keys and mnemonic phrase** "
+"regardless of how convincing a person/entity may be."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:95
+msgid "Clipboard hacking"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:98
+msgid "What is clipboard hacking?"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:100
+msgid ""
+"Symbol addresses are not easily memorized nor typed manually, so many "
+"users leverage their device's clipboard to copy and paste a recipient's "
+"Symbol address. Clipboard hacking involves malware that intercepts the "
+"contents of your clipboard and replaces an address you've copied with an "
+"address belonging to the hacker.  When you go to send a transaction and "
+"paste the address from your clipboard, the hacker's address is pasted "
+"instead of the one you initially copied."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:103
+msgid "How can I protect myself?"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:105
+msgid ""
+"The only way reliable way to be safe is to triple-check addresses before "
+"you confirm any transaction. A robust and up-to-date anti-malware "
+"software is strongly recommended, as it should identify most potential "
+"clipboard hacking malware programs, notify you, and quarantine them "
+"before they can affect your crypto activity."
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:110
+msgid "Compromised Backup"
+msgstr ""
+
+#: ../../source/guides/account/scams-and-security.rst:112
+msgid ""
+"Keep in mind that any copies of your private keys or mnemonic phrase can "
+"also grant someone access to your accounts. Ensure that these cannot be "
+"accessed by a hack, theft, or compromised cloud storage account."
+msgstr ""
+

@@ -1,0 +1,732 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guidelines/sdk-development.rst:3
+msgid "SDK Development"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:5
+msgid ""
+"One of the key objectives we had when building the first group of  SDKs "
+"was to enable developers to change quickly between programming languages "
+"without having to adapt to a completely different design. This document "
+"intends to guide developers to ship |codename|-based SDKs that share the "
+"same design to achieve interoperability."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:10
+msgid "Architecture"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:13
+msgid "Package Organization"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:19
+msgid "Package organization diagram"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:21
+msgid "**Infrastructure**"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:23
+msgid ""
+"This package includes the generated API client and DTOs. The HTTP "
+"requests are made following the Repository Pattern, and they return "
+"|codename| domain immutable models via the Observable Pattern."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:26
+msgid "**Models**"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:28
+msgid ""
+"The |codename| domain models are immutable by definition, meaning that "
+"the developer cannot change their attributes. Instead, the developers "
+"have to create new Transactions and dispatch them to the blockchain via "
+"TransactionHTTP."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:31
+msgid "**Services**"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:33
+msgid ""
+"Common operations that require combining multiple :doc:`REST API "
+"<../api>` requests."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:36
+msgid "Characteristics"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:38
+msgid ""
+"**Standardized Contracts**: Guaranteeing interoperability and "
+"harmonization of data models."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:39
+msgid "**Loose Coupling**: Reducing the degree of component coupling fosters."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:40
+msgid ""
+"**Abstraction**: Increasing the long-term consistency of interoperability"
+" and allowing underlying components to evolve independently."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:41
+msgid ""
+"**Reusability**: Enabling high-level interoperability between modules and"
+" potential component consumers."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:42
+msgid ""
+"**Stateless**: Increasing availability and scalability of components "
+"allowing them to interoperate more frequently and reliably."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:43
+msgid ""
+"**Composability**: For components to be effectively composable, they must"
+" be interoperable."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:46
+msgid "Reactive"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:48
+msgid "The |sdk| uses the `ReactiveX Library <http://reactivex.io/>`_ intensely."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:50
+msgid "The benefits of using a reactive approach are:"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:52
+msgid ""
+"**Functional**: Developers can avoid complex stateful programs using "
+"clean input/output functions over observable streams."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:53
+msgid ""
+"**Less is more**: ReactiveX's operators often reduce what was once an "
+"elaborate challenge into a few lines of code."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:54
+msgid ""
+"**Async error handling**: Traditional try/catch is weak for error "
+"handling in asynchronous computations, but ReactiveX will offer "
+"developers the proper tools to handle errors."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:55
+msgid ""
+"**Concurrency**: Observables and Schedulers in ReactiveX allow the "
+"programmer to abstract away low-level threading, synchronization, and "
+"concurrency issues."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:56
+msgid ""
+"**Frontend**: Manipulation of UI events and API responses on the Web "
+"using RxJS."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:57
+msgid ""
+"**Backend**: Embrace ReactiveX's asynchronicity, enabling concurrency and"
+" implementation independence."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:59
+msgid ""
+"If you are new to Reactive Programming, we encourage you to start with "
+"the online guide `Learn RxJS <https://www.learnrxjs.io/>`_."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:63
+msgid "Before starting"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:65
+msgid ""
+"Review the technical documentation to become familiar with the |codename|"
+" :doc:`built-in features<../concepts/account>`."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:66
+msgid ""
+"Setup the |codename| :doc:`local environment via docker "
+"<../guides/network/creating-a-private-test-net>`."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:67
+msgid ""
+"Check the :doc:`API reference <../api>` and play with offered set of "
+"endpoints."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:68
+msgid ""
+"Become familiar with the current :doc:`SDK via code examples "
+"<../concepts/account>` and :ref:`CLI <wallet-cli>` ."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:69
+msgid "Join our |discord| to ask |codename| related questions."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:70
+msgid ""
+"Be sure no one is already working on the SDK you want to create. Check "
+"the :doc:`repository list <../sdk>` and comment on your intentions in "
+"``#sig-api`` channel."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:71
+msgid ""
+"Claim the SDK `forking this repository "
+"<https://help.github.com/en/articles/creating-a-pull-request/>`_ and add "
+"a new entry to the :doc:`repository list <../sdk>`."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:75
+msgid "Creating the project"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:77
+msgid ""
+"You can base your work on the `TypeScript SDK <https://github.com/symbol"
+"/symbol-sdk-typescript-javascript>`_. The TypeScript version is the first"
+" SDK getting the latest updates. Check regularly the `Changelog "
+"<https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/CHANGELOG.md>`_ to be sure you didn't miss any code "
+"change update."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:81
+msgid "Create a new repository, preferably on GitHub, with:"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:83
+msgid "The README with the instructions to install the SDK."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:84
+msgid ""
+"The `Code of Conduct <https://help.github.com/articles/adding-a-code-of-"
+"conduct-to-your-project/>`_."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:85
+msgid ""
+"The `Contributors guidelines <https://help.github.com/articles/setting-"
+"guidelines-for-repository-contributors/>`_ to help others know how they "
+"can help you."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:89
+msgid "Testing"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:91
+msgid ""
+"A project with good test coverage it's more likely to be used and trusted"
+" by the developers!"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:93
+msgid ""
+"We **strongly** suggest to do `Test-Driven Development "
+"<https://en.wikipedia.org/wiki/Test-driven_development>`_ or Unit-Testing"
+" (test last). If you need inspiration, feel free to adapt directly the "
+"same tests we did."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:96
+msgid ""
+"Example of ``travis.yml`` `configuration file <https://github.com/symbol"
+"/symbol-sdk-typescript-javascript/blob/main/.travis.yml>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:97
+msgid ""
+"Example of `unit tests  <https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/tree/main/test>`_."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:98
+msgid ""
+"Example of `end to end tests  <https://github.com/symbol/symbol-sdk-"
+"typescript-javascript/tree/main/e2e>`_."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:100
+msgid ""
+"Once you have written some tests, setup a Continuous Integration (CI) "
+"system to run the test suite and code linter automatically. We use "
+"`travis-ci <https://travis-ci.org/>`_, but feel free to use the one that "
+"suits you best."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:103
+#, python-format
+msgid ""
+"Also, we strive to keep our codebases with a unit test coverage of 80% or"
+" higher. We use `coveralls <https://coveralls.io/>`_ to monitor test "
+"coverage."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:108
+msgid "Infrastructure"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:110
+msgid ""
+"The `OpenAPI Generator <https://openapi-generator.tech/>`_  handles the "
+"API and DTOs generation. It supports multiple languages, and hopefully, "
+"yours is `on the list <https://openapi-"
+"generator.tech/docs/generators/>`_."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:113
+msgid ""
+"These are the steps we followed to generate the Typescript DTOs (data "
+"transfer objects):"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:115
+msgid ""
+"Download the `latest Symbol OpenAPI spec <https://github.com/symbol"
+"/symbol-openapi/releases>`_ from GitHub releases."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:117
+msgid "Install the OpenApi generator CLI."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:123
+msgid "Generate the DTOs for the programming language selected."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:129
+msgid ""
+"The generated lib is normally published into a central repository (e.g. "
+"maven, npm). The SDKs depend on those libraries like any other third "
+"party dependency. To automate the deployment of the packages, including "
+"the generator for the selected programming language in the `symbol-"
+"openapi-generator <https://github.com/symbol/symbol-openapi-generator>`_ "
+"project."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:131
+msgid ""
+"Drop the generated client classes and implement them using the "
+"`Repository pattern "
+"<https://martinfowler.com/eaaCatalog/repository.html>`_ returning "
+"`Observables <https://en.wikipedia.org/wiki/Observer_pattern>`_ of "
+"`ReactiveX <http://reactivex.io/>`_."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:133
+msgid ""
+"The SDK for TypeScript currently chooses the ``typescript-node`` template"
+" from the OpenAPI Generator, but there are also other templates available"
+" to fit for other purposes. The SDK has interfaced out all the Http "
+"Repositories so that different implementations can be applied."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:135
+msgid "Example of repositories and implementations:"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:137
+msgid ""
+"`CreateTransactionsFromDTO <https://github.com/symbol/symbol-sdk-"
+"typescript-"
+"javascript/blob/main/src/infrastructure/transaction/CreateTransactionFromDTO.ts>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:138
+msgid ""
+"`BlockchainRepository <https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/infrastructure/BlockRepository.ts>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:139
+msgid ""
+"`BlockchainHttp <https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/infrastructure/BlockHttp.ts>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:141
+msgid ""
+"See the complete list of `repositories and implementations "
+"<https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/infrastructure>`_."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:143
+msgid ""
+"The **repositories return models instead of DTOs**. You will need to code"
+" the models before finishing the API wrapper."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:147
+msgid "Models"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:149
+msgid ""
+"By default, models are immutable and aim to hide the complexity, like "
+"type conversion or relationship between objects."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:151
+msgid "Example of models implementation:"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:153
+msgid ""
+"`Account <https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/model/account/Account.ts>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:154
+msgid ""
+"`NamespaceId <https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/model/namespace/NamespaceId.ts>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:155
+msgid ""
+"`NodeInfo <https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/model/node/NodeInfo.ts>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:157
+msgid ""
+"See the complete list of `models <https://github.com/symbol/symbol-sdk-"
+"typescript-javascript/tree/main/src/model>`_."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:159
+msgid ""
+"You will find in the implementations different invariants to ensure the "
+"object is well constructed and a nicer API is published."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:161
+msgid "Particular decisions we considered:"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:163
+msgid ""
+"UInt64 support: While `Java supports big numbers "
+"<https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html>`_, "
+"for example, JavaScript doesn't. The JavaScript SDK has a custom class to"
+" handle the `uint64 types <https://github.com/symbol/symbol-sdk-"
+"typescript-javascript/blob/main/src/model/UInt64.ts>`_. If your language "
+"supports ``uint64``, use that implementation instead."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:164
+msgid ""
+"API conversions: Sometimes, the data returned by API is compressed. You "
+"might need to convert those types for the user."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:165
+msgid ""
+"`Namespace <https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/model/namespace/NamespaceId.ts>`_ id: At "
+"creation time you add the string name, but when you receive the Namespace"
+" from the network, it comes in formatted as ``uint64`` id. A specific "
+"endpoint returns the Namespace ``string`` name."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:168
+msgid "Transaction Serialization"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:170
+msgid ""
+"The `catbuffer-schemas library "
+"<https://github.com/symbol/symbol/tree/dev/catbuffer/schemas>`_ defines "
+"the protocol to serialize and deserialize |codename| entities."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:172
+msgid ""
+"In combination with the catbuffer generators project, developers can "
+"generate builder classes for a given set of programming languages. For "
+"example, the |sdk| uses the generated code to operate with the entities "
+"in binary form."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:175
+msgid ""
+"If there is no generator for the programming language selected, you will "
+"need to develop it first. You can base your work on the `generator "
+"<https://github.com/symbol/symbol/tree/dev/sdk/javascript/generator>`_ "
+"for TypeScript."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:177
+msgid ""
+"If there is a generator, follow the next steps to generate the builders "
+"for all the existent entities:"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:179
+msgid "Clone the catbuffer-generators repository recursively."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:185
+msgid "Install the package requirements."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:191
+msgid ""
+"Clone the catbuffer-schemas repository inside the ``catbuffer-"
+"generators`` folder."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:193
+msgid ""
+"Generate code for all the schemas running the following command under the"
+" ``catbuffer-generators`` directory, replacing ``cpp_builder`` for the "
+"targeted programming language."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:199
+msgid ""
+"The previous command creates a new file for every schema under the "
+"``catbuffer/_generated/cpp_builder`` folder."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:201
+msgid ""
+"Publish the generated code into a central repository (e.g. Maven, NPM) "
+"and make the SDK dependant on this library. For every transaction type, "
+"use the generated builders to serialize and deserialize transactions."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:203
+msgid "Here you can find some examples of how we used transactions builders:"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:205
+msgid ""
+"`AccountAddressRestrictionTransaction <https://github.com/symbol/symbol-"
+"sdk-typescript-"
+"javascript/blob/main/src/model/transaction/AccountAddressRestrictionTransaction.ts>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:206
+msgid ""
+"`TransferTransaction <https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/model/transaction/TransferTransaction.ts>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:207
+msgid ""
+"`AggregateTransaction <https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/model/transaction/AggregateTransaction.ts>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:209
+msgid ""
+"See the complete list of `transactions <https://github.com/symbol/symbol-"
+"sdk-typescript-javascript/tree/main/src/model/transaction>`_."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:212
+msgid "KeyPair and Cryptographic functions"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:214
+msgid "This section is incomplete."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:216
+msgid ""
+"Cryptographic functions are required to sign transactions. All the "
+"crypto-related functions can be found under the `core/crypto "
+"<https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/tree/main/src/core/crypto>`_ module."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:219
+msgid ""
+"SDKs use standard ``tweetnacl`` (ed2559) for key pair generation, address"
+" derivation (from public key) and signings:"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:221
+msgid ""
+"Keypairs are based on tweetnacl 64 bytes secretKey (public + private) "
+"using SHA-512."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:222
+msgid ""
+"Signatures use tweetnacl detached mode and also get generated using "
+"SHA-512."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:224
+msgid ""
+"Finally, pay special attention to the `test vectors "
+"<https://github.com/symbol/symbol/tree/dev/tests/vectors>`_. The best way"
+" to make sure your implementation is correct is to use the test vectors "
+"files as inputs and expected outputs."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:227
+msgid "Examples of vector tests:"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:229
+msgid ""
+"`KeyPair <https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/test/core/crypto/keyPair.spec.ts#L88>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:233
+msgid "Services"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:235
+msgid ""
+"Services combine multiple :doc:`REST API <../api>` requests and provide "
+"developers with handy methods that cannot be retrieved directly from the "
+"API."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:237
+msgid ""
+"Services are considered \"nice to have\" features, and these usually are "
+"not required to consider the SDK complete. We recommend starting coding "
+"services only if you have a fully operational and well-tested SDK first."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:239
+msgid "Examples of services:"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:241
+msgid ""
+"`AggregateTransactionService <https://github.com/symbol/symbol-sdk-"
+"typescript-"
+"javascript/blob/main/src/service/AggregateTransactionService.ts>`_: Helps"
+" application developers to announce aggregate transactions without having"
+" to develop the logic to wait for the hash lock confirmation."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:242
+msgid ""
+"`MetadataTransactionService <https://github.com/symbol/symbol-sdk-"
+"typescript-"
+"javascript/blob/main/src/service/MetadataTransactionService.ts>`_: "
+"Creates metadata transactions without having to pass the previous value."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:243
+msgid ""
+"`BlockService <https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/service/BlockService.ts>`_: Provides with "
+"methods to verify that the data returned by a given node is valid."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:245
+msgid ""
+"See the complete list of `services <https://github.com/symbol/symbol-sdk-"
+"typescript-javascript/tree/main/src/service>`_."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:249
+msgid "Documenting the SDK"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:251
+msgid ""
+"The SDKs need to be adopted by other developers. As the main developer, "
+"no one knows better than you how the SDK works. Consider helping others "
+"and spread the usage of the SDK by providing :doc:`the following "
+"documentation <sdk-documentation>`."
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:256
+msgid "Recommended Licenses"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:258
+msgid "MIT: `Expat/MIT/X11 license <https://opensource.org/licenses/MIT>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:259
+msgid ""
+"Apache-2.0: `Apache License, version 2.0 "
+"<http://www.apache.org/licenses/LICENSE-2.0>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:261
+msgid ""
+"BSD-2-Clause: `OSI-approved BSD 2-clause license "
+"<https://opensource.org/licenses/BSD-2-Clause>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:263
+msgid ""
+"BSD-3-Clause: `OSI-approved BSD 3-clause license "
+"<https://opensource.org/licenses/BSD-3-Clause>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:265
+msgid ""
+"CC0-1.0: `Creative Commons CC0 1.0 Universal "
+"<https://creativecommons.org/publicdomain/zero/1.0/>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:267
+msgid ""
+"GNU-All-Permissive: `GNU All-Permissive License "
+"<http://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-"
+"Files.html>`_"
+msgstr ""
+
+#: ../../source/guidelines/sdk-development.rst:269
+msgid ""
+"LGPL-2.1+: `GNU Lesser General Public License (LGPL), version 2.1 or "
+"newer <http://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html>`_"
+msgstr ""
+

@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:9
+msgid "Creating a mosaic"
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:11
+msgid "Tokenize an asset using mosaics."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:15
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:17
+msgid ""
+"Complete the :doc:`getting started section <../../getting-started/setup-"
+"workstation>`."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:18
+msgid "Create a new :ref:`account <setup-creating-a-test-account>`."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:19
+msgid ""
+"Load the account with enough |networkcurrency| to pay for transaction "
+"fees."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:23
+msgid "Method #01: Using the Desktop Wallet"
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:25
+msgid "Click on the \"**Mosaics**\" tab from the left side menu."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:27
+msgid "Click on the \"**Create new mosaics**\" tab on the top of the page."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:33
+msgid ""
+"3. Determine the properties of the mosaic you desire to create. You can "
+"read :doc:`\"Mosaic Properties\" <../../concepts/mosaic>` to decide how "
+"do you want to configure your mosaic. Click \"**Send**\"."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:41
+msgid ""
+"Verify the information on the popup and enter your wallet password. Click"
+" \"**Confirm**\". This should send the transaction to the network."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:47
+msgid ""
+"When the transaction becomes confirmed, you can check to see that the "
+"mosaic has been created by going back to the \"**Owned mosaics**\" tab."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:51
+msgid "Method #02: Using the SDK"
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:53
+msgid ""
+"1. Open a new file and define a :ref:`mosaicdefinitiontransaction`. This "
+"transaction defines the mosaic properties your mosaic will have. You can "
+"read :ref:`Mosaic Properties <configurable-mosaic-properties>` to decide "
+"how do you want to configure your mosaic."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:59
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:79
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:102
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/mosaic/CreatingAMosaic.ts`"
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:64
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:84
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:107
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/mosaic/CreatingAMosaic.js`"
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:69
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:89
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:112
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/mosaic/CreatingAMosaic.java`"
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:74
+msgid ""
+"2. Define a :ref:`mosaicsupplychangetransaction` to set the **initial "
+"supply**. For instance, we can set it to **1,000,000** mosaic units."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:94
+msgid ""
+"|codename| works with **absolute amounts**. To get an absolute amount, "
+"multiply the number of assets you want to create by 10\\ "
+":sup:`divisibility`.  For example, if the mosaic has **divisibility** 2, "
+"to create 10 units (relative) you should define 1000 (absolute) instead."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:96
+msgid ""
+"3. Announce both transactions together using an :ref:`aggregate-"
+"transaction`. Include the network generation hash to make the transaction"
+" only valid for your network. Open :term:`NODE_URL` ``/node/info`` in a "
+"new browser tab and copy the ``meta.networkGenerationHash`` value."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:117
+msgid ""
+"Once the transaction gets confirmed, you can try to :doc:`transfer "
+"<../transfer/sending-a-transfer-transaction>` one unit of the created "
+"mosaic to another account, :doc:`modify the mosaic properties <modifying-"
+"mosaic-supply>` or :doc:`link a namespace to the mosaic "
+"<creating-a-mosaic>`."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:121
+msgid "Method #03: Using the CLI"
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:123
+msgid "Open a terminal window and run the following command."
+msgstr ""
+
+#: ../../source/guides/mosaic/creating-a-mosaic.rst:125
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/bash/mosaic/CreatingAMosaic.sh`"
+msgstr ""
+

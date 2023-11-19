@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:3
+msgid "JavaScript Coding Guidelines"
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:5
+msgid ""
+"Most of our javascript guidelines are enforced by various linters. We are"
+" currently using ``eslint``. We encourage you to familiarize yourself "
+"with the settings."
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:10
+msgid "NodeJS Version"
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:12
+msgid "We generally strive to support the newest Active LTS NodeJS version."
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:15
+msgid "File / Directory Layout"
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:17
+msgid ""
+"If a javascript file contains a single class, the file should be named "
+"after the class and be UpperCamelCase. If a javascript file contains "
+"utility functions, the file should be given a descriptive name and be "
+"snake_case."
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:20
+msgid "We expect parallel source and test directory hierarchies. For example,"
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:39
+msgid "Naming"
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:41
+msgid "Class names should be UpperCamelCase."
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:42
+msgid "Constants should be TITLE_CASE."
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:43
+msgid "Everything else should be lowerCamelCase."
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:46
+msgid "Variables"
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:48
+msgid "Prefer ``const`` and only use ``let`` on an exception basis."
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:51
+msgid "Modules"
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:53
+msgid ""
+"Since most of our javascript code has historically been run in NodeJS and"
+" was written before NodeJS added first class support for ES6 modules, "
+"most existing code is using CommonJS module conventions."
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:55
+msgid ""
+"For projects where CommonJS is already used, we recommend continuing to "
+"use CommonJS. For new projects, we recommend using ES6 modules."
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:59
+msgid "Package Manager"
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:61
+msgid "We recommend using npm instead of yarn for managing packages."
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:64
+msgid "Polyfills"
+msgstr ""
+
+#: ../../source/handbook/javascript-coding-guidelines.rst:66
+msgid ""
+"We generally do not use polyfills and things like Babel for code running "
+"in NodeJS. We have found that transpiling often violates the principle of"
+" least surprise, so try to avoid it in most cases."
+msgstr ""
+

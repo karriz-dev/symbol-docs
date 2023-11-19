@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:9
+msgid "Linking a namespace to a mosaic"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:11
+msgid ""
+"Alias an mosaic with a namespace so that others can reference it in a "
+"more friendly way when issuing transactions."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:15
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:17
+msgid ""
+"Complete the :doc:`getting started section <../../getting-started/setup-"
+"workstation>`."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:18
+msgid "Create a new :ref:`account <setup-creating-a-test-account>`."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:19
+msgid ""
+"Load the account with enough |networkcurrency| to pay for transaction "
+"fees."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:20
+msgid "Create a :doc:`mosaic <../../concepts/mosaic>` with the account."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:21
+msgid "Register a :doc:`namespace <../../concepts/namespace>` with the account."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:25
+msgid "Method #01: Using the Desktop Wallet"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:27
+msgid "Click on \"**Namespace**\" on the left-side menu."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:33
+msgid ""
+"Click on the edit icon of the namespace you desire to link to a mosaic. "
+"Click \"**Link**\"."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:35
+msgid ""
+"Select \"**Link a mosaic**\" as the alias type. Select the ID of the "
+"mosaic you desire to connect to the namespace. Click \"**Send**\". Verify"
+" the information on the next page and enter your wallet password. Click "
+"\"**Confirm**\"."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:41
+msgid ""
+"You can check that the mosaic has been linked by going to the "
+"\"**Mosaic**\" page. The name displayed for the mosaic should be the "
+"linked namespace."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:49
+msgid "Method #02: Using the SDK"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:51
+msgid ""
+"Open a new file and define the namespace identifier and the mosaic "
+"identifier you want to alias."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:53
+msgid ""
+"The account signing the transaction must own the namespace and mosaic "
+"being aliased."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:57
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:71
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/namespace/LinkingANamespaceToAMosaic.ts`"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:62
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:76
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/namespace/LinkingANamespaceToAMosaic.js`"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:67
+msgid ""
+"Then, announce the **AliasTransaction** that links the namespace and the "
+"mosaic."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:81
+msgid ""
+"If you want to unlink the alias, change alias action type to "
+"``AliasActionType.Unlink``."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:85
+msgid ""
+"Now you can send transactions using the namespace linked to the mosaic "
+"instead of defining the complete MosaicId."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:89
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/SendingATransferTransactionMosaicAlias.ts`"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:94
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/SendingATransferTransactionMosaicAlias.js`"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:99
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/transfer/SendingATransferTransactionMosaicAlias.java`"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:106
+msgid "Method #03: Using the CLI"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:108
+msgid ""
+"To link a namespace and a mosaic, open a terminal window and run the "
+"following command. Replace ``7cdf3b117a3c40cc`` with the mosaic "
+"identifier and ``foo`` with the namespace name to be linked."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-a-mosaic.rst:111
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/bash/namespace/LinkNamespaceMosaic.sh`"
+msgstr ""
+

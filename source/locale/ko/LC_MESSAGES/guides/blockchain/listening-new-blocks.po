@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:9
+msgid "Listening to new blocks"
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:11
+msgid "Get notified when a new block is included."
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:15
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:17
+msgid ""
+"Complete the :doc:`getting started section <../../getting-started/setup-"
+"workstation>`."
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:21
+msgid "Method #01: Using WebSockets"
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:23
+msgid ""
+"1. First, we need to create a bidirectional link between our client "
+"application and the REST Gateway. To do so, open a new :ref:`WebSocket "
+"connection <websockets>` connection. Remember to use a suitable "
+":term:`NODE_URL`."
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:50
+msgid ""
+"Once the connection is open, you will get a unique string identifier "
+"named ``uid``. As we want to get notifications every time there is a new "
+"block harvested; the next step is to subscribe to the block channel. "
+"Check :ref:`here <websockets>` the complete list of channels available."
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:54
+msgid ""
+"Send the uid received during the connection phase, and the channel name "
+"formatted as follows."
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:69
+msgid ""
+"From that moment, every ``30`` seconds more or less, you will receive a "
+"new notification with the content of the new harvested blocks."
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:73
+msgid "Method #02: Using the SDK"
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:75
+msgid "The |sdk| simplifies the process of handling WebSocket connections."
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:77
+msgid ""
+"In the SDK, WebSockets are named **Listeners**. As we have done with "
+"WebSockets, we need to open the connection first and subscribe to the "
+"desired channel, but this time without handling uids."
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:82
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/blockchain/ListeningNewBlocks.ts`"
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:87
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/blockchain/ListeningNewBlocks.js`"
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:92
+msgid ""
+"Note that the |sdk| for TypeScript base Listener is designed to work on "
+"Node.js backend environments. If you want to execute Listeners from the "
+"client-side (e.g., Angular, React, Vue.), pass the browser implementation"
+" of the WebSocket to the Listener."
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:102
+msgid "Method #03: Using the CLI"
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:104
+msgid "Open a terminal window and run the following command."
+msgstr ""
+
+#: ../../source/guides/blockchain/listening-new-blocks.rst:106
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/bash/blockchain/ListeningNewBlocks.sh`"
+msgstr ""
+

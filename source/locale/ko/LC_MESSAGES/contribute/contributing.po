@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/contribute/contributing.rst:3
+msgid "Contributing Guidelines"
+msgstr ""
+
+#: ../../source/contribute/contributing.rst:5
+msgid ""
+"Follow these guidelines when contributing to |codename| projects to "
+"achieve the best quality with the least effort."
+msgstr ""
+
+#: ../../source/contribute/contributing.rst:9
+msgid "Code"
+msgstr ""
+
+#: ../../source/contribute/contributing.rst:11
+msgid ":doc:`Writing a transaction schema <../guidelines/writing-a-schema>`"
+msgstr ""
+
+#: ../../source/contribute/contributing.rst:12
+msgid ""
+":doc:`Generating transaction builders <../guidelines/generating-"
+"transaction-builders>`"
+msgstr ""
+
+#: ../../source/contribute/contributing.rst:13
+msgid ":doc:`Developing an SDK <../guidelines/sdk-development>`"
+msgstr ""
+
+#: ../../source/contribute/contributing.rst:17
+msgid "Documentation"
+msgstr ""
+
+#: ../../source/contribute/contributing.rst:19
+msgid ":doc:`Style guide <../guidelines/style-guide>`"
+msgstr ""
+
+#: ../../source/contribute/contributing.rst:20
+msgid ":doc:`Suggesting changes <../guidelines/suggesting-changes>`"
+msgstr ""
+
+#: ../../source/contribute/contributing.rst:21
+msgid ":doc:`Writing a guide <../guidelines/writing-a-guide>`"
+msgstr ""
+
+#: ../../source/contribute/contributing.rst:22
+msgid ""
+":doc:`Translating the documentation <../guidelines/translating-the-"
+"documentation>`"
+msgstr ""
+
+#: ../../source/contribute/contributing.rst:23
+msgid ":doc:`Documenting an SDK <../guidelines/sdk-documentation>`"
+msgstr ""
+

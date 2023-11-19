@@ -1,0 +1,324 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/cryptography.rst:3
+msgid "Cryptography"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:5
+msgid ""
+"|codename| uses `elliptic curve cryptography "
+"<https://en.wikipedia.org/wiki/Elliptic-curve_cryptography>`__ to verify "
+"data integrity and to authenticate a signer's identity."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:11
+msgid "Key pair"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:13
+msgid ""
+"Elliptic curve cryptography is based on **key pairs**: a private and a "
+"matching public key. In particular, |codename| uses the `Twisted Edwards "
+"curve <https://en.wikipedia.org/wiki/Twisted_Edwards_curve>`__ with the "
+"digital signature algorithm named `Ed25519 <https://ed25519.cr.yp.to>`__ "
+"and hashing algorithm **SHA-512**:"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:15
+msgid ""
+"**Private key**: A random 256-bit (32 byte) integer used to sign "
+":ref:`entities <verifiableentity>` known by the owner."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:17
+msgid ""
+"**Public key**: A 256-bit (32 bytes) integer derived from the private "
+"key. It serves as the public identifier of the key pair and can be "
+"disseminated widely. It is used to prove that an entity was signed with "
+"the paired private key."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:19
+msgid ""
+"The public key can be derived from the private key, but **not the other "
+"way around**."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:24
+msgid "|codename| keys"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:26
+msgid ""
+"Key pairs are used in |codename| in different places, for **different "
+"purposes**. This is a summary of the keys used:"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:28
+msgid ""
+"**Main**: This key pair manages a **regular** :doc:`account`, containing "
+"assets like mosaics or namespaces."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:29
+msgid ""
+"**Remote**: This key pair manages the **remote account** used in :ref"
+":`remote-harvesting`."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:30
+msgid "**VRF**: Required :ref:`for harvesting <account_eligibility>`."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:31
+msgid ""
+"**Voting**: Required for nodes participating in the :ref:`finalization` "
+"process."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:32
+msgid ""
+"**Transport**: This key pair is used by nodes for secure transport over "
+"`TLS <https://en.wikipedia.org/wiki/Transport_Layer_Security>`__."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:36
+msgid ""
+"As a rule of thumb, the **private key** in any key pair should be kept "
+"secret at all times. However, **how bad is it to have a private key "
+"stolen?**"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "Key"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "Severity"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "Impact"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "**Main**"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "🔴 HIGH"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "Funds could be transferred to another account."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "**Remote**"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "🟠 MED"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid ""
+"Harmless to the account or the node. Easily reverted by linking another "
+"remote account. An attacker grabbing a large number of remote keys could "
+"gain a lot of harvesting power, influencing which blocks are added to the"
+" blockchain."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "**VRF**"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "🟡 LOW"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "Harmless without the key used for harvesting."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "**Voting**"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+#, python-format
+msgid ""
+"Harmless to the account or the node. Easily reverted by linking another "
+"voting account. An attacker grabbing more than 50% of the network's "
+"voting keys could influence block finalization."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "**Transport**"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid ""
+"An attacker could steal harvesting delegations away from the node, but "
+"harmless otherwise."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:51
+msgid "Signature"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:53
+msgid ""
+"**All transactions are signed** using a private key, producing 512-bit "
+"(64 byte) **signatures**."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:55
+msgid ""
+"As part of the regular workflow of the protocol, signatures are "
+"**validated** using the matching public key. This ensures the "
+"authenticity of the signer of an entity."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+#: ../../source/concepts/cryptography.rst:61
+msgid "Address"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:63
+msgid ""
+"|codename| public keys can be shared in a **shorter form** as "
+"**addresses**."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:65
+msgid "First, a **24-byte** **raw address** is built, consisting of:"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:67
+msgid "A network-id byte."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:68
+msgid "A 160-bit (20 byte) hash of the account's public key."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:69
+msgid "A 3-byte checksum, to allow the quick recognition of mistyped addresses."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:71
+msgid ""
+"However, the raw address is inconvenient to use because it is a binary "
+"array, so it is typically `Base32-encoded "
+"<https://en.wikipedia.org/wiki/Base32>`__ into a **39-character** text "
+"string called an **encoded address**, or simply an **adress**."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:73
+msgid ""
+"Finally, for easier reading, hyphens can be added every 6 characters to "
+"create a **pretty address**."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:75
+msgid "Examples:"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "Raw address"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "``0x78,0xD0,0x44,0xED,0xC3,0xDC,0x8B,0x86...``"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "24 bytes"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "``PDIEJ3OD3SFYNZCQUSEWKY4NRRZUI5LMJPSVLPQ``"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "39 chars"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "Pretty address"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "``PDIEJ3-OD3SFY-NZCQUS-EWKY4N-RRZUI5-LMJPSV-LPQ``"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:1
+msgid "45 chars"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:85
+msgid ""
+"It is possible to create an address without interacting with the "
+"blockchain. In fact, the blockchain only tracks addresses and public keys"
+" when they first appear in a transaction."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:91
+msgid "HD-Wallets and Mnemonics"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:93
+msgid ""
+"**Hierarchical Deterministic Wallets** (HD-Wallets for short) can "
+"**derive a series of accounts** from a single seed account. This allows "
+"handling a group of accounts using a single :ref:`key pair <keypair>`, "
+"greatly simplifying their management:"
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:95
+msgid "Only one key to protect."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:96
+msgid ""
+"Multiple accounts can be stored in a single QR code or **mnemonic "
+"phrase**."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:98
+msgid ""
+"A **Mnemonic Phrase** is human-friendly representation for a private key,"
+" composed of **24 random English words**. Mnemonic phrases are sometimes "
+"used instead of private keys as they are **easier for humans to remember "
+"and write down**."
+msgstr ""
+
+#: ../../source/concepts/cryptography.rst:100
+msgid ""
+"However, they are **equivalent to private keys** so it is critical that "
+"they are kept secret at all times. Even more so in the |codename| :ref"
+":`wallet-desktop`, where **the mnemonic phrase encodes the seed account's"
+" key**."
+msgstr ""
+

@@ -1,0 +1,283 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:8
+msgid "Retrieving your XYM from a pre-launch opt-in"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:10
+msgid ""
+"This guide explains how to access the **XYM** (|codename|'s native "
+"currency) you were awarded if you enrolled in the opt-in process "
+"**BEFORE** |codename| launched (March 12, 2021)."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:12
+msgid ""
+"If you missed that, you can still opt-in by following the :doc:`post-"
+"launch-optin-xym-retrieval` guide."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:16
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:18
+msgid ""
+"**NEM NIS1 is the original blockchain** offering from NEM, created by the"
+" community, and has been running since 2015."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:20
+msgid ""
+"**Symbol is the next-generation blockchain** from NEM, rewritten from "
+"scratch, and launched in March, 2021."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:22
+msgid ""
+"To quickstart |codename|'s adoption, an **opt-in** process was "
+"established which awarded **one XYM** in the new |codename| blockchain "
+"**for every XEM** (NIS1's native currency) held in the NIS1 blockchain."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:25
+msgid "The pre-launch opt-in Process"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:33
+msgid ""
+"First off, XEM holders wishing to participate in the opt-in process had "
+"to **enroll** using any of the NEM Wallets. For example, using the "
+"Desktop `NEM Wallet <https://nemplatform.com/wallets/#desktop>`__."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:41
+msgid ""
+"In return, the user received a **Symbol Mnemonic**, a 24-word phrase "
+"which encoded a Symbol account for the future Symbol blockchain."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:43
+msgid ""
+"Here is an example produced by the **NEM Wallet** containing the Symbol "
+"Mnemonic."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:45
+msgid ""
+"Then, on **March 12th, 2021** the **NIS1 Snapshot** took place: When the "
+"NIS1 blockchain reached block height 3'105'500 a picture was taken of all"
+" accounts and their assets."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:47
+msgid ""
+"Finally, on **March 16th, 2021** the **Symbol blockchain was launched** "
+"and all opted-in accounts were automatically created:"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:49
+msgid ""
+"**For every opted-in NIS1 account that held at least 100 XEM at the "
+"snapshot, a Symbol account was created holding that same amount of XYM.**"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:51
+msgid "This guide explains how to access this new Symbol account and its assets."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:53
+msgid ""
+"If you did not opt-in before the new Symbol blockchain launched, you can "
+"still opt-in **post-launch** by following the :doc:`post-launch-optin-"
+"xym-retrieval` guide."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:57
+msgid "Guide"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:59
+msgid ""
+"**Download and install** the :doc:`Symbol Desktop Wallet <../../wallets>`"
+" for your platform."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:61
+msgid ""
+"Please note that this is different from the NEM Wallet used to interact "
+"with the NIS1 blockchain."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:63
+msgid "Open the Wallet and click on ``Create a new profile?``:"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:71
+msgid "Click on ``Import mnemonic``:"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:79
+msgid ""
+"Fill in some profile data. A profile can contain several Symbol accounts "
+"and it helps keeping them organized."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:87
+msgid "Give your profile a **name**, for your personal use."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:88
+msgid "Select the ``Mainnet`` **Network type**."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:89
+msgid "Enter a **password** to protect your profile and confirm it."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:90
+msgid "Enter a **hint** to help you remember your password, should you forget it."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:91
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:101
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:113
+msgid "Click on ``Next``."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:93
+msgid ""
+"Write every word in the **Symbol Mnemonic** that you obtained when you "
+"**opted-in** (See the previous section):"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:103
+msgid ""
+"On the **Selected Accounts** screen, you will be presented with the list "
+"of accounts that can be derived from the mnemonic, including the one that"
+" you opted-in and its balance."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:111
+msgid "Select your opted-in account."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:112
+msgid "Select at least another (non-opted-in) account."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:115
+msgid "Accept the **Terms and Conditions** and click on ``Finish``:"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:123
+msgid ""
+"The Wallet's main screen will appear and your opted-in balance will be "
+"shown:"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:131
+msgid ""
+"**Your imported accounts are now ready to use**. In the ``Accounts`` tab "
+"you can see all of them and give them more meaningful names if you want."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:133
+msgid ""
+"Take a look at the rest of the :doc:`guides <../index>` to learn what you"
+" can do with these accounts. For example, :doc:`../transfer/sending-a"
+"-transfer-transaction`."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:-1
+msgid "Before you go"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:137
+msgid ""
+"It is **recommended** that you **move** your funds from the opted-in "
+"account to the other one you imported in step 6 above (called a **Seed** "
+"account, because it was obtained from a seed Symbol mnemonic)."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:139
+msgid ""
+"Accounts opted-in from the **NEM Wallet** are special and **cannot be "
+"derived from the mnemonic**. Therefore, in the future, if you used a "
+"Wallet **other than the Symbol Desktop Wallet** to recover your account "
+"from the mnemonic, it **might not recover your opted-in account**."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:141
+msgid ""
+"It will recover all other seed accounts, though, and hence the "
+"recommendation to move your funds and use only seed accounts."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:145
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:147
+msgid ""
+"This is a short list of items to check should you encounter any problem "
+"when recovering your opted-in accounts."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:149
+msgid ""
+"Check that the **balance on your NIS1 account** was at least **100 XEM** "
+"at the time of the snapshot."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:151
+msgid ""
+"Check that you are using the **correct Symbol mnemonic**. Did you do "
+"several attempts at opting-in and obtained different mnemonics?"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:153
+msgid ""
+"Check that your NIS1 account was successfully opted-in by looking up its "
+"address in the `opt-in Report "
+"<http://report.experimental.symboldev.network/ok1.html>`__."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:155
+msgid ""
+"If your account is not on the list, check the other tabs to find the "
+"reason."
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:157
+msgid "The **NEM Helpdesk** can help you if everything else fails:"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:159
+msgid "`NEM's Telegram Help Desk <https://t.me/nemhelpdesk>`__"
+msgstr ""
+
+#: ../../source/guides/migration/post-optin-xym-retrieval.rst:160
+msgid "Send an email to support@nem.group"
+msgstr ""
+

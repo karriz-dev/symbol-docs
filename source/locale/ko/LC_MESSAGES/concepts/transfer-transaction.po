@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/transfer-transaction.rst:3
+msgid "Transfer Transaction"
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:5
+msgid ""
+"Transfer transactions are used to send :doc:`mosaics <mosaic>` and "
+"messages between two :doc:`accounts <account>`."
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:11
+msgid "Alice sends 10 |networkcurrency| to Bob"
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:15
+msgid "Recipient"
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:17
+msgid ""
+"The recipient is the address or :ref:`alias <alias>` of the account that "
+"receives the TransferTransaction."
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:19
+msgid ""
+"It is possible to send mosaics to any valid address, even if the address "
+"has not previously participated in any transaction."
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:21
+msgid ""
+"If nobody owns the private key of the recipient's account, the funds are "
+"most likely lost forever."
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:25
+msgid "Mosaics"
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:27
+msgid ""
+"A :doc:`mosaic <mosaic>` could be a token, but it could also be more "
+"specialized assets such as reward points, shares of stock, signatures, "
+"status flags, votes or even other currencies."
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:29
+msgid "You can send a combination of different mosaics in the same transaction."
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:33
+msgid "Message"
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:35
+msgid ""
+"In the :ref:`public network <config-network-properties>`, transfer "
+"transactions can hold a message up to ``1023`` characters in length, "
+"making them suitable for timestamping data permanently on the blockchain."
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:37
+msgid "By default, the messages attached are visible to all network participants."
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:40
+msgid "Encrypted message"
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:42
+msgid "Encrypted messages are only accessible by the sender and the recipient."
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:44
+msgid ""
+"|codename| uses Bouncy Castle's AES block cipher implementation in `CBC "
+"mode <https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#CBC>`_"
+" to encrypt and decrypt messages."
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:46
+msgid ""
+"You can find under the ``crypto`` module how to `encode "
+"<https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/core/crypto/Crypto.ts#L116-L126>`_ and `decode "
+"<https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/core/crypto/Crypto.ts#L162-L178>`_ encrypted "
+"messages, but we recommend you to use the available `SDK public methods "
+"<https://symbol.github.io/symbol-sdk-typescript-"
+"javascript/0.23.2/classes/_model_account_account_.account.html#decryptmessage>`_"
+" instead."
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:50
+msgid "Related transactions"
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:1
+msgid "Id"
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:1
+msgid "Type"
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:1
+msgid "0x4154"
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:1
+msgid ":ref:`transfertransaction`"
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:1
+msgid "Send mosaics and messages between two accounts."
+msgstr ""
+
+#: ../../source/concepts/transfer-transaction.rst:61
+msgid "Related guides"
+msgstr ""
+

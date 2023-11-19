@@ -1,0 +1,282 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:9
+msgid "Sending a multisig transaction"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:11
+msgid ""
+"This guide will show you how to issue transactions from a multisig "
+"account."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:15
+msgid "Use case"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:21
+msgid "Sending an AggregateCompleteTransaction"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:23
+msgid ""
+"In this example, Alice and Bob are cosignatories of a **1-of-2 multisig**"
+" account. This multisig configuration permits Alice and Bob to share "
+"funds in a separate account, requiring only the signature from one of "
+"them to transact."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:26
+msgid ""
+"Let's send 10  |networkcurrency| from the shared account to a third "
+"address."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:30
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:32
+msgid ""
+"Complete :doc:`sending mosaics and messages between two accounts "
+"<../transfer/sending-a-transfer-transaction>` guide."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:33
+msgid ""
+"Complete :doc:`converting an account to multisig <../multisig/creating-a"
+"-multisig-account>` guide."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:34
+msgid "Load the 1-of-2 multisig account with 10 |networkcurrency| units."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:35
+msgid ""
+"Load Bob's account with enough |networkcurrency| units to pay for the "
+"transactions fees."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:39
+msgid "Method #01: Using the Desktop Wallet"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:41
+msgid "Log in to one of the cosignatory accounts of the multisig."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:43
+msgid "Click on the “**transfer**” tab."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:45
+msgid ""
+"Enter the appropriate information for your transfer transaction. Select "
+"the multisig account from the dropdown menu of the “FROM” field. Enter "
+"the address of the recipient. Select the mosaic you desire to send and "
+"the amount. Click “**Send**”. Review the information on the popup and "
+"enter your wallet password. Click “**Confirm**”"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:51
+msgid ""
+"If the multisig account has the \"**minimum approval**\" set to a number "
+"greater than 1, log in to another cosignatory account and :doc:`cosign "
+"the transaction <../aggregate/signing-announced-aggregate-bonded-"
+"transactions>`. Repeat this step until the minimum approval number is "
+"satisfied."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:57
+msgid ""
+"Once the transaction is confirmed, you should see changes in the "
+"respective account balances."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:61
+msgid "Method #02: Using the SDK"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:63
+msgid ""
+"Define the private key of one of the multisig cosignatories in a new "
+"variable. Then, define the public key of the shared account."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:67
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:96
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:115
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:134
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/SendingAMultisigTransactionAggregateComplete.ts`"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:72
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:101
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:120
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:139
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/SendingAMultisigTransactionAggregateComplete.js`"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:77
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:106
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:125
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:144
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/aggregate/SendingAMultisigTransactionAggregateComplete.java`"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:82
+msgid "Define the a :ref:`transfertransaction` as follows:"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:1
+msgid "Property"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:1
+msgid "Value"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:1
+msgid "Type"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:1
+msgid "TransferTransaction"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:1
+msgid "Recipient"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:1
+msgid "Address of the account that will receive the transaction"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:1
+msgid "Mosaics"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:1
+msgid "[10 |networkcurrency|]"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:1
+msgid "Message"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:1
+msgid "sending 10 |networkcurrency|"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:111
+msgid ""
+"Wrap the TransferTransaction in an :ref:`aggregate-transaction`, "
+"attaching the multisig public key as the signer of the transaction."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:130
+msgid "Then, sign and announce the transaction with a cosignatory account."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:149
+msgid ""
+"The recipient of the transction should receive the funds once the funds "
+"are confirmed."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:151
+msgid ""
+"This time, the TransferTransaction was wrapped in an "
+"AggregateCompleteTransaction because just one account was required to "
+"announce the transaction. If more than one cosignature is required to "
+"announce the transaction (e.g., the multisig is a 2-of-2 account), the "
+"transaction must be defined as aggregate **bonded**, and all other "
+"required multisig participants should cosign it in order to be confirmed."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:154
+msgid ""
+"To issue a transaction from a **2-of-2 multisig**, modify the previous "
+"code and define the transaction as bonded."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:158
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:180
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/SendingAMultisigTransactionAggregateBonded.ts`"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:163
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:185
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/SendingAMultisigTransactionAggregateBonded.js`"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:168
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:190
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/aggregate/SendingAMultisigTransactionAggregateBonded.java`"
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:173
+msgid ""
+"2. When an AggregateTransaction is bonded, an account needs to lock at "
+"least ``10`` |networkcurrency| to prevent spamming the network. Once all "
+"cosigners sign the transaction, the amount of |networkcurrency| locked "
+"becomes available again in the account that has locked the funds. After "
+":ref:`hashlocktransaction` has been confirmed, :doc:`announce the "
+"AggregateBondedTransaction <../../concepts/aggregate-transaction>` with a"
+" cosignatory. In our case, we will sign the transaction with Bob's "
+"account."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:195
+msgid ""
+"Once the transaction reaches the network, every other multisig "
+"cosignatory required to reach quorum must cosign the transaction."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:197
+msgid ""
+"To cosign the transaction, you can use the :ref:`CLI <wallet-cli>` "
+"command ``transaction cosign``, replacing the transaction hash from (2)."
+msgstr ""
+
+#: ../../source/guides/aggregate/sending-a-multisig-transaction.rst:203
+msgid ""
+"The recipient should receive the funds once the transaction is cosigned "
+"by at least ``minApproval`` cosignatories. Besides, the account that has "
+"locked the 10 |networkcurrency| should have received the locked funds "
+"back."
+msgstr ""
+

@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/inflation.rst:3
+msgid "Inflation"
+msgstr ""
+
+#: ../../source/concepts/inflation.rst:5
+msgid ""
+"|codename| engine supports increasing the native currency supply as time "
+"passes. The creation of an **inflationary mosaic** empowers consortium "
+"and private networks to apply new token economic models that suit their "
+"needs."
+msgstr ""
+
+#: ../../source/concepts/inflation.rst:10
+msgid "Distribution"
+msgstr ""
+
+#: ../../source/concepts/inflation.rst:12
+msgid ""
+"Networks with inflation configured can increase the currency mosaic per "
+"block. In this case, the block reward includes the mosaics created due to"
+" inflation. The :doc:`harvester <harvesting>` collects the newly created "
+"mosaics, sharing them with the beneficiary when set."
+msgstr ""
+
+#: ../../source/concepts/inflation.rst:15
+msgid ""
+"The block creating currency mosaics record an :doc:`inflation receipt "
+"<receipt>`, listing the amount of mosaics created."
+msgstr ""
+
+#: ../../source/concepts/inflation.rst:19
+msgid "Configuration"
+msgstr ""
+
+#: ../../source/concepts/inflation.rst:21
+msgid ""
+"The :properties:`starting-at-height-1 <config-inflation.properties>` "
+"property defines the amount of currency mosaics created per block. "
+"Besides, the incrementing ratio can vary depending on the block height. "
+"The last height determines the amount of inflation per block that will be"
+" created from then on."
+msgstr ""
+
+#: ../../source/concepts/inflation.rst:31
+msgid ""
+"The previous configuration example inflates 500 currency mosaics per "
+"block from height 1 until the next ``starting-at-height-entry``. Between "
+"the blocks 100 and 1250, the currency mosaic supply increases by 400 "
+"units per block. Starting at height 1250, new blocks will not trigger the"
+" creation of mosaics."
+msgstr ""
+
+#: ../../source/concepts/inflation.rst:35
+msgid ""
+"The `network configuration "
+"<https://github.com/symbol/symbol/blob/main/client/catapult/resources"
+"/config-network.properties>`_ also describes the initial and **maximum "
+"supply** of the native currency mosaic. The maximum supply takes into "
+"account the inflation generated per-block."
+msgstr ""
+

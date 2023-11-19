@@ -1,0 +1,317 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/cross-chain-swaps.rst:3
+msgid "Cross-Chain Swaps"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:5
+msgid ""
+"A cross-chain swap enables trading tokens across different blockchains "
+"without using an intermediary party (e.g. an exchange service) in the "
+"process."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:11
+msgid "Cross-chain swap between public and private network"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:13
+msgid ""
+"|codename| follows the **Hashed TimeLock Contract** (HTLC) protocol to "
+"create a trustless environment for the decentralized exchange of assets. "
+"The protocol guarantees that if all participants agree, the swap will "
+"take place. On the contrary, each participant should receive their locked"
+" funds back if some of them decide not to conclude the process."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:17
+msgid ""
+"HTLC uses *hashlocks* and *timelocks* to reduce the counterparty risk. "
+"Every participant in the exchange of tokens needs to present proof "
+"(hashlock) to complete it. Failing to do so, the locked assets are "
+"released back to each original owner after the timelock expires."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:21
+msgid ""
+"A thorough explanation of the protocol can be found on the `Bitcoin Wiki "
+"<https://en.bitcoin.it/wiki/Hashed_Timelock_Contracts>`_."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:25
+msgid "Protocol"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:27
+msgid "Alice and Bob want to exchange **10 alice.tokens for 10 bob.tokens**."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:29
+msgid ""
+"The problem is that they are not in the same network: alice.token is "
+"defined in a private chain using |codename| tech, whereas bob.token is "
+"only present in |codename|'s public chain."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:31
+msgid ""
+"Trading tokens directly from one blockchain to the other is impossible "
+"due to the technological differences between them. In the case of "
+"|codename| public and private chain, the same mosaic name could have a "
+"different definition, distribution, or even not exist. Between Bitcoin "
+"and |codename|, the difference is even more evident, as each blockchain "
+"uses an entirely different technology."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:35
+msgid ""
+"Instead of transferring tokens between different chains literally, the "
+"trade will be performed inside each chain. The cross-chain swap protocol "
+"ensures that the token swap occurs atomically."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:41
+msgid ""
+"Before starting with the swap, all participants involved in the swap must"
+" own at least an account in each blockchain."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:43
+msgid ""
+"Alice generates a random set of bytes called ``proof``. The proof should "
+"have a size between ``10`` and ``1000`` bytes."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:45
+msgid ""
+"Alice hashes the obtained proof with one of the :ref:`available "
+"algorithms <lockhashalgorithm>` to generate the ``secret``."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:47
+msgid "Alice defines the :ref:`secretlocktransaction` **TX1**:"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "TX1 Property"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Value"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Type"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "SecretLockTransaction"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Mosaic"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "10 alice.token"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Recipient"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Bob's address (Private Chain)"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Algorithm"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "h"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Duration"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "96 h"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Secret"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "h(proof)"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Network"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Private Chain"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:62
+msgid ""
+"Once announced, this transaction will remain locked until someone "
+"discovers the proof that matches the secret. If no one unlocks it before "
+"the duration set is reached, the locked funds will be returned back to "
+"Alice."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:64
+msgid ""
+"Alice **announces TX1 to the private network** and **shares with Bob the "
+"secret**."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:66
+msgid ""
+"Bob should retrieve the secret from the chain and announces the following"
+" **SecretLockTransaction TX2** to the **public network**:"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "TX2 Property"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "10 bob.token"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Alice's address (Public Chain)"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "84 h"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Public Chain"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:81
+msgid ""
+"Alice announces the :ref:`secretprooftransaction` **TX3** to the **public"
+" network**. This transaction defines the encrypting algorithm used, the "
+"original proof and the secret:"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "TX3 Property"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "SecretProofTransaction"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Proof"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "proof"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:95
+msgid ""
+"Once TX3 is confirmed, the **proof** is revealed. **TX2 transaction is "
+"unlocked**, and Alice receives the locked funds."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:97
+msgid ""
+"Bob picks the proof and announces the **SecretProofTransaction TX4** to "
+"the **private network**, receiving the locked funds from **TX1**."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "TX4 Property"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:111
+msgid ""
+"The process is atomic but should be completed with lots of time before "
+"the deadlines:"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:113
+msgid ""
+"TX1's duration should be significantly bigger than TX2's to guarantee "
+"that the second participant will have time to unlock TX1 after the first "
+"one reveals the proof."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:114
+msgid ""
+"Each participant must wait for at least ``maxRollBackBlocks`` between "
+"announcements to prevent experiencing :ref:`transaction rollbacks "
+"<rollbacks>`."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:118
+msgid "Related transactions"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Id"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "0x4152"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid ":ref:`secretlocktransaction`"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "Transaction to start a token swap between different chains."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "0x4252"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid ":ref:`secretprooftransaction`"
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:1
+msgid "transaction to conclude a token swap between different chains."
+msgstr ""
+
+#: ../../source/concepts/cross-chain-swaps.rst:130
+msgid "Related guides"
+msgstr ""
+

@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:9
+msgid "Linking a namespace to an address"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:11
+msgid ""
+"Alias an address with a namespace so that others can reference the "
+"account in a more friendly way when issuing transactions."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:15
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:17
+msgid ""
+"Complete the :doc:`getting started section <../../getting-started/setup-"
+"workstation>`."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:18
+msgid "Create a new :ref:`account <setup-creating-a-test-account>`."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:19
+msgid ""
+"Load the account with enough |networkcurrency| to pay for transaction "
+"fees."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:20
+msgid "Register a :doc:`namespace <../../concepts/namespace>` with the account."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:24
+msgid "Method #01: Using the Desktop Wallet"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:26
+msgid "Click on \"**Namespaces**\" on the left-side menu."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:32
+msgid ""
+"Click on the edit icon of the namespace you desire to link to an account."
+" Select \"**Link an address**\" as the alias type.  Enter the address of "
+"the account you want to link to the namespace. Click \"**Send**\"."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:38
+msgid ""
+"Verify the information on the next page. Enter your wallet password. "
+"Click on \"**Confirm**\"."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:40
+msgid ""
+"If you linked the namespace to your desktop wallet account, you can check"
+" by going to the \"**Account**\" page and checking the \"**Alias**\"."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:48
+msgid "Method #02: Using the SDK"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:50
+msgid ""
+"Open a new file and define the namespace identifier and the address you "
+"want to alias."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:52
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:110
+msgid "The account signing the transaction must own the namespace."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:56
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:70
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/namespace/LinkingANamespaceToAnAddress.ts`"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:61
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:75
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/namespace/LinkingANamespaceToAnAddress.js`"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:66
+msgid ""
+"Then, announce the **AliasTransaction** that links the namespace and the "
+"address."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:80
+msgid ""
+"If you want to unlink the alias, change alias action type to "
+"``AliasActionType.Unlink``."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:84
+msgid ""
+"Now you can send transactions to the namespace linked to the account "
+"instead of using the complete address."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:88
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/SendingATransferTransactionAddressAlias.ts`"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:93
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/SendingATransferTransactionAddressAlias.js`"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:98
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/transfer/SendingATransferTransactionAddressAlias.java`"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:105
+msgid "Method #03: Using the CLI"
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:107
+msgid ""
+"To link a namespace and an address, open a terminal window and run the "
+"following command. Replace ``TCHBDE-NCLKEB-ILBPWP-3JPB2X-NY64OE-7PYHHE-"
+"32I`` with the account's address and ``foo`` with the namespace name to "
+"be linked."
+msgstr ""
+
+#: ../../source/guides/namespace/link-a-namespace-to-an-address.rst:112
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/bash/namespace/LinkNamespaceAddress.sh`"
+msgstr ""
+

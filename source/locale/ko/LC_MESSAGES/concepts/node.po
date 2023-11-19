@@ -1,0 +1,246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/node.rst:3
+msgid "Node"
+msgstr ""
+
+#: ../../source/concepts/node.rst:5
+msgid ""
+"|codename| blockchain platform is built from a **network of nodes**. "
+"These nodes provide a powerful, stable, and secure platform where Smart "
+"Assets transactions are conducted, searched, and immutably logged on the "
+"blockchain ledger."
+msgstr ""
+
+#: ../../source/concepts/node.rst:12
+msgid "|codename|’s Performance Advantage: A Four-Layered Architecture"
+msgstr ""
+
+#: ../../source/concepts/node.rst:14
+msgid ""
+"The **four-layered architecture** allows developers to update any of "
+"these tiers without disrupting the others, which improves security."
+msgstr ""
+
+#: ../../source/concepts/node.rst:20
+msgid "Peer node"
+msgstr ""
+
+#: ../../source/concepts/node.rst:22 ../../source/concepts/node.rst:77
+msgid "**Repository:** |catapult-client|"
+msgstr ""
+
+#: ../../source/concepts/node.rst:28
+msgid "Peer node communication"
+msgstr ""
+
+#: ../../source/concepts/node.rst:30
+msgid ""
+"The peer nodes form the backbone of the blockchain, making the network "
+"robust since it cannot be shut down by eliminating a single entity. The "
+"role of the node is to :ref:`verify transactions <transaction-"
+"validation>` and :doc:`blocks<block>`, run the consensus algorithm, "
+"create new blocks, and propagate the changes through the network."
+msgstr ""
+
+#: ../../source/concepts/node.rst:33
+msgid ""
+"The API nodes push new transactions to the P2P network, where they are "
+":doc:`included in a block <harvesting>` or discarded. After the block is "
+"processed, the node saves:"
+msgstr ""
+
+#: ../../source/concepts/node.rst:36
+msgid "The binary of each block as a flat-file on disk."
+msgstr ""
+
+#: ../../source/concepts/node.rst:37
+msgid "The updated chain state in memory or RocksDB (configurable)."
+msgstr ""
+
+#: ../../source/concepts/node.rst:40
+msgid "RocksDB"
+msgstr ""
+
+#: ../../source/concepts/node.rst:42
+msgid ""
+"Peer nodes store the chain state in |rocksdb|. The data structures cached"
+" are serialized and stored as values to corresponding keys. For example, "
+"a column in this database maps the public keys to addresses. Another one,"
+" the account state entries as the values to corresponding address keys."
+msgstr ""
+
+#: ../../source/concepts/node.rst:47
+msgid ""
+"Storing the state in memory is faster than using RocksDB. However, "
+"storing state information in RocksDB demands less memory of the network "
+"nodes."
+msgstr ""
+
+#: ../../source/concepts/node.rst:50
+msgid ""
+"Persisting the state in RocksDB is convenient in networks with a large "
+"number of accounts."
+msgstr ""
+
+#: ../../source/concepts/node.rst:53
+msgid "Node reputation"
+msgstr ""
+
+#: ../../source/concepts/node.rst:55
+msgid ""
+"Public networks enable anyone to run a node. Some of these nodes could "
+"share invalid information or try to disturb the network."
+msgstr ""
+
+#: ../../source/concepts/node.rst:58
+msgid ""
+"To reduce miscommunication attempts, the nodes keep track of the results "
+"of preceding communications. Every node with P2P capabilities keeps a "
+"success and a failure counter for every other peer node that it has "
+"interacted with."
+msgstr ""
+
+#: ../../source/concepts/node.rst:61
+msgid ""
+"Nodes update the counters accordingly after processing the data "
+"requested. If a node successfully connects to a remote peer, it first "
+"increments the success counter towards the remote peer. If the "
+"communication attempt fails, the node increments the remote peer’s "
+"failure counter. Likewise, the node updates the peer counters accordingly"
+" after processing data shared."
+msgstr ""
+
+#: ../../source/concepts/node.rst:66
+msgid ""
+"Extrapolating from these scores, the node assigns a weight between 500 "
+"and 10000 to every peer reached."
+msgstr ""
+
+#: ../../source/concepts/node.rst:68
+msgid ""
+"The probability of selecting a remote node to read data from depends "
+"linearly on its weight. Every four rounds of node selections, the "
+"criteria changes to prevent |sybil|."
+msgstr ""
+
+#: ../../source/concepts/node.rst:75
+msgid "API node"
+msgstr ""
+
+#: ../../source/concepts/node.rst:83
+msgid "Peer + API (Dual) node communication"
+msgstr ""
+
+#: ../../source/concepts/node.rst:85
+msgid ""
+"The primary responsibility of an API node is to store the data in a "
+"readable form in MongoDB. The catapult-client software allows configuring"
+" standalone API nodes or with Peer capabilities (Dual)."
+msgstr ""
+
+#: ../../source/concepts/node.rst:88
+msgid ""
+"Instead of writing the data directly into MongoDB, the nodes write it "
+"into a file-based queue called ``spool``. A broker service consumes the "
+"data from the spool and updates MongoDB accordingly. Once a block is "
+"processed, the broker service notifies the changes to catapult-rest "
+"instances using ZMQ."
+msgstr ""
+
+#: ../../source/concepts/node.rst:92
+msgid ""
+"API nodes are also responsible for collecting the cosignatures of "
+":doc:`aggregated bonded transactions <aggregate-transaction>`, which are "
+"only processed once they are complete."
+msgstr ""
+
+#: ../../source/concepts/node.rst:95
+msgid "MongoDB"
+msgstr ""
+
+#: ../../source/concepts/node.rst:97
+msgid ""
+"|mongodb| stores blocks, transactions, and chain states for high query "
+"performance."
+msgstr ""
+
+#: ../../source/concepts/node.rst:99
+msgid "The broker service updates the linked MongoDB instance when:"
+msgstr ""
+
+#: ../../source/concepts/node.rst:101
+msgid "A new block / a bunch of blocks finish processing."
+msgstr ""
+
+#: ../../source/concepts/node.rst:102
+msgid "New unconfirmed transactions complete processing."
+msgstr ""
+
+#: ../../source/concepts/node.rst:104
+msgid "MongoDB should not be accessed externally."
+msgstr ""
+
+#: ../../source/concepts/node.rst:107
+msgid "ZMQ"
+msgstr ""
+
+#: ../../source/concepts/node.rst:109
+msgid ""
+"|zmq| is an asynchronous messaging library, which enables real-time "
+"subscriptions. It transports notifications from the API node to the ZMQ "
+"endpoint, where Catapult REST listens. It is an alternative to REST "
+"WebSockets, aimed to be used when performance is critical."
+msgstr ""
+
+#: ../../source/concepts/node.rst:117
+msgid "REST gateway"
+msgstr ""
+
+#: ../../source/concepts/node.rst:119
+msgid "**Repository:** |catapult-rest|"
+msgstr ""
+
+#: ../../source/concepts/node.rst:125
+msgid "REST gateway communication"
+msgstr ""
+
+#: ../../source/concepts/node.rst:127
+msgid ""
+"The REST gateways handle :doc:`JSON API <../api>` client requests. The "
+"gateway reads from MongoDB, formats the response, and returns it to the "
+"client. This component is also responsible for returning events to the "
+"client using :ref:`WebSockets <websockets>`."
+msgstr ""
+
+#: ../../source/concepts/node.rst:131
+msgid ""
+"Each REST gateway connects to one API instance to send new transactions "
+"requests triggered from the client-side and receive updates in real-time "
+"using sockets."
+msgstr ""
+
+#: ../../source/concepts/node.rst:159
+msgid "Related guides"
+msgstr ""
+

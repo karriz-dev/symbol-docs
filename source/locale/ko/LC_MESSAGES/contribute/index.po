@@ -1,0 +1,154 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/contribute/index.rst:3
+msgid "Contribute"
+msgstr ""
+
+#: ../../source/contribute/index.rst:5
+msgid "So glad you are visiting this section!"
+msgstr ""
+
+#: ../../source/contribute/index.rst:7
+msgid "There are plenty of things you can do to help improve |codename|!"
+msgstr ""
+
+#: ../../source/contribute/index.rst:10
+msgid "👩‍💻 Can you code?"
+msgstr ""
+
+#: ../../source/contribute/index.rst:12
+msgid ""
+"|codename| is **Open Source**. Visit the |github| repositories and check "
+"if there is any project where you want to contribute."
+msgstr ""
+
+#: ../../source/contribute/index.rst:14
+msgid ""
+"There is the C++ `Catapult client "
+"<https://github.com/symbol/symbol/tree/dev/client/catapult>`__ but also "
+"Typescript tools like the `Wallets <https://github.com/symbol/desktop-"
+"wallet>`__, the `Explorer <https://github.com/symbol/symbol-explorer>`__,"
+" `Bootstrap <https://github.com/fboucquez/symbol-bootstrap>`__ and many "
+"more. Each repository's ``README`` and ``CONTRIBUTING`` files will tell "
+"you how to submit your code!"
+msgstr ""
+
+#: ../../source/contribute/index.rst:17
+msgid "👨‍🏫 Can you write?"
+msgstr ""
+
+#: ../../source/contribute/index.rst:19
+msgid ""
+"This documentation is also **Open Source**, written by :doc:`many people "
+"<authors>` over the years. The :doc:`contributing-docs` page explains how"
+" you can improve it and help other |codename| users!"
+msgstr ""
+
+#: ../../source/contribute/index.rst:22
+msgid "👨‍🎨 Can you draw?"
+msgstr ""
+
+#: ../../source/contribute/index.rst:24
+msgid ""
+"Would you like to create the art used by the |codename| tools, sites or "
+"social media? **Share your samples** on |twitter| or |discord|!"
+msgstr ""
+
+#: ../../source/contribute/index.rst:27
+msgid "👩‍🎤 Can you rally the masses?"
+msgstr ""
+
+#: ../../source/contribute/index.rst:29
+msgid ""
+"**Raise awareness** about the project using your **social media powers!**"
+" Symbol's main arena is |twitter|."
+msgstr ""
+
+#: ../../source/contribute/index.rst:32
+msgid "👨‍🔧 Can you host a node?"
+msgstr ""
+
+#: ../../source/contribute/index.rst:34
+msgid ""
+"Do you know how to have a PC or :term:`VPS` plugged to the Internet and "
+"running 24h a day?"
+msgstr ""
+
+#: ../../source/contribute/index.rst:36
+msgid ""
+"**Deploy a Symbol node!** You can receive :doc:`../concepts/harvesting` "
+"rewards even if you don't own a large quantity of ``XYM``, thanks to :ref"
+":`delegated-harvesting`."
+msgstr ""
+
+#: ../../source/contribute/index.rst:38
+msgid ""
+"The :doc:`network guides <../guides/network/index>` explain how to create"
+" and maintain your own Symbol node."
+msgstr ""
+
+#: ../../source/contribute/index.rst:41
+msgid "💰 Do you hold more than 10'000 XYM?"
+msgstr ""
+
+#: ../../source/contribute/index.rst:43
+msgid ""
+"**Don't let them gather dust** and become a :ref:`delegated harvester "
+"<delegated-harvesting>`!"
+msgstr ""
+
+#: ../../source/contribute/index.rst:45
+msgid ""
+"Your balance can help a node harvest more blocks, **strengthening the "
+"Symbol network** (and you will earn some profits in the process). No "
+"funds locking, vesting or spending required!"
+msgstr ""
+
+#: ../../source/contribute/index.rst:47
+msgid ""
+"See the :doc:`harvesting guides <../guides/harvesting/index>` for "
+"instructions on how to activate delegated harvesting."
+msgstr ""
+
+#: ../../source/contribute/index.rst:50
+msgid "🤔 Not sure what you can do?"
+msgstr ""
+
+#: ../../source/contribute/index.rst:52
+msgid "Here are some ideas:"
+msgstr ""
+
+#: ../../source/contribute/index.rst:54
+msgid ""
+"Just come hang out in the |discord| server, almost everything we do is "
+"public! Listen to discussions, participate, share your thoughts..."
+msgstr ""
+
+#: ../../source/contribute/index.rst:55
+msgid "Follow the development updates on |twitter|."
+msgstr ""
+
+#: ../../source/contribute/index.rst:57
+msgid "In short, **be part of the community**!"
+msgstr ""
+

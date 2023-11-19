@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:10
+msgid "Creating a multisig account"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:12
+msgid "This guide will show you how to setup a joint account."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:16
+msgid "Use case"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:18
+msgid ""
+"Imagine that Alice and Bob have separate accounts, but they also want to "
+"have a shared account to buy groceries. If one of them goes out shopping,"
+" they should be able to transact with using their joint account without "
+"requiring explicit authorization from the other person."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:21
+msgid ""
+"This shared account appears in |codename| as **1-of-2 multisig**. "
+"Creating a :doc:`Multisig account <../../concepts/multisig-account>` "
+"permits Alice and Bob to share funds in a separate account. Since the "
+"account is configured as a 1-of-2, it's only required the signature from "
+"one of them to issue transactions from the new account."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:29
+msgid "1-of-2 multisig account example"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:33
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:35
+msgid ""
+"Complete the :doc:`getting started section <../../getting-started/setup-"
+"workstation>`."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:36
+msgid ""
+"Create a new :ref:`account <setup-creating-a-test-account>` to turn into "
+"multisig."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:37
+msgid ""
+"Load the account with enough |networkcurrency| to pay for transaction "
+"fees."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:38
+msgid "Create accounts for Alice and Bob."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:40
+msgid ""
+"To create create new accounts, follow :ref:`this guide <setup-creating-a"
+"-test-account>`."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:44
+msgid "Method #01: Using the Desktop Wallet"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:46
+msgid "Log in to the account that you want to convert into a multisig account."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:48
+msgid "Click on the “**Multisig**” tab on the left-side menu."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:50
+msgid ""
+"Click on “**Add a cosignatory**” and provide the address or public key of"
+" the account you want to add as a cosignatory of the multisig. Click on "
+"the “**+**” button."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:56
+msgid ""
+"Repeat step 3 for each account you want to add as a cosignatory of the "
+"multisig. In our example case, we have 2 accounts we want to add as "
+"cosignatories: Alice and Bob."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:58
+msgid ""
+"Select the number of “**Min. Approval**” and “**Min. Removal**” for the "
+"multisig."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:60
+msgid ""
+"Click “**Send**”. Review the information on the popup. Provide your "
+"wallet password and click “**Confirm**”."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:66
+msgid ""
+"Log in to an account you selected as a potential cosignatory of the "
+"multisig. On the “**Home**” page, click on “**Partial**” transactions. "
+"Click on the pending Aggregate Bonded transaction. Provide your wallet "
+"password and click “**Confirm**”."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:72
+msgid ""
+"Repeat step 7 for each account you added as a potential cosignatory for "
+"the multisig."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:74
+msgid ""
+"Log in to the account being converted to a multisig. When the Aggregate "
+"Bonded transaction is complete (confirmed), you can check that it has "
+"been converted by going back to the “**Multisig**” page."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:82
+msgid "Method #02: Using the SDK"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:84
+msgid ""
+"1. First, define the accounts that will become cosignatories of the "
+"multisig account. Following our example, these are Alice and Bob "
+"addresses. Then, open the account that will be converted into multisig "
+"using its private key."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:90
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:105
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:120
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:136
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:152
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/multisig/ConvertingAnAccountToMultisig.ts`"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:95
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:110
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:125
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:141
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:157
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/multisig/ConvertingAnAccountToMultisig.js`"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:100
+msgid ""
+"2. Create a :ref:`multisigaccountmodificationtransaction` to convert the "
+"shared account into a multisig account. Since we want to create a 1-of-2 "
+"multisig account, let's set the minimum required signatures to ``1``."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:115
+msgid ""
+"3. Create an :ref:`aggregatebondedtransaction`, wrapping the "
+"**MultisigAccountModificationTransaction** defined in the previous step. "
+"This action is necessary because Alice and Bob must opt-in to become "
+"cosignatories of the new multisig account."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:130
+msgid ""
+"Sign the **AggregateTransaction** using the private key of the future "
+"multisig account."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:132
+msgid ""
+"To make the transaction only valid for your network, you will need to "
+"pass the first network generation hash. Open :term:`NODE_URL` "
+"``/node/info`` in a new browser tab and copy the "
+"``meta.networkGenerationHash`` value."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:146
+msgid ""
+"5. Before sending an **AggregateBondedTransaction**, the future multisig "
+"account needs to lock at least ``10`` |networkcurrency|. This transaction"
+" is required to prevent spamming the network. After the "
+"**HashLockTransaction** has been confirmed, announce the "
+"AggregateTransaction signed in (4)."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:162
+msgid ""
+"6. :doc:`Cosign the AggregateTransaction <../aggregate/signing-announced-"
+"aggregate-bonded-transactions>` with the :ref:`CLI <wallet-cli>` using "
+"Alice's account. Replace the hash "
+"``A6A374E66B32A3D5133018EFA9CD6E3169C8EEA339F7CCBE29C47D07086E068C`` with"
+" the AggregateTransaction hash signed in (4)."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:169
+msgid ""
+":doc:`Cosign the AggregateTransaction <../aggregate/signing-announced-"
+"aggregate-bonded-transactions>` with Bob's account."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:177
+msgid ""
+"8. If everything goes well, the account is now set as multisig, being "
+"Alice and Bob accounts their cosignatories. You can get the list of the "
+"multisig accounts where Alice or Bob are cosignatories with the function "
+"``MultisigHttp.getMultisigAccountInfo()``."
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:182
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/multisig/GettingMultisigAccountCosignatories.ts`"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:187
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/multisig/GettingMultisigAccountCosignatories.js`"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:192
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/multisig/GettingMultisigAccountCosignatories.java`"
+msgstr ""
+
+#: ../../source/guides/multisig/creating-a-multisig-account.rst:197
+msgid ""
+"Follow :doc:`the next guide <modifying-a-multisig-account-min-approval>` "
+"to modify the number of required signatures."
+msgstr ""
+

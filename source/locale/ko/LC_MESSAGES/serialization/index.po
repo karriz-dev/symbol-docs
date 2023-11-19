@@ -1,0 +1,663 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/serialization/index.rst:3
+msgid "Serialization"
+msgstr ""
+
+#: ../../source/serialization/index.rst:5
+msgid ""
+"The `catbuffer schemas "
+"<https://github.com/symbol/symbol/tree/dev/catbuffer/schemas>`_ "
+"repository defines how the different Symbol entities type should be "
+"serialized (for example, Transactions). In combination with the catbuffer"
+" generators project, developers can generate builder classes for a given "
+"set of programming languages."
+msgstr ""
+
+#: ../../source/serialization/index.rst:15
+msgid "Basic Types"
+msgstr ""
+
+#: ../../source/serialization/index.rst:101
+msgid "Enumerations"
+msgstr ""
+
+#: ../../source/serialization/index.rst:106
+msgid "LinkAction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:114
+msgid "NetworkType"
+msgstr ""
+
+#: ../../source/serialization/index.rst:122
+msgid "BlockType"
+msgstr ""
+
+#: ../../source/serialization/index.rst:130
+msgid "ReceiptType"
+msgstr ""
+
+#: ../../source/serialization/index.rst:138
+msgid "NamespaceRegistrationType"
+msgstr ""
+
+#: ../../source/serialization/index.rst:146
+msgid "AliasAction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:154
+msgid "AccountType"
+msgstr ""
+
+#: ../../source/serialization/index.rst:162
+msgid "AccountKeyTypeFlags"
+msgstr ""
+
+#: ../../source/serialization/index.rst:170
+msgid "AccountStateFormat"
+msgstr ""
+
+#: ../../source/serialization/index.rst:178
+msgid "LockStatus"
+msgstr ""
+
+#: ../../source/serialization/index.rst:186
+msgid "MetadataType"
+msgstr ""
+
+#: ../../source/serialization/index.rst:194
+msgid "MosaicFlags"
+msgstr ""
+
+#: ../../source/serialization/index.rst:202
+msgid "MosaicSupplyChangeAction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:210
+msgid "NamespaceAliasType"
+msgstr ""
+
+#: ../../source/serialization/index.rst:218
+msgid "AccountRestrictionFlags"
+msgstr ""
+
+#: ../../source/serialization/index.rst:226
+msgid "TransactionType"
+msgstr ""
+
+#: ../../source/serialization/index.rst:234
+msgid "MosaicRestrictionType"
+msgstr ""
+
+#: ../../source/serialization/index.rst:242
+msgid "MosaicRestrictionEntryType"
+msgstr ""
+
+#: ../../source/serialization/index.rst:250
+msgid "LockHashAlgorithm"
+msgstr ""
+
+#: ../../source/serialization/index.rst:256
+msgid "Structures"
+msgstr ""
+
+#: ../../source/serialization/index.rst:261
+msgid "Mosaic"
+msgstr ""
+
+#: ../../source/serialization/index.rst:269
+msgid "UnresolvedMosaic"
+msgstr ""
+
+#: ../../source/serialization/index.rst:277
+msgid "VrfProof"
+msgstr ""
+
+#: ../../source/serialization/index.rst:285
+msgid "NemesisBlockHeader"
+msgstr ""
+
+#: ../../source/serialization/index.rst:293
+msgid "NormalBlockHeader"
+msgstr ""
+
+#: ../../source/serialization/index.rst:301
+msgid "ImportanceBlockHeader"
+msgstr ""
+
+#: ../../source/serialization/index.rst:309
+msgid "FinalizationRound"
+msgstr ""
+
+#: ../../source/serialization/index.rst:317
+msgid "FinalizedBlockHeader"
+msgstr ""
+
+#: ../../source/serialization/index.rst:325
+msgid "BalanceTransferReceipt"
+msgstr ""
+
+#: ../../source/serialization/index.rst:333
+msgid "BalanceChangeReceipt"
+msgstr ""
+
+#: ../../source/serialization/index.rst:341
+msgid "InflationReceipt"
+msgstr ""
+
+#: ../../source/serialization/index.rst:349
+msgid "MosaicExpiryReceipt"
+msgstr ""
+
+#: ../../source/serialization/index.rst:357
+msgid "NamespaceExpiryReceipt"
+msgstr ""
+
+#: ../../source/serialization/index.rst:365
+msgid "ReceiptSource"
+msgstr ""
+
+#: ../../source/serialization/index.rst:373
+msgid "AddressResolutionEntry"
+msgstr ""
+
+#: ../../source/serialization/index.rst:381
+msgid "MosaicResolutionEntry"
+msgstr ""
+
+#: ../../source/serialization/index.rst:389
+msgid "MosaicResolutionStatement"
+msgstr ""
+
+#: ../../source/serialization/index.rst:397
+msgid "AddressResolutionStatement"
+msgstr ""
+
+#: ../../source/serialization/index.rst:405
+msgid "PinnedVotingKey"
+msgstr ""
+
+#: ../../source/serialization/index.rst:413
+msgid "ImportanceSnapshot"
+msgstr ""
+
+#: ../../source/serialization/index.rst:421
+msgid "HeightActivityBucket"
+msgstr ""
+
+#: ../../source/serialization/index.rst:429
+msgid "HeightActivityBuckets"
+msgstr ""
+
+#: ../../source/serialization/index.rst:437
+msgid "AccountState"
+msgstr ""
+
+#: ../../source/serialization/index.rst:445
+msgid "HashLockInfo"
+msgstr ""
+
+#: ../../source/serialization/index.rst:453
+msgid "MetadataValue"
+msgstr ""
+
+#: ../../source/serialization/index.rst:461
+msgid "MetadataEntry"
+msgstr ""
+
+#: ../../source/serialization/index.rst:469
+msgid "MosaicProperties"
+msgstr ""
+
+#: ../../source/serialization/index.rst:477
+msgid "MosaicDefinition"
+msgstr ""
+
+#: ../../source/serialization/index.rst:485
+msgid "MosaicEntry"
+msgstr ""
+
+#: ../../source/serialization/index.rst:493
+msgid "MultisigEntry"
+msgstr ""
+
+#: ../../source/serialization/index.rst:501
+msgid "NamespaceLifetime"
+msgstr ""
+
+#: ../../source/serialization/index.rst:509
+msgid "NamespaceAlias"
+msgstr ""
+
+#: ../../source/serialization/index.rst:517
+msgid "NamespacePath"
+msgstr ""
+
+#: ../../source/serialization/index.rst:525
+msgid "RootNamespaceHistory"
+msgstr ""
+
+#: ../../source/serialization/index.rst:533
+msgid "AccountRestrictionAddressValue"
+msgstr ""
+
+#: ../../source/serialization/index.rst:541
+msgid "AccountRestrictionMosaicValue"
+msgstr ""
+
+#: ../../source/serialization/index.rst:549
+msgid "AccountRestrictionTransactionTypeValue"
+msgstr ""
+
+#: ../../source/serialization/index.rst:557
+msgid "AccountRestrictionsInfo"
+msgstr ""
+
+#: ../../source/serialization/index.rst:565
+msgid "AccountRestrictions"
+msgstr ""
+
+#: ../../source/serialization/index.rst:573
+msgid "AddressKeyValue"
+msgstr ""
+
+#: ../../source/serialization/index.rst:581
+msgid "AddressKeyValueSet"
+msgstr ""
+
+#: ../../source/serialization/index.rst:589
+msgid "RestrictionRule"
+msgstr ""
+
+#: ../../source/serialization/index.rst:597
+msgid "GlobalKeyValue"
+msgstr ""
+
+#: ../../source/serialization/index.rst:605
+msgid "GlobalKeyValueSet"
+msgstr ""
+
+#: ../../source/serialization/index.rst:613
+msgid "MosaicAddressRestrictionEntry"
+msgstr ""
+
+#: ../../source/serialization/index.rst:621
+msgid "MosaicGlobalRestrictionEntry"
+msgstr ""
+
+#: ../../source/serialization/index.rst:629
+msgid "MosaicRestrictionEntry"
+msgstr ""
+
+#: ../../source/serialization/index.rst:637
+msgid "SecretLockInfo"
+msgstr ""
+
+#: ../../source/serialization/index.rst:645
+msgid "AccountKeyLinkTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:653
+msgid "EmbeddedAccountKeyLinkTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:661
+msgid "NodeKeyLinkTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:669
+msgid "EmbeddedNodeKeyLinkTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:677
+msgid "DetachedCosignature"
+msgstr ""
+
+#: ../../source/serialization/index.rst:685
+msgid "AggregateCompleteTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:693
+msgid "AggregateBondedTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:701
+msgid "VotingKeyLinkTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:709
+msgid "EmbeddedVotingKeyLinkTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:717
+msgid "VrfKeyLinkTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:725
+msgid "EmbeddedVrfKeyLinkTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:733
+msgid "HashLockTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:741
+msgid "EmbeddedHashLockTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:749
+msgid "SecretLockTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:757
+msgid "EmbeddedSecretLockTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:765
+msgid "SecretProofTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:773
+msgid "EmbeddedSecretProofTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:781
+msgid "AccountMetadataTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:789
+msgid "EmbeddedAccountMetadataTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:797
+msgid "MosaicMetadataTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:805
+msgid "EmbeddedMosaicMetadataTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:813
+msgid "NamespaceMetadataTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:821
+msgid "EmbeddedNamespaceMetadataTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:829
+msgid "MosaicDefinitionTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:837
+msgid "EmbeddedMosaicDefinitionTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:845
+msgid "MosaicSupplyChangeTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:853
+msgid "EmbeddedMosaicSupplyChangeTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:861
+msgid "MosaicSupplyRevocationTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:869
+msgid "EmbeddedMosaicSupplyRevocationTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:877
+msgid "MultisigAccountModificationTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:885
+msgid "EmbeddedMultisigAccountModificationTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:893
+msgid "AddressAliasTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:901
+msgid "EmbeddedAddressAliasTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:909
+msgid "MosaicAliasTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:917
+msgid "EmbeddedMosaicAliasTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:925
+msgid "NamespaceRegistrationTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:933
+msgid "EmbeddedNamespaceRegistrationTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:941
+msgid "AccountAddressRestrictionTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:949
+msgid "EmbeddedAccountAddressRestrictionTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:957
+msgid "AccountMosaicRestrictionTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:965
+msgid "EmbeddedAccountMosaicRestrictionTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:973
+msgid "AccountOperationRestrictionTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:981
+msgid "EmbeddedAccountOperationRestrictionTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:989
+msgid "MosaicAddressRestrictionTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:997
+msgid "EmbeddedMosaicAddressRestrictionTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1005
+msgid "MosaicGlobalRestrictionTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1013
+msgid "EmbeddedMosaicGlobalRestrictionTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1021
+msgid "TransferTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1029
+msgid "EmbeddedTransferTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1035
+msgid "Inner Structures"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1037
+msgid ""
+"These are structures only meant to be included inside other structures. "
+"Their description is already present in the containing structures above "
+"and is only repeated here for completeness."
+msgstr ""
+
+#: ../../source/serialization/index.rst:1043
+msgid "SizePrefixedEntity"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1051
+msgid "VerifiableEntity"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1059
+msgid "EntityBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1067
+msgid "BlockHeader"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1075
+msgid "ImportanceBlockFooter"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1083
+msgid "Receipt"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1091
+msgid "StateHeader"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1099
+msgid "Transaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1107
+msgid "EmbeddedTransactionHeader"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1115
+msgid "EmbeddedTransaction"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1123
+msgid "AccountKeyLinkTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1131
+msgid "NodeKeyLinkTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1139
+msgid "Cosignature"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1147
+msgid "AggregateTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1155
+msgid "VotingKeyLinkTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1163
+msgid "VrfKeyLinkTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1171
+msgid "HashLockTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1179
+msgid "SecretLockTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1187
+msgid "SecretProofTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1195
+msgid "AccountMetadataTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1203
+msgid "MosaicMetadataTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1211
+msgid "NamespaceMetadataTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1219
+msgid "MosaicDefinitionTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1227
+msgid "MosaicSupplyChangeTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1235
+msgid "MosaicSupplyRevocationTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1243
+msgid "MultisigAccountModificationTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1251
+msgid "AddressAliasTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1259
+msgid "MosaicAliasTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1267
+msgid "NamespaceRegistrationTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1275
+msgid "AccountAddressRestrictionTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1283
+msgid "AccountMosaicRestrictionTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1291
+msgid "AccountOperationRestrictionTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1299
+msgid "MosaicAddressRestrictionTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1307
+msgid "MosaicGlobalRestrictionTransactionBody"
+msgstr ""
+
+#: ../../source/serialization/index.rst:1315
+msgid "TransferTransactionBody"
+msgstr ""
+

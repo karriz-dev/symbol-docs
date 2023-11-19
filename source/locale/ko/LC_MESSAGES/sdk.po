@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/sdk.rst:3
+msgid "SDK"
+msgstr ""
+
+#: ../../source/sdk.rst:5
+msgid ""
+"The **Symbol SDK** is the primary software development tool to create "
+"|codename| components, such as additional tools, libraries, or "
+"applications. It enables developers to focus on their product rather than"
+" on the specific API details due to its higher abstraction."
+msgstr ""
+
+#: ../../source/sdk.rst:8
+msgid ""
+"The |sdk| shares the same design between programming languages to "
+"accomplish the next properties:"
+msgstr ""
+
+#: ../../source/sdk.rst:10
+msgid ""
+"**Fast language adaptation**: For example, there is a |sdk| for Java, but"
+" you need to work on C++. As both SDKs share the same design, you could "
+"re-write the library faster, adapting the syntax to your language. The "
+"same principle also applies to code examples, projects, applications..."
+msgstr ""
+
+#: ../../source/sdk.rst:11
+msgid ""
+"**Cohesion/shared knowledge across developers**: Every developer should "
+"be able to change between projects that use |codename|. By sharing the "
+"same design, we also share the same best practices among projects."
+msgstr ""
+
+#: ../../source/sdk.rst:12
+msgid ""
+"**Fast SDK updates**: Migrating any improvement from a |sdk| to the other"
+" is faster. Also, if any bug appears in one language, it is quicker to "
+"check and fix it."
+msgstr ""
+
+#: ../../source/sdk.rst:25
+msgid "Supported languages"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "Language"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "Repository"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "Reference"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "TypeScript& JavaScript SDK"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "|tsjs-repo|"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid ":doc:`Documentation <references/typescript-sdk>`"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "Java SDK"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "|java-repo|"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid ":doc:`Documentation <references/java-sdk>`"
+msgstr ""
+
+#: ../../source/sdk.rst:34
+msgid ""
+"Learn how to use |codename|'s SDK following the :ref:`guided "
+"implementation examples <blog-categories>`."
+msgstr ""
+
+#: ../../source/sdk.rst:36
+msgid ""
+"If you want to create a new SDK, check the :doc:`development guidelines "
+"<guidelines/sdk-development>`."
+msgstr ""
+
+#: ../../source/sdk.rst:48
+msgid "Other libraries"
+msgstr ""
+
+#: ../../source/sdk.rst:50
+msgid ""
+"Symbol developers have created other libraries that improve and add new "
+"features on top of Symbol."
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "Name"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "`apostille <https://github.com/luxtagofficial/Apostille-library>`_"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid ""
+"Transferable, updatable, branded, and conjointly owned blockchain "
+"notarizations."
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "`symbol-hd-wallets <https://www.npmjs.com/package/symbol-hd-wallets>`_"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "Hierarchical-deterministic wallets library for |codename|."
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "`symbol-qr-library <https://www.npmjs.com/package/symbol-qr-library/>`_"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "QR library for |codename|."
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "`symbol-uri-scheme <https://github.com/symbol/symbol-uri-scheme/>`_"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "URI Scheme library for |codename|."
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid ""
+"`nem2-secret-sharing <https://github.com/CrackTheCode016/nem2-secret-"
+"sharing/>`_"
+msgstr ""
+
+#: ../../source/sdk.rst:1
+msgid "Implementing Shamir's secret sharing on |codename|."
+msgstr ""
+
+#: ../../source/sdk.rst:62
+msgid ""
+"To make a library official, the library should be proposed through the "
+"|NIP| process."
+msgstr ""
+
+#: ../../source/sdk.rst:64
+msgid "The reason behind the |NIP| is to ensure that:"
+msgstr ""
+
+#: ../../source/sdk.rst:66
+msgid "The specification has been discussed and accepted."
+msgstr ""
+
+#: ../../source/sdk.rst:67
+msgid ""
+"The new library is reviewed, tested and shared among |codename| "
+"developers."
+msgstr ""
+
+#: ../../source/sdk.rst:68
+msgid ""
+"The library is compatible with third-party projects that uses the same "
+"specification."
+msgstr ""
+

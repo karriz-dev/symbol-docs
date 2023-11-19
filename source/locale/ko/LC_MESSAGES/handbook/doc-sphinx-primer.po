@@ -1,0 +1,281 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/handbook/doc-sphinx-primer.rst:3
+msgid "Sphinx primer"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:5
+msgid ""
+"The Symbol documentation pages are made with `Sphinx <https://www.sphinx-"
+"doc.org>`__, a documentation engine built around the `reStructuredText "
+"<https://docutils.sourceforge.io/rst.html>`__ format and adding its own "
+"extensions."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:7
+msgid ""
+"Therefore, you will need to read both the RST and `Sphinx <https://www"
+".sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`__ docs to "
+"learn about their syntax. This page is intended as an extremely quick "
+"summary of the things you will most commonly use."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:9
+msgid ""
+"It is extremely helpful to use an IDE that supports reStructuredText, "
+"like `Visual Studio Code <https://code.visualstudio.com/>`__ with an `RST"
+" extension "
+"<https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext>`__,"
+" for example."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:11
+msgid ""
+"Pay attention to Sphinx's log output when building! Any warning you see "
+"there is worth investigating."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:14
+msgid "Basic formatting"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:16
+msgid "**Bold**: \\*\\*Bold\\*\\*"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:17
+msgid "*Italics*: \\*Italics\\*"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:18
+msgid "``Monospace``: \\`\\`Monospace\\`\\`"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:19
+msgid "Unordered lists: Start items with - or \\*."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:20
+msgid "Ordered lists: Start items with numbers or #."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:21
+msgid ""
+"Headers: Underline (and optionally overline) the header with any of the "
+"characters #, \\*, =, -, ^ or \". The level of the header will be "
+"inferred from the order in which they are found. The Symbol docs mostly "
+"use only 3 levels indicated with the characters #, \\* and =."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:37
+msgid "Quoted block: Indent with a space. **Indentation is critical in RST!**"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:38
+msgid "Code blocks: See the directives section below."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:41
+msgid "Links"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:43
+msgid ""
+"External link: Enclosed in backticks, with a trailing **double "
+"underscore**."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:49
+msgid "Internal link to another page:"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:55
+msgid ""
+"The path is relative to the current file, or absolute (from the "
+"``source`` directory) if it starts with ``/``."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:57
+msgid ""
+"You can skip the Link Title part and use the document's actual title (its"
+" first header):"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:63
+msgid "Internal link to a label (anchor):"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:69
+msgid "And define labels (in any file) like this:"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:78
+msgid ""
+"If the label appears right before a header (as in the example above), you"
+" can omit the \"Link Title\" part in the link and the header text will be"
+" used:"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:85
+msgid "Tables"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:87
+msgid ""
+"There are `different mechanisms <https://www.sphinx-"
+"doc.org/en/master/usage/restructuredtext/directives.html#table-"
+"directives>`__ to render tables in Sphinx. The most used in the Symbol "
+"docs is the `csv-table "
+"<https://docutils.sourceforge.io/docs/ref/rst/directives.html#csv-"
+"table>`__:"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:99
+msgid ""
+"``:header:``, ``:widths:`` and ``:delim:`` are optional and do not "
+"require much explanation. ``:delim:`` indicates the character used to "
+"separate columns in the data that follows."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:101
+msgid ""
+"Note that the data is indented so it is aligned with the word ``csv-"
+"table`` (i.e. indented by 3 spaces)."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:104
+msgid "Adding pages"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:106
+msgid ""
+"In the Symbol docs all pages appear in the Navigation bar at the left, "
+"therefore all pages **must appear in a TOC tree**. Any page can indicate "
+"what other pages are its children by using the ``toctree`` directive (you"
+" can search for examples in the current docs)."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:108
+msgid ""
+"If you add a new page, besides creating the ``.rst`` file in the proper "
+"folder, you will need to add its name to the ``toctree`` of its parent:"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:120
+msgid ""
+"``:maxdepth: 1`` indicates that you do not want that page's sections or "
+"its sub-pages to be listed. If the page has sub-pages you will give it "
+"its own ``toctree`` so they are shown."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:122
+msgid ""
+"You can add ``:hidden:`` so the list of pages does not render on the "
+"page. It will still show up in the navigation bar."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:125
+msgid "Substitutions"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:127
+msgid ""
+"Sphinx allows defining some codewords to be substituted by longer text. "
+"The codewords are indicated between pipe characters ``|like-this|`` and "
+"can be defined anywhere. In the Symbol docs they are mostly defined in "
+"the ``conf.py`` file (In the ``rst_prolog`` variable)."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:129
+msgid ""
+"The most commonly used substitution is ``|codename|`` which expands to "
+"\"|codename|\". `There is an open issue to remove this particular one "
+"<https://github.com/symbol/symbol-docs/issues/670>`__."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:132
+msgid "Useful directives"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:134
+msgid ""
+"Directives have the form ``.. directive-name::`` and are a mechanism to "
+"extend RST functionality. Sphinx added its own directives over RST, and "
+"the Symbol docs further add a few more (Look at the ``/source/_ext`` "
+"folder. They are written in Python)."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:136
+msgid ""
+"Directives can have an unnamed parameter **after** the directive name "
+"(see ``code-block`` below), or multiple named parameters between colons "
+"``:`` in the lines below (as you have seen above in the Tables section)."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:138
+msgid ""
+"The directive **body** is separated from the directive and parameters by "
+"a blank line and is indented by 3 spaces."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:140
+msgid ""
+"These are the most commonly used directives in the Symbol docs (besides "
+"the ones already mentioned):"
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:142
+msgid "``code-block``: To insert syntax-highlighted code."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:150
+msgid "``figure``: To insert a captioned image."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:158
+msgid ""
+"``note``, ``caution``, ``topic``: To insert a titled, colored box (notes "
+"are blue, cautions are orange). Topics allow defining your own title, "
+"otherwise it will be \"Note\" or \"Caution\"."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:166
+msgid "``raw``: To insert raw HTML. Use only in case of emergency."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:174
+msgid "``tabs``: Define tabbed content."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:188
+msgid ""
+"``example-code``: Tabbed source code, with syntax highlight and link to "
+"original source file."
+msgstr ""
+
+#: ../../source/handbook/doc-sphinx-primer.rst:204
+msgid ""
+"``serializationref``: Inserts nicely-formatted serialization "
+"documentation."
+msgstr ""
+

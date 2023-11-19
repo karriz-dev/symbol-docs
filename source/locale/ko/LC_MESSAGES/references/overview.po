@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/references/overview.rst:3
+msgid "Tools"
+msgstr ""
+
+#: ../../source/references/overview.rst:7
+msgid "Assets Management"
+msgstr ""
+
+#: ../../source/references/overview.rst:10
+msgid "Desktop Wallet"
+msgstr ""
+
+#: ../../source/references/overview.rst:12
+msgid ""
+"Cross-platform client for Symbol to manage accounts, mosaics, namespaces,"
+" and issue transactions. Symbol Desktop Wallet is available is available "
+"for Mac, Windows, and as a web application."
+msgstr ""
+
+#: ../../source/references/overview.rst:15
+msgid ":doc:`Read more ...<../wallets>`."
+msgstr ""
+
+#: ../../source/references/overview.rst:23
+msgid "Development"
+msgstr ""
+
+#: ../../source/references/overview.rst:26
+msgid "Catapult REST (API)"
+msgstr ""
+
+#: ../../source/references/overview.rst:28
+msgid ""
+"The package ``catapult-rest`` REST Combines HTTP and WebSockets to "
+"perform read and write actions on the blockchain."
+msgstr ""
+
+#: ../../source/references/overview.rst:30
+msgid ":doc:`Read more ...<../api>`."
+msgstr ""
+
+#: ../../source/references/overview.rst:37
+msgid "Software Development Kit (SDK)"
+msgstr ""
+
+#: ../../source/references/overview.rst:39
+msgid ""
+"The primary software development tool to create Symbol components, such "
+"as additional tools, libraries, or applications. It enables developers to"
+" focus on their product rather than on the specific API details due to "
+"its higher abstraction."
+msgstr ""
+
+#: ../../source/references/overview.rst:42
+msgid ":doc:`Read more ...<../sdk>`."
+msgstr ""
+
+#: ../../source/references/overview.rst:49
+msgid "Command-Line Interface (CLI)"
+msgstr ""
+
+#: ../../source/references/overview.rst:51
+msgid ""
+"The open-source command-line interface to interact with the Symbol "
+"blockchain."
+msgstr ""
+
+#: ../../source/references/overview.rst:53
+msgid ":doc:`Read more ...<../cli>`."
+msgstr ""
+
+#: ../../source/references/overview.rst:61
+msgid "System Administration"
+msgstr ""
+
+#: ../../source/references/overview.rst:64
+msgid "Catapult Client"
+msgstr ""
+
+#: ../../source/references/overview.rst:66
+msgid ""
+"Symbol-based networks rely on nodes to provide a trustless, high-"
+"performance, and secure blockchain platform."
+msgstr ""
+
+#: ../../source/references/overview.rst:68
+msgid ""
+"These nodes are deployed using ``catapult-client`` software, a C++ "
+"rewrite of the previous Java-written NEM distributed ledger that has been"
+" running since 2015."
+msgstr ""
+
+#: ../../source/references/overview.rst:70
+msgid ":doc:`Read more ...<../server>`."
+msgstr ""
+
+#: ../../source/references/overview.rst:77
+msgid "Symbol Bootstrap"
+msgstr ""
+
+#: ../../source/references/overview.rst:79
+msgid ""
+"The ``symbol-bootstrap`` package contains the necessary setup scripts to "
+"deploy a network for testing and development purposes with just one "
+"command."
+msgstr ""
+
+#: ../../source/references/overview.rst:81
+msgid ":doc:`Read more ...<../guides/network/creating-a-private-test-net>`."
+msgstr ""
+

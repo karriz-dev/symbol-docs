@@ -1,0 +1,318 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:9
+msgid "Creating an escrow contract"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:11
+msgid "Learn about aggregate bonded transactions creating an escrow contract."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:15
+msgid "Use case"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:17
+msgid ""
+"An **escrow** is a *contractual arrangement* in which a *third party "
+"receives and disburses money* or documents for the *primary transacting "
+"parties*. This disbursement is dependent on the *conditions agreed by the"
+" transacting parties*, or an *account established by a broker for holding"
+" funds* on behalf of the broker’s principal or some other person until "
+"the consummation or termination of a transaction. See the full "
+"description at |escrow_wikipedia|."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:22
+msgid ""
+"For this example, imagine that the two parties agree on a virtual "
+"service, implying that the escrow can be executed immediately:"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:24
+msgid "The buyer and seller agree on terms."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:25
+msgid "The buyer submits payment to escrow."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:26
+msgid "The seller delivers goods or service to the buyer."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:27
+msgid "The buyer approves goods or service."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:28
+msgid "The escrow releases payment to the seller."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:34
+msgid "Multi-Asset Escrowed Transactions"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:37
+msgid "How to create an escrow contract with Symbol"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:39
+msgid "Normalizing the previous description into |codename| related concepts:"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:41
+msgid ""
+"**contractual arrangement**: A new type of transaction called :ref"
+":`aggregate-transaction`."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:43
+msgid ""
+"**third party receives and disburses money**: There is no third party, we"
+" are going to use blockchain technology."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:45
+msgid ""
+"**primary transacting parties**: |codename| accounts will represent the "
+"participants."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:47
+msgid ""
+"**conditions agreed to by the transacting parties**: When every "
+"participant signs the AggregateTransaction."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:49
+msgid ""
+"**account established by a broker for holding funds**: There will not be "
+"an intermediate account, the exchange will happen atomically using an "
+"AggregateTransaction."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:51
+msgid ""
+"**until the consummation or termination of a transaction**: The "
+"transaction gets included in a block or expires."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:55
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:57
+msgid ""
+"Complete :doc:`sending mosaics and messages between two accounts "
+"<../transfer/sending-a-transfer-transaction>` guide."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:58
+msgid ""
+"Create :ref:`accounts <setup-creating-a-test-account>` for Alice and the "
+"ticket distributor."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:59
+msgid "Load Alice's account with at least 200 |networkcurrency| units."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:60
+msgid ""
+"Create a :doc:`new mosaic <../mosaic/creating-a-mosaic>` with the ticket "
+"distributor account to represent the museum ticket."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:64
+msgid "Setting up the required accounts and mosaics"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:66
+msgid "Alice and a ticket distributor want to swap the following mosaics."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:1
+msgid "Owner"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:1
+msgid "Amount"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:1
+msgid "MosaicId"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:1
+msgid "Alice"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:1
+msgid "100"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:1
+msgid "|networkcurrency|"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:1
+msgid "Native currency mosaic"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:1
+msgid "Ticket distributor"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:1
+msgid "1"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:1
+msgid "``7cdf3b117a3c40cc``"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:1
+msgid "Represents a museum ticket."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:74
+msgid ""
+"Before continuing, :ref:`create the two accounts <setup-creating-a-test-"
+"account>` loaded with |networkcurrency|. You should also :doc:`create a "
+"mosaic <../mosaic/creating-a-mosaic>` with the ticket distributor's "
+"account. This new mosaic will represent the ticket."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:80
+msgid "Creating the escrow contract"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:82
+msgid "Open a new file, and define two transfer transactions:"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:84
+msgid ""
+"A TransferTransaction from Alice to the ticket distributor sending 100 "
+"|networkcurrency|."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:86
+msgid ""
+"A TransferTransaction from the ticket distributor to Alice sending 1 "
+"``7cdf3b117a3c40cc`` (museum ticket)."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:88
+msgid ""
+"The museum ticket does not have the id ``7cdf3b117a3c40cc`` in your "
+"network. Replace the mosaic identifier for the one you have created in "
+"the previous step."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:92
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:114
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:134
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/CreatingAnEscrowContractWithAggregateBondedTransaction.ts`"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:97
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:119
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:139
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/aggregate/CreatingAnEscrowContractWithAggregateBondedTransaction.js`"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:102
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:124
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:144
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/java/src/test/java/symbol/guides/examples/aggregate/CreatingAnEscrowContractWithAggregateBondedTransaction.java`"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:107
+msgid ""
+"2. Wrap the defined transactions in an :ref:`aggregate-transaction` and "
+"sign it with Alice's account. An AggregateTransaction is *complete* if "
+"before announcing it to the network, all required cosigners have signed "
+"it. If valid, it will be included in a block. In case that signatures are"
+" required from other participants—the ticket distributor—it is considered"
+" *bonded*."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:129
+msgid ""
+"3. When an **AggregateTransaction is bonded**, Alice will need to lock "
+"``10`` |networkcurrency| to prevent spamming the network. Once the ticket"
+" distributor signs the AggregateTransaction, the amount of locked "
+"|networkcurrency| becomes available again on Alice's account, and the "
+"exchange will get through."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:149
+msgid ""
+"The distributor has not signed the AggregateBondedTransaction yet, so the"
+" exchange has not been completed."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:151
+msgid ""
+"Copy the **AggregateTransaction hash** from (2), and check how to cosign "
+"the AggregateTransaction by :doc:`following the next guide <signing-"
+"announced-aggregate-bonded-transactions>`."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:155
+msgid "Is it possible without aggregate transactions?"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:157
+msgid "**It is not secure**, since:"
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:159
+msgid "Alice could decide not to pay the distributor after receiving the ticket."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:160
+msgid ""
+"The distributor could choose not to send the ticket after receiving the "
+"payment."
+msgstr ""
+
+#: ../../source/guides/aggregate/creating-an-escrow-contract-with-aggregate-bonded-transaction.rst:162
+msgid ""
+"Using the AggregateTransaction feature, we ensure that multiple "
+"transactions are executed at the same time when all the participants "
+"agree."
+msgstr ""
+

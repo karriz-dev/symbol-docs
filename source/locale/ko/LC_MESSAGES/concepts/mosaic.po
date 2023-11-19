@@ -1,0 +1,319 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/mosaic.rst:3
+msgid "Mosaic"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:5
+msgid ""
+"Mosaics are **fixed assets** that represent a set of multiple identical "
+"things that do not change."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:7
+msgid ""
+"A mosaic can be what is conventionally called **a token**, but it can "
+"also be a collection of more specialized assets such as reward points, "
+"shares of stock, signatures, status flags, votes or other currencies, for"
+" example."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:9
+msgid ""
+"Mosaic specialization is achieved through its properties, which are set "
+"during :doc:`mosaic creation <../guides/mosaic/creating-a-mosaic>`."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:11
+msgid ""
+"Once created, each mosaic has a unique identifier represented as a 64-bit"
+" unsigned integer. For example, |codename|'s native currency, **XYM**, "
+"has the mosaic ID ``0x6BED913FA20223F8``."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:13
+msgid ""
+"If you create a mosaic which should be used by other users, it is very "
+"convenient to use a :doc:`namespace` to alias the mosaic ID to a human-"
+"readable string. XYM use the |networkcurrency| alias, for example."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:19
+msgid "Mosaic Properties"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:22
+msgid "Divisibility"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:24
+msgid ""
+"Determines the number of **decimal places** to which the mosaic can be "
+"divided. A divisibility of **3** means that the smallest fraction a "
+"mosaic can be divided into is **0.001**."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:26
+msgid ""
+"When decimals are used units are called **relative**, and when no "
+"decimals are used units are called **absolute**. I.e., with a "
+"divisibility of 3, **1** absolute unit corresponds to **0.001** relative "
+"units. To convert from relative to absolute units multiply by 10\\ "
+":sup:`divisibility`."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:28
+msgid "Divisibility must be in the **0** to **6** range (included)."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:31
+msgid "Initial supply"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:33
+msgid ""
+"Indicates the amount of mosaics initially in circulation, in **absolute "
+"units**."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:35
+msgid ""
+"This amount can be later changed by a "
+":ref:`mosaicsupplychangetransaction` if the **Supply mutable** flag (see "
+"below) of the mosaic is set to true."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:37
+msgid ""
+"The total supply must be in the **0** to **9,000,000,000,000,000** range "
+"in absolute units."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:40
+msgid "Duration"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:42
+msgid "Specifies the number of confirmed blocks the mosaic is rented for."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:44
+msgid ""
+"**Expiring mosaics** are allowed to lie in |codename|'s public network up"
+" to **3650** days (10 years), being this maximum parameter :ref:`editable"
+" per network <config-network-properties>`."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:46
+msgid "**Non-expiring mosaics** can be created by setting this property to **0**."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:48
+msgid ""
+"Mosaic duration cannot be extended after its creation. Before creating "
+"one, consider if your use case requires the mosaic to expire or not. Note"
+" that this behavior is different for :doc:`Namespaces <namespace>`."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:50
+msgid "The following formula is used to convert days to blocks approximately:"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:52
+msgid ""
+"duration ≈ \\frac{numberOfDays * "
+"86400}{blockGenerationTargetTimeInSeconds}"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:56
+msgid "By default, ``blockGenerationTargetTimeInSeconds`` is **30** seconds."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:59
+msgid "Supply mutable"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:61
+msgid ""
+"If set to true, the mosaic supply can change at a later point. In this "
+"case, the mosaic creator is allowed to redefine the total mosaic supply "
+"with a :ref:`mosaicsupplychangetransaction`. The transaction increases or"
+" decreases the mosaic supply in ``delta`` units."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:65
+msgid ""
+"To decrease the mosaic supply, the mosaic creator account must own at "
+"least ``delta`` units. This means that the mosaic creator cannot remove "
+"mosaics from other account balances, even if the supply mutable property "
+"is enabled."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:68
+msgid ""
+"If Supply mutable set to false, the mosaic supply cannot be changed. "
+"However, if the mosaic creator owns all the mosaic supply, this is "
+"modifiable even if the mosaic is defined as not mutable."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:72
+msgid "Transferable"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:78
+msgid "Example of a non-transferable mosaic"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:80
+msgid ""
+"If set to true, the mosaic can be transferred between arbitrary accounts."
+" Otherwise, the mosaic can only be transferred to or from the mosaic "
+"creator."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:84
+msgid "Restrictable"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:90
+msgid "Example of a mosaic restriction"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:92
+msgid ""
+"If set to true, the mosaic creator can configure custom "
+":doc:`restrictions <mosaic-restriction>`."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:95
+msgid "Revokable"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:97
+msgid ""
+"Mosaics can be revoked (i.e., **reclaimed**) by the mosaic creator when "
+"this flag is set to true."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:103
+msgid "Creation fee"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:105
+msgid ""
+"An account willing to create a mosaic has to pay a rental fee in addition"
+" to the :doc:`transaction fee <fees>`. Both fees will be deducted from "
+"the account's balance after the announcement of a valid "
+":ref:`mosaicdefinitiontransaction`."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:108
+msgid ""
+"The :doc:`REST Gateway <../api>` provides an endpoint to get an "
+"estimation of how much network currency will cost you to create a mosaic:"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:112
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/mosaic/GettingMosaicRentalFee.ts`"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:117
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/mosaic/GettingMosaicRentalFee.js`"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:122
+msgid ""
+"By default, creating a mosaic in |codename|'s public network has an "
+"initial cost of **0.5** |networkcurrency| (:ref:`configurable per network"
+" <config-network-properties>` by the ``mosaicRentalFee`` property). "
+"However, **the network dynamically adjusts the mosaic rental fee** over "
+"time."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:125
+msgid ""
+"To calculate the effective rental fee, the network multiplies the default"
+" value set in the configuration by the network's :ref:`dynamic fee "
+"multiplier <fees_dynamic_multiplier>`."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:129
+msgid "Related transactions"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:1
+msgid "Id"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:1
+msgid "Type"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:1
+msgid "0x414D"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:1
+msgid ":ref:`mosaicdefinitiontransaction`"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:1
+msgid "Create a new mosaic."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:1
+msgid "0x424D"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:1
+msgid ":ref:`mosaicsupplychangetransaction`"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:1
+msgid "Change the mosaic total supply."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:1
+msgid "0x434D"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:1
+msgid ":ref:`mosaicsupplyrevocationtransaction`"
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:1
+msgid "Reclaim transferred mosaics."
+msgstr ""
+
+#: ../../source/concepts/mosaic.rst:142
+msgid "Related guides"
+msgstr ""
+

@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/harvesting/index.rst:3
+msgid "Harvesting"
+msgstr ""
+
+#: ../../source/guides/harvesting/index.rst:5
+msgid ""
+"|codename| supports **different harvesting methods** depending on whether"
+" you own a node or not, and the tools you want to use to enable it."
+msgstr ""
+
+#: ../../source/guides/harvesting/index.rst:7
+msgid ""
+"Make sure you understand the :ref:`different harvesting types "
+"<harvesting-types>` first and then choose the appropriate guide from the "
+"list below."
+msgstr ""
+
+#: ../../source/guides/harvesting/index.rst:9
+msgid "**If you do not own a node:**"
+msgstr ""
+
+#: ../../source/guides/harvesting/index.rst:11
+msgid ":doc:`activating-delegated-harvesting-wallet`"
+msgstr ""
+
+#: ../../source/guides/harvesting/index.rst:13
+msgid "For **users** wishing to enable harvesting using their wallet application."
+msgstr ""
+
+#: ../../source/guides/harvesting/index.rst:15
+msgid ":doc:`activating-delegated-harvesting-manual`"
+msgstr ""
+
+#: ../../source/guides/harvesting/index.rst:17
+msgid ""
+"For **developers** wanting to understand how to manually enable "
+"harvesting on their applications."
+msgstr ""
+
+#: ../../source/guides/harvesting/index.rst:19
+msgid "**If you own a node:**"
+msgstr ""
+
+#: ../../source/guides/harvesting/index.rst:21
+msgid ":doc:`activating-remote-harvesting`"
+msgstr ""
+
+#: ../../source/guides/harvesting/index.rst:23
+msgid ""
+"For **node owners** wishing to enable harvesting, whether through "
+"|symbol-bootstrap| or not."
+msgstr ""
+

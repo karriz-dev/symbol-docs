@@ -1,0 +1,266 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/transaction.rst:3
+msgid "Transaction"
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:5
+msgid ""
+"A transaction generally represents a unit of work within a database "
+"system. In the case of blockchain, that is when an action signed by an "
+":doc:`account <account>` changes its state."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:12
+msgid "Transaction types"
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:14
+msgid ""
+"|codename| supports many different transaction types. For example, there "
+"are transactions to transfer :doc:`mosaics <mosaic>` between accounts, "
+"messages or configure the ownership of accounts (including the use of "
+":doc:`multisig <multisig-account>` rules), and more."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:17
+msgid ""
+"The following transaction types are included in |codename| based networks"
+" by default:"
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:21
+msgid ""
+"Every base transaction type available in |codename| is defined as a "
+"separate :doc:`plugin <plugin>`. The plugin approach allows developers to"
+" introduce new transaction types without modifying the core engine or "
+"disrupting other features."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:28
+msgid "Defining a transaction"
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:30
+msgid ""
+"Transactions are defined in a serialized form. Every transaction extends "
+"from the base ``Transaction`` schema, adding the type's particular "
+"properties."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:33
+msgid "All transactions should define a deadline and a max_fee:"
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:35
+msgid ""
+"``deadline``: A transaction has a time window to be accepted before it "
+"reaches its deadline. The transaction expires when the deadline is "
+"reached and all the nodes reject the transaction. By default, the SDK "
+"sets the deadline to 2 hours, but it can be extended up to 6 hours (or 48"
+" for :ref:`aggregate-bonded` transactions)."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:37
+msgid ""
+"``max_fee``: The maximum amount of network currency that the sender of "
+"the transaction is willing to pay to get the transaction accepted. "
+":doc:`The next documentation <fees>` shows you how to set the optimal "
+"max_fee value."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:39
+msgid ""
+"The `catbuffer schemas "
+"<https://github.com/symbol/symbol/tree/main/catbuffer/schemas>`_ "
+"repository defines how each transaction type should be serialized. In "
+"combination with the catbuffer generators, developers can generate "
+"builder classes for a given set of programming languages."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:41
+msgid "We recommend using the :doc:`SDK <../sdk>` to define new transactions."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:45
+#: ../../source/concepts/transaction.rst:73
+#: ../../source/concepts/transaction.rst:87
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/transfer/SendingATransferTransaction.ts`"
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:54
+msgid "Signing a transaction"
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:56
+msgid ""
+"Accounts must sign transactions before announcing them to the network. "
+"Signing a transaction expresses the account's agreement to change the "
+"network state as defined."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:59
+msgid ""
+"For example, a TransferTransaction describes who the recipient is and the"
+" number of mosaics to transfer. In this case, signing the transaction "
+"means to accept moving those mosaics from one account's balance to "
+"another."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:62
+msgid ""
+"An account has to follow the next steps to `sign a transaction "
+"<https://github.com/symbol/symbol-sdk-typescript-"
+"javascript/blob/main/src/model/transaction/Transaction.ts#L216>`_:"
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:64
+msgid ""
+"Get the ``signing bytes``, which are all the bytes of the transaction "
+"except the size, signature, and signer."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:65
+msgid ""
+"Get the nemesis block ``generation hash``. You can query :term:`NODE_URL`"
+" ``/node/info'`` and copy ``meta.networkGenerationHash`` value."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:66
+msgid "Prepend the nemesis block generation hash to the signing bytes."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:67
+msgid ""
+"Sign the resulting string with the signer's private key. This will give "
+"you the transaction ``signature``."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:68
+msgid ""
+"Append the signer's signature and public key to the transaction to obtain"
+" the ``payload``."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:69
+msgid ""
+"Calculate the `transaction hash <https://github.com/symbol/symbol-sdk-"
+"typescript-"
+"javascript/blob/main/src/model/transaction/Transaction.ts#L127>`_ by "
+"applying SHA3-512 hashing algorithm to the first 32 bytes of signature, "
+"the signer public key, nemesis block generation hash, and the remaining "
+"transaction payload."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:80
+msgid "Announcing a transaction"
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:82
+msgid ""
+"Signed transactions are ready to be announced to the network. You can "
+"either use the SDK ``TransactionHttp`` service or append the payload to "
+"the request of the `transaction endpoint <https://symbol.github.io"
+"/symbol-openapi/v0.11.3/#operation/announceTransaction>`_."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:96
+msgid ""
+"After announcing the transaction, the REST API will always return an OK "
+"response immediately. At this point, it is still unknown whether the "
+"transaction is valid."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:103
+msgid "Transaction cycle"
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:109
+msgid "Validation"
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:111
+msgid ""
+"The first stage of validation happens in the API nodes. If the "
+"transaction encounters an error, the WebSocket throws a notification "
+"through the status channel. If not, the transaction reaches the P2P "
+"network with an **unconfirmed** status. In this state, it is not yet "
+"clear if the transaction will get included in a block. Thus, an "
+"unconfirmed transaction should never be relied upon."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:116
+msgid ""
+"The second validation happens before the transaction is added in a "
+":doc:`harvested block <block>`. If successful, the harvester stores the "
+"transaction in a block and the transaction reaches the **confirmed** "
+"status. At this state, the transaction is officially recorded in the "
+"blockchain ledger, but has not yet reached **finality**."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:120
+msgid ""
+"Under certain circumstances, such as a network failure or partition, the "
+"most recently confirmed blocks can be :ref:`rolled back <rollbacks>`. "
+"Hence, confirmed transactions that have not been finalized are recognized"
+" by the network but are not immutable because they can still be reversed."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:123
+msgid ""
+"For a block to be immutable, it needs to complete the :ref:`finalization "
+"<finalization>` process. Once a block is finalized, the block and the "
+"included transactions are permanently recorded on the blockchain ledger."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:128
+msgid "Spam Throttle"
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:130
+msgid ""
+"The node's cache holds unconfirmed transactions until they can be "
+"included in a block. Since cache is a valuable resource, |codename| "
+"implements a spam throttle that prevents an attacker from filling the "
+"cache with unconfirmed transactions while still letting honest actors "
+"successfully submit new unconfirmed transactions."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:133
+msgid ""
+"The spam throttle controls the amount of unconfirmed transactions "
+"accounts can submit by calculating the fair share of cache for each "
+"account relative to its importance score. If an account has surpassed its"
+" fair share of the cache and the node cache contains more unconfirmed "
+"transactions than the amount that can be included in a single block, the "
+"transaction will be rejected. This effectively blocks malicious actors "
+"from spamming a node with transactions while allowing other users to "
+"continue using the node normally."
+msgstr ""
+
+#: ../../source/concepts/transaction.rst:139
+msgid "Related guides"
+msgstr ""
+

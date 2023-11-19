@@ -1,0 +1,624 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:3
+msgid "REST API Troubleshooting Guide for Exchanges"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:5
+msgid ""
+"The :doc:`exchange-integration` guide explains how to integrate the "
+"``XYM`` token into an Exchange platform using the :doc:`available SDKs "
+"<../../sdk>`. It is also possible to perform this integration using the "
+":doc:`REST API <../../api>` but the procedure is significantly **more "
+"complicated**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:7
+msgid ""
+"This page does not aim at repeating the content of the :doc:`exchange-"
+"integration` guide using REST, instead, it shows how to fix **the most "
+"common problems** encountered when using this API in the development of "
+"an Exchange."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:9
+msgid "Feel free to jump directly to the section of your interest."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:12
+msgid "Topics"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:16
+msgid "Receiving transactions"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:19
+msgid "Filtering (by block height and more)"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:21
+msgid ""
+"Use the `/transactions/confirmed <https://symbol.github.io/symbol-"
+"openapi/v1.0.1/#operation/searchConfirmedTransactions>`__ endpoint to "
+"retrieve any group of confirmed transactions. Among other filtering "
+"options, the following parameters are typically useful for narrowing down"
+" searches:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Parameter"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Type"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Effect"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``type``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "integer"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid ""
+"Retrieve only transactions of this type. The code for "
+":ref:`transfertransaction` is 16724 (0x4154)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``recipientAddress``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "string"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid ""
+"The address **receiving** the transaction. Compare with ``address`` which"
+" returns all transactions involving the given address (as sender, "
+"recipient or cosigner)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:3
+msgid ""
+"This might either be a Base32 :ref:`address` or a "
+":doc:`../../concepts/namespace`. If the bit 0 of byte 0 is not set (e.g. "
+"0x90) then it is an address, otherwise (e.g. 0x91) it represents a "
+"namespace id which starts at byte 1."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``fromHeight``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "The starting block height to search for."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``toHeight``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "The ending block height to search for."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``embedded``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "boolean"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid ""
+"Use ``true`` to automatically search inside aggregate transactions. The "
+"data returned by a standalone transaction and an embedded transaction "
+"(one inside an aggregate) is slightly different (Check the next section)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:3
+msgid ""
+"Use ``false`` to manually search for aggregate transactions (e.g. types "
+"0x4141 and 0x4241) and parse them."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:5
+msgid ""
+"**Caution**: Does not work when combined with ``address``, only with "
+"``recipientAddress``."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:40
+msgid "Here is an example query to a :term:`NODE_URL`:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:52
+msgid ""
+"This query returns the list of all **transfer** transactions sent to "
+"address ``TAOXU...``, that happened between block height **70000** and "
+"**80000**, including transactions **embedded** inside other transactions."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:54
+msgid "The next section explains how to parse the resulting list."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:57
+msgid "Parsing of embedded transactions"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:59
+msgid ""
+"|codename| supports :ref:`aggregate-transaction`, i.e., **transactions "
+"inside other transactions**. For the most part it does not matter if a "
+"transaction is **standalone** or **embedded** inside another one, but "
+"there are a few differences which might be confusing when parsing "
+"incoming transactions. This section explains them."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:61
+msgid ""
+"You can always **receive** embedded transactions, even if you never "
+"**create** any yourself. Make sure you understand how to parse them!"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:63
+msgid ""
+"As shown in the `/transactions/confirmed <https://symbol.github.io"
+"/symbol-openapi/v1.0.1/#operation/searchConfirmedTransactions>`__ "
+"endpoint documentation, a successfull query returns **a data array** "
+"including transactions and metadata (this array is **paginated** so pay "
+"attention to the ``pageSize`` and ``pageNumber`` parameters and return "
+"values). Each one of the returned transactions can match a different "
+"schema depending on the transaction's type, so the ``type`` field of each"
+" transaction must be checked."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:65
+msgid ""
+"Moreover, the metadata content is also different when the transaction is "
+"embedded inside an :ref:`aggregate-transaction`."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:67
+msgid ""
+"This is specially important when using the ``embedded=true`` parameter "
+"since some of the returned transactions might be **embedded** "
+"transactions whereas some other might be **regular** transactions, and "
+"the involved schemas are different."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:69
+msgid ""
+"For example the above sample query, which filters by ``type=16724`` "
+"(transfer transactions), actually returns both ``TransferTransactionDTO``"
+" and ``EmbeddedTransferTransactionDTO`` objects because of the "
+"``embedded=true`` parameter. The attached metadata also varies between "
+"``TransactionMetaDTO`` and ``EmbeddedTransactionMetaDTO``."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:71
+msgid "These are the main differences to keep in mind:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:73
+msgid "Metadata"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Property"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Regular"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Embedded"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Schema"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``TransactionMetaDTO``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``EmbeddedTransactionMetaDTO``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``index``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Transaction index **within the block**"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Transaction index **within the aggregate transaction**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``hash``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Transaction Hash"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "\\-"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``aggregateHash``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Hash of the containing aggregate transaction."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:83
+msgid "Transaction"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``TransferTransactionDTO``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``EmbeddedTransferTransactionDTO``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``size``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Transaction size in bytes"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``signature``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Signature generated by the signer"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``maxFee``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Maximum fee to pay for the transaction"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "``deadline``"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Number of blocks before the transaction expires"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:94
+msgid ""
+"The above 4 fields are missing from the embedded transaction because they"
+" belong to the containing aggregate transaction. To access them recover "
+"first the aggregate transaction using the "
+"`/transactions/confirmed/{transactionId} <https://symbol.github.io"
+"/symbol-openapi/v1.0.1/#operation/getConfirmedTransaction>`__ endpoint "
+"and ``aggregateHash`` as Id."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:96
+msgid ""
+"If you are not interested in any of the fields listed above you can "
+"safely treat regular and embedded transfer transactions the same way, "
+"since they share the rest of properties."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:99
+msgid "Alias resolution"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:101
+msgid ""
+":doc:`Mosaics <../../concepts/mosaic>` IDs and :ref:`addresses <address>`"
+" are long random strings which are cumbersome to use. For convenience, "
+"|codename| provides **namespaces**, which are user-provided **text "
+"strings** (aliases) that can be used instead of addresses or mosaic IDs. "
+"A namespace can always be **resolved** into the actual address or mosaic "
+"ID that it represents."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:103
+msgid ""
+"The most common example is ``symbol.xym`` (Namespace ID "
+"``0xE74B99BA41F4AFEE``) which is an **alias** for |codename|'s native "
+"currency (Mosaic ID ``0x6BED913FA20223F8``)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:105
+msgid ""
+"Mosaic ID ``0x6BED913FA20223F8`` and ``0xE74B99BA41F4AFEE`` can always be"
+" safely treated as equivalent."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:107
+msgid ""
+"You might find transactions using one or the other depending on whether "
+"they were created using directly the mosaic ID or the namespace."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:109
+msgid ""
+"``symbol.xym`` is a namespace which does not **expire** so the above "
+"equivalence **always holds**. However, regular namespaces are rented "
+"**for a limited amount of time**, and this poses a problem when resolving"
+" them because after expiration a namespace might get rented again and be "
+"aliased to a different mosaic or address."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:111
+msgid ""
+"Therefore, **to correctly resolve a namespace found in a transaction, the"
+" block height that included the transaction must be taken into account**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:113
+msgid ""
+"This is very easy to do because all blocks which include a namespace also"
+" include either a :ref:`mosaicresolutionstatement` or an "
+":ref:`addressresolutionstatement` containing the resolved namespace. Just"
+" use the `/statements/resolutions/mosaic <https://symbol.github.io"
+"/symbol-openapi/v1.0.1/#operation/searchMosaicResolutionStatements>`__ "
+"and `/statements/resolutions/address <https://symbol.github.io/symbol-"
+"openapi/v1.0.1/#operation/searchAddressResolutionStatements>`__ endpoints"
+" to retrieve all statements for a given block, and then locate the "
+"unresolved namespace ID you are interested in."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:115
+msgid "**Example using TESTNET:**"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:117
+msgid ""
+"``NODE_URL/transactions/confirmed?height=211972`` retrieves all "
+"transactions included in block 211972."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:139
+msgid ""
+"However, the mosaic ID ``0xE374D0B5E061EE92`` does not exist "
+"(``/mosaics/E374D0B5E061EE92`` would return a ``ResourceNotFound`` "
+"error). Besides, the highest bit being set indicates this is actually a "
+"namespace."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:141
+msgid ""
+"You could check the **current** alias of this namespace by querying "
+"``/namespaces/E374D0B5E061EE92``, but you actually want to know the "
+"aliased mosaic ID **at the time the transaction was confirmed**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:143
+msgid ""
+"You do this by checking the block's :ref:`mosaicresolutionstatement` at "
+"``/statements/resolutions/mosaic?height=211972``:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:164
+msgid ""
+"Here you can see the resolved mosaic ID, ``0x0DDE03C044AF95D4`` which is "
+"a valid ID and can be queried with ``/mosaics/0DDE03C044AF95D4``."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:168
+msgid "Sending transactions"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:170
+msgid ""
+"Transactions are announced to the network through the `/transactions "
+"<https://symbol.github.io/symbol-"
+"openapi/v1.0.1/#operation/announceTransaction>`__ endpoint which accepts "
+"an hexadecimal string representing the transaction's payload. The process"
+" to build this payload is explained fairly extensively in the :ref"
+":`transaction-definition` guide."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:172
+msgid ""
+"The following sections aim at clarifying the points which have been "
+"deemed the most confusing by users of the API."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:175
+msgid "Transaction deadline"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:177
+msgid ""
+"Transactions are not allowed to remain unconfirmed in the network "
+"forever, as this would pose a significant strain on the network's "
+"resources. Instead, **all transactions have a deadline**, and are "
+"automatically disposed of when the deadline arrives."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:179
+msgid ""
+"Users are free to use any deadline they want for their transactions, "
+"between **now** and **6h into the future** (48h for :ref:`aggregate-"
+"bonded` transactions). Transactions announced with a deadline outside "
+"this window will be rejected with an **invalid deadline** error."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:181
+msgid ""
+"Deadlines are given in **milliseconds since the creation of the nemesis "
+"block**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:183
+msgid ""
+"The moment when the :ref:`nemesis block <block-creation>` was created can"
+" be found in the ``network.epochAdjustment`` property of the "
+"`/network/properties <https://symbol.github.io/symbol-"
+"openapi/v1.0.1/#operation/getNetworkProperties>`__ endpoint. This is the "
+"**number of seconds** elapsed since the `UNIX epoch "
+"<https://en.wikipedia.org/wiki/Unix_time>`__ and **it is always "
+"1615853185 for MAINNET**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:185
+msgid ""
+"In other words, you need to subtract the **epoch adjustment** from a Unix"
+" time to obtain a deadline. Therefore, a **deadline 2h into the future**,"
+" which is the default deadline provided by the SDK, can be calculated as:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:192
+msgid ""
+"This deadline can now be used when building the transaction, and it will "
+"expire 2h from now (7200 seconds)."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:195
+msgid "Transaction fee"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:197
+msgid ""
+"The effective :doc:`Fee <../../concepts/fees>` a transaction must pay to "
+"be announced is the **transaction size** (in bytes) times a **fee "
+"multiplier** chosen by the node that confirms the transaction."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:199
+msgid ""
+"Since this multiplier is unknown when making the announcement, "
+"**transactions** define the **maximum fee** they are willing to pay."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:201
+msgid ""
+"Moreover, **nodes** can define a **minimum fee** below which transactions"
+" are just ignored."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:203
+msgid ""
+"As a consequence, choosing the right maximum fee for a transaction is "
+"very important: Too low a number and the transaction will not be "
+"confirmed by any node and will eventually expire. Too high maximum fees, "
+"though, will incur in unnecessary expenses."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:205
+msgid ""
+"To help choose the right amount, the `/network/fees/transaction "
+"<https://symbol.github.io/symbol-"
+"openapi/v1.0.1/#operation/getTransactionFees>`__ endpoint provides some "
+"statistics regarding the effective fees paid by the last 60 blocks. The "
+"returned data is:"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Meaning"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Highest"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Biggest fee multiplier used in the last 60 blocks."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Median"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid ""
+"The `median value <https://en.wikipedia.org/wiki/Median>`__ of the fee "
+"multipliers used in the last 60 blocks. See the "
+":ref:`fees_dynamic_multiplier` section for more details."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Mean"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid ""
+"The `average value <https://en.wikipedia.org/wiki/Arithmetic_mean>`__ of "
+"the fee multipliers used in the last 60 blocks."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Lowest"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Smallest fee multiplier used in the last 60 blocks."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "Min"
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:1
+msgid "The minimum fee multiplier accepted by the node being queried."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:218
+msgid ""
+"``minFeeMultiplier`` refers to **the node** being queried, whereas the "
+"rest of properties refer to **the whole network**."
+msgstr ""
+
+#: ../../source/guides/exchanges/exchange-REST-troubleshooting.rst:220
+msgid ""
+"A good rule of thumb is to use the ``medianFeeMultiplier``. This "
+"typically provides timely confirmation of transactions without incurring "
+"in excessive fees being paid."
+msgstr ""
+

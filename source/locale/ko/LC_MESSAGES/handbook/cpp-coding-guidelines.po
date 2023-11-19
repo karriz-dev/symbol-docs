@@ -1,0 +1,397 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:3
+msgid "C++ Coding Guidelines"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:6
+msgid "Best Practices"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:8
+msgid "**NEVER** include ``using namespace`` statements in header files."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:9
+msgid ""
+"**NEVER** include a using statement for the standard namespace (``std``)."
+" Instead, always qualify all types from it."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:10
+msgid "**USE** a constexpr expression instead of a MACRO whenever possible."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:11
+msgid "**USE** ``pragma once`` instead of header guards."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:12
+msgid "**USE** ``enum class`` instead of ``enum`` whenever possible."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:13
+msgid ""
+"**ALWAYS** declare variables as close to first usage as possible - this "
+"isn't C!"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:14
+msgid "**ALWAYS** pass non-trivial parameters by reference."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:15
+msgid ""
+"**PREFER** a composite return value (e.g. ``pair``, POD ``struct``) to "
+"multiple out parameters."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:16
+msgid ""
+"**PREFER** ``auto`` whenever possible, but use as many type modifiers "
+"(``const``, ``volatile``, ``&``, ``*``) as possible."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:17
+msgid ""
+"**AVOID** `volatile` unless there is a very strong justification (there "
+"usually isn't)."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:18
+msgid "**ALWAYS** use ``using`` statements instead of ``typedef`` for aliases."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:19
+msgid ""
+"**USE** function qualifiers (``override``, ``final``, ``const``) "
+"liberally."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:20
+msgid "**PREFER** an enumeration to multiple booleans."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:21
+msgid ""
+"**USE** anonymous namespaces liberally in cpp files and export the "
+"minimum number of names from each compilation object."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:22
+msgid "**NEVER** use static free functions."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:25
+msgid "Numeric Types"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:27
+msgid "**USE** ``size_t`` whenever dealing with data sizes."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:28
+msgid ""
+"**USE** types defined in **stdint.h** (``uint8_t``, ``uint16_t``, "
+"``uint32_t``, etc.)"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:29
+msgid "**AVOID** using signed types unless it's really necessary and reasonable."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:30
+msgid ""
+"**AVOID** using floating point arithmetic, especially in any part of "
+"consensus."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:33
+msgid "File / Directory Layout"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:35
+msgid ""
+"If a cpp/h file contains a single class, the file should be named after "
+"the class and be UpperCamelCase. If a cpp/h file contains utility "
+"functions, the file should be given a descriptive name and be "
+"UpperCamelCase."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:38
+msgid "We expect parallel source and test directory hierarchies. For example,"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:55
+msgid "Naming"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:57
+msgid "Static and free functions should be UpperCamelCase"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:59
+msgid "Member function names should be lowerCamelCase"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:61
+msgid "Constants (global or local) should be Upper_Camel_Case."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:63
+msgid "#defines should be TITLE_CASE"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:65
+msgid "Local variables and function parameters should be lowerCamelCase"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:67
+msgid "Struct members should be UpperCamelCase"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:71
+msgid "Prefixes"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:73
+msgid "Prefix class instance members with ``m_``"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:75
+msgid "Prefix class static members with ``s_``"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:77
+msgid "Prefix globals with ``g_``"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:79
+msgid "Prefix all pointers (both smart and raw) with ``p``"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:81
+msgid "Never prefix anything with a single underscore (``_``)."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:85
+msgid "Arrays"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:87
+msgid ""
+"If you pass size of an array somewhere, always give the size variable a "
+"name, that suggests what it actually is:"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:89
+msgid ""
+"So if you actually expect **number of elements**, use name with ``Count``"
+" postfix [e.g. ``nodeCount``]"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:91
+msgid "If you want number of **bytes** use name like ``size_t nameSize``"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:94
+msgid "Includes"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:96
+msgid ""
+"Always use \"/\" in includes and NEVER \"\\\\\", (C standard WG14/N1256 "
+"point 6.4.7, C++ standard ISO/IEC 14882:2003 point 2.8, C++ standard "
+"ISO/IEC 14882:2011 (from working draft N3225) point 2.9)"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:98
+msgid ""
+"Try to include the minimal number of files required for a successful "
+"build. Corollary: don't include anything you don't need."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:100
+msgid "Order includes from most specific to most general."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:103
+msgid "Style"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:106
+msgid "Classes, Methods and Members"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:108
+msgid "Recommended class order:"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:110
+msgid "Private constants (as they are usually used early)"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:112
+msgid "Public constants"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:114
+msgid "Methods"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:116
+msgid "Constructors"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:118
+msgid "Instance methods"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:120
+msgid "Static methods"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:122
+msgid "Fields"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:124
+msgid "Public members (should probably be used only for POD types)"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:126
+msgid "Protected members"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:128
+msgid "Private members"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:130
+msgid ""
+"Use an access modifier (``public:``, ``private:``) for each section even "
+"if the modifier is redundant."
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:133
+msgid "Special Names"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:135
+msgid "Blockchain not BlockChain"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:137
+msgid "Filename not FileName"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:139
+msgid "Filesystem not FileSystem"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:141
+msgid "NotEmpty not NonEmpty"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:143
+msgid "Nonzero not NonZero or Notzero or NotZero"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:145
+msgid "Roundtrip not RoundTrip"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:147
+msgid "SubCache not Subcache"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:149
+msgid "ThreadPool not Threadpool"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:151
+msgid "Timestamp not TimeStamp"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:153
+msgid "``Configuration`` for class names"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:155
+msgid "``config`` for variable names"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:158
+msgid "Indentation"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:160
+msgid "single indent for block opening"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:170
+msgid "continuations use **double** indent"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:180
+msgid ""
+"initializer list, and ctors/function/method arguments, have **double** "
+"indent"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:197
+msgid "Bracing"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:199
+msgid "empty body, short"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:206
+msgid "empty body, long"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:216
+msgid "body, short"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:224
+msgid "body, long"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:236
+msgid "Empty Statements"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:238
+msgid "Do not use such a construct when ``for`` doesn't have a body"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:244
+msgid "Instead use"
+msgstr ""
+
+#: ../../source/handbook/cpp-coding-guidelines.rst:251
+msgid "This leaves clear intention of what you had in mind."
+msgstr ""
+

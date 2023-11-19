@@ -1,0 +1,266 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/account-restriction.rst:3
+msgid "Account Restriction"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:5
+msgid ""
+":doc:`Accounts <account>` may configure a set of smart rules to block "
+"announcing or receiving transactions given a series of restrictions."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:7
+msgid ""
+"The account owners—plural in case of multisig accounts—can edit the "
+"account restrictions at a later time announcing the specific "
+":ref:`accountaddressrestrictiontransaction`."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:9
+msgid ""
+"|codename|'s public network enables accounts to define up to ``512`` "
+"restrictions per account and restriction type, being this parameter "
+":ref:`configurable per network <config-network-properties>`."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:13
+msgid "Address restriction"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:15
+msgid ""
+"An account can decide to **only receive** transactions from a list of "
+"allowed **addresses**. Alternatively, the account can define a list of "
+"blocked addresses."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:18
+msgid ""
+"Restricting **incoming transactions** is useful when the account will be "
+"only receiving transactions from known addresses, or when the account "
+"wants to block transactions coming from unknown senders."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:24
+msgid "Address restriction diagram"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:26
+msgid ""
+"Allow and block restrictions are mutually exclusive. In other words, an "
+"account can only configure a block or an allow list per type of "
+"restriction."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:28
+msgid ""
+"By default, when there are no restrictions set, all the accounts in the "
+"network can announce transactions to the unrestricted account."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:30
+msgid ""
+"Additionally, an account can decide to apply address restrictions to the "
+"**outgoing transactions**, limiting the accounts allowed that are valid "
+"recipients."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:34
+msgid "Mosaic restriction"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:36
+msgid ""
+"Similar to address restrictions, an account can configure a restriction "
+"to permit **incoming** transactions only if all the :doc:`mosaics "
+"<mosaic>` attached are allowed. On the other hand, the account can refuse"
+" to accept transactions containing a mosaic listed as blocked."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:39
+msgid ""
+"Account mosaic restrictions are generally used to **prevent accounts "
+"being tagged with mosaics** not associated with their activity."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:43
+msgid "Operation restriction"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:45
+msgid ""
+"An account can allow/block announcing **outgoing** transactions with a "
+"determined :ref:`operation type <transaction-types>`. By doing so, the "
+"account increases its security, preventing the announcement by mistake of"
+" undesired transactions."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:48
+msgid "Restriction types allowed"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "Restriction"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "Incoming Transactions"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "Outgoing Transactions"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "Address Restriction"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "✔️"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "Mosaic Restriction"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "❌"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "Operation Restriction"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:59
+msgid "Examples"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:62
+#: ../../source/concepts/account-restriction.rst:74
+msgid "Blocking spam transactions"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:64
+msgid ""
+"A pharmaceutical company is using the public chain to certify the quality"
+" of their products."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:66
+msgid ""
+"When the quality verification process concludes, an operator sends a "
+":doc:`quality seal<mosaic>` to the product account."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:68
+msgid ""
+"The final customers can review the product mosaics scanning a QR code. "
+"For that reason, the company only wants to show related transactions, "
+"avoiding that others spam their products with non-related information."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:76
+msgid ""
+"The company opts to configure their product accounts restrictions, "
+"enabling only to receive transactions containing "
+"``pharmaceutical.quality.seal`` mosaics."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:79
+msgid "Enhancing the account security"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:81
+msgid ""
+"Lately, Alice is only using her main account to cosign aggregate "
+"transactions where she is a cosignatory for the :doc:`multisig <multisig-"
+"account>` account."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:83
+msgid ""
+"As a temporary security measure, Alice opts to disable announcing "
+"transfer transactions from her main account. Doing so, Alice double-"
+"checks that the funds held in the main account are not going to be "
+"transferred by mistake."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:88
+msgid "Related transactions"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "Id"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "Type"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "0x4150"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid ":ref:`accountaddressrestrictiontransaction`"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid ""
+"Allow or block incoming and outgoing transactions for a given a set of "
+"addresses."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "0x4250"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid ":ref:`accountmosaicrestrictiontransaction`"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "Allow or block incoming transactions containing a given set of mosaics."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "0x4350"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid ":ref:`accountoperationrestrictiontransaction`"
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:1
+msgid "Allow or block outgoing transactions by transaction type."
+msgstr ""
+
+#: ../../source/concepts/account-restriction.rst:101
+msgid "Related guides"
+msgstr ""
+

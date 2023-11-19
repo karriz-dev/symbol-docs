@@ -1,0 +1,420 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/receipt.rst:3 ../../source/concepts/receipt.rst:55
+msgid "Receipt"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:5
+msgid ""
+"Conditional state changes in the background enable complex transactions. "
+"For example, a :ref:`hashlocktransaction` concludes as soon as the "
+":ref:`aggregatebondedtransaction` is confirmed. When the locked funds are"
+" automatically returned to the account, there is no additional "
+":doc:`transaction <transaction>` recorded. This might appear as a *hidden"
+" change* that increases the :doc:`account <account>` balance."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:10
+msgid ""
+"Receipts provide proof for every hidden change. The collection of "
+"receipts are hashed into a :doc:`merkle tree <data-validation>` and "
+"linked to a :doc:`block <block>`. The block header stores the root hash, "
+"which is different from zero when the block has receipts."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:16
+msgid "Transaction statement"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:18
+msgid ""
+"A transaction statement is a collection of receipts linked to a "
+"transaction in a particular block. Statements can include receipts with "
+"the following basic types:"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:21
+msgid ""
+"**Balance Transfer**: An invisible state change triggered a mosaic "
+"transfer."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:22
+msgid ""
+"**Balance Change**: An invisible state change altered an account's "
+"balance."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:23
+msgid "**Mosaic Expiry**: A mosaic expired."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:24
+msgid "**Namespace Expiry**: A namespace expired."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:25
+msgid ""
+"**Inflation**: Network currency mosaics were created due to "
+":doc:`inflation <inflation>`."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:31
+msgid "Resolution statement"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:33
+msgid ""
+"When a transaction includes an :doc:`alias <namespace>`, a so called "
+"Resolution Statement reflects the resolved value for that block:"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:35
+msgid ":ref:`addressresolutionstatement`: An account alias was used in the block."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:36
+msgid ":ref:`mosaicresolutionstatement`: A mosaic alias was used in the block."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:38
+msgid ""
+"The alias receipts record the first occurrence of an (unresolved, "
+"resolved) alias pair used in a block."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:40
+msgid ""
+"It is technically possible to get more than one resolution for the same "
+"namespace id and block. This situation is common when a namespace creator"
+" changes the alias link to another asset, leading to two different "
+"resolutions in the same block."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:43
+msgid ""
+"The receipt source ``primaryId`` references the transaction where the "
+"alias first appears within the block. The ``secondaryId`` is not 0 when "
+"the transaction is part of an :doc:`AggregateTransaction <../../concepts"
+"/aggregate-transaction>`, and it will indicate the index position within "
+"the aggregate."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:48
+msgid "Recorded receipts"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:50
+msgid "|codename| records invisible state changes for the following entities."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:55
+msgid "Id"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:55
+msgid "Basic type"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:57
+msgid "**Core**"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:60
+msgid "``0x2143``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:60
+msgid "``Harvest_Fee``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:60 ../../source/concepts/receipt.rst:99
+#: ../../source/concepts/receipt.rst:102 ../../source/concepts/receipt.rst:105
+#: ../../source/concepts/receipt.rst:111 ../../source/concepts/receipt.rst:114
+#: ../../source/concepts/receipt.rst:117
+msgid ":ref:`balancechangereceipt`"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:61
+msgid ""
+"The recipient, account and amount of fees received for harvesting a "
+"block. It is recorded when a block is :doc:`harvested <harvesting>`."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:63
+msgid "``0x5143``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:63
+msgid "``Inflation``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:63
+msgid ":ref:`inflationreceipt`"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:64
+msgid ""
+"The amount of native currency mosaics created. The receipt is recorded "
+"when the network has inflation configured, and a new block triggers the "
+"creation of currency mosaics."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:66
+msgid "``0xE143``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:66
+msgid "``Transaction_Group``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:67
+msgid ""
+"A collection of state changes for a given source. It is recorded when a "
+"state change receipt is issued."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:69
+msgid "``0xF143``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:69
+msgid "``Address_Alias_Resolution``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:69
+msgid ":ref:`addressresolutionstatement`"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:70
+msgid ""
+"The unresolved and resolved :doc:`alias <namespace>`. It is recorded when"
+" a transaction indicates a valid address alias instead of an address."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:72
+msgid "``0xF243``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:72
+msgid "``Mosaic_Alias_Resolution``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:72
+msgid ":ref:`mosaicresolutionstatement`"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:73
+msgid ""
+"The unresolved and resolved alias. It is recorded when a transaction "
+"indicates a valid mosaic alias instead of a mosaic id."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:75
+msgid "**Mosaic**"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:78
+msgid "``0x414D``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:78
+msgid "``Mosaic_Expired``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:78
+msgid ":ref:`mosaicexpiryreceipt`"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:79
+msgid ""
+"The identifier of the mosaic expiring in this block. It is recorded when "
+"a :doc:`mosaic <mosaic>` lifetime elapses."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:81
+msgid "``0x124D``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:81
+msgid "``Mosaic_Rental_Fee``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:81 ../../source/concepts/receipt.rst:93
+msgid ":ref:`balancetransferreceipt`"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:82
+msgid ""
+"The sender and recipient of the mosaic id and amount representing the "
+"cost of registering the mosaic. It is recorded when a mosaic is "
+"registered."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:84
+msgid "**Namespace**"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:87
+msgid "``0x414E``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:87
+msgid "``Namespace_Expired``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:87 ../../source/concepts/receipt.rst:90
+msgid ":ref:`namespaceexpiryreceipt`"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:88
+msgid ""
+"The identifier of the namespace expiring in this block. It is recorded "
+"when the :doc:`namespace <namespace>` lifetime elapses."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:90
+msgid "``0x424E``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:90
+msgid "``Namespace_Deleted``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:91
+msgid ""
+"The identifier of the namespace deleted in this block. It is recorded "
+"when the :doc:`namespace <namespace>` grace period elapses."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:93
+msgid "``0x134E``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:93
+msgid "``Namespace_Rental_Fee``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:94
+msgid ""
+"The sender and recipient of the mosaic id and amount representing the "
+"cost of extending the namespace. It is recorded when a namespace is "
+"registered or its duration is extended."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:96
+msgid "**HashLock**"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:99
+msgid "``0x3148``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:99
+msgid "``LockHash_Created``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:100
+msgid ""
+"The lockhash sender, mosaic id and amount locked. It is recorded when a "
+"valid :ref:`hashlocktransaction` is announced."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:102
+msgid "``0x2248``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:102
+msgid "``LockHash_Completed``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:103
+msgid ""
+"The hashlock sender, mosaic id and amount locked that is returned. It is "
+"recorded when an AggregateBondedTransaction linked to the hash completes."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:105
+msgid "``0x2348``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:105
+msgid "``LockHash_Expired``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:106
+msgid ""
+"The account receiving the locked mosaic, the mosaic id and the amount. It"
+" is recorded when a lock hash expires."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:108
+msgid "**SecretLock**"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:111
+msgid "``0x3152``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:111
+msgid "``LockSecret_Created``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:112
+msgid ""
+"The secretlock sender, mosaic id and amount locked. It is recorded when a"
+" valid :ref:`secretlocktransaction` is announced."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:114
+msgid "``0x2252``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:114
+msgid "``LockSecret_Completed``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:115
+msgid ""
+"The secretlock recipient, mosaic id and amount locked. It is recorded "
+"when a secretlock is proved."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:117
+msgid "``0x2352``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:117
+msgid "``LockSecret_Expired``"
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:118
+msgid ""
+"The account receiving the locked mosaic, the mosaic id and the amount. It"
+" is recorded when a secretlock expires."
+msgstr ""
+
+#: ../../source/concepts/receipt.rst:124
+msgid "Related guides"
+msgstr ""
+

@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/metadata.rst:3
+msgid "Metadata"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:5
+msgid ""
+"|codename| provides the option to associate custom data to an "
+":doc:`account <account>`, :doc:`mosaic <mosaic>` or :doc:`namespace "
+"<namespace>` with a transaction."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:7
+msgid "The most common uses of metadata are:"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:9
+msgid "Attach relevant information to assets."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:10
+msgid ""
+"Validate the value attached to an asset to enable users in an application"
+" to perform an off-chain action."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:12
+msgid ""
+"Metadata is uniquely **identified** by the tuple ``{ signer, target-id, "
+"metadata-key }``. Including a signer in this composite identifier allows "
+"multiple accounts to specify the same metadata without conflict."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:15
+msgid ""
+"The **value** linked to an identifier is a string up to ``1024`` "
+"characters,  being this parameter :ref:`editable per network <config-"
+"network-properties>`. The client application is responsible for "
+"encrypting the message or keeping it visible for every blockchain "
+"participant."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:20
+msgid "Persistence"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:22
+msgid ""
+"Metadata entries are stored on the blockchain—like the message of a "
+"regular :doc:`TransferTransaction <transfer-transaction>`—but also as a "
+"**key-value state**."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:24
+msgid ""
+"This feature reduces the reading time of client applications; metadata "
+"allows information to be accessed by keys instead of processing the "
+"entire account transaction history off-chain to obtain the latest "
+"transaction message value."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:28
+msgid "Permissions"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:30
+msgid ""
+"The account, namespace or mosaic creator must **opt-in** to all metadata "
+"requests received by giving explicit permission. In practice, this means "
+"that all MetadataTransactions must be wrapped in an "
+":doc:`AggregateTransaction <aggregate-transaction>`."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:33
+msgid ""
+"The target account should cosign the aggregate to record the metadata on "
+"the blockchain and update the asset state."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:37
+msgid "Examples"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:40
+msgid "Adding a certificate to an account"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:46
+msgid "Metadata used to attach relevant information to an asset"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:48
+msgid ""
+"Bob works as a digital notary that stamp accounts on |codename|'s public "
+"blockchain. When a customer comes to Bob to notarize a document, he "
+"checks the authentication of the customer’s documents then tags the "
+"account with a MetadataTransaction."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:51
+msgid ""
+"Alice a recent graduate and wants her educational certificate accredited "
+"to her |codename| account to avoid the hassle of repeatedly providing "
+"verification of her degree. So she goes to Bob and provides him with "
+"proof of her degree. Once Alice pays Bob a fee, Bob verifies the "
+"authenticity and stamps Alice’s account with metadata that signifies her "
+"degree."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:56
+msgid "Access management"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:62
+msgid "Validating metadata to restrict performing an off-chain action"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:64
+msgid ""
+"The HR department of the SneakersCompany uses the |codename| for access "
+"management of sensitive work resources. Each account is tagged with the "
+"metadata that regulates its access to the company apps suite."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:67
+msgid ""
+"When a new employee, Carol, is hired, the HR department creates a new "
+"work account for her. For security reasons, HR sets the metadata of the "
+"account to ``{company, ACCESS, 9-18}``."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:70
+msgid ""
+"Each time Carol attempts to access the company apps suite, the company "
+"app validates that Carol has permission and that the time falls under "
+"*9:00-18:00* before granting her admission."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:72
+msgid ""
+"Similarly, if Derek, who has no permissions, attempts to access the "
+"company apps suite, the app will reject his request."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:76
+msgid "Related transactions"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:1
+msgid "Id"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:1
+msgid "Type"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:1
+msgid "0x4144"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:1
+msgid ":ref:`accountmetadatatransaction`"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:1
+msgid "Associate a key-value state to an account."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:1
+msgid "0x4244"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:1
+msgid ":ref:`mosaicmetadatatransaction`"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:1
+msgid "Associate a key-value state to a mosaic."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:1
+msgid "0x4344"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:1
+msgid ":ref:`namespacemetadatatransaction`"
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:1
+msgid "Associate a key-value state to a namespace."
+msgstr ""
+
+#: ../../source/concepts/metadata.rst:89
+msgid "Related guides"
+msgstr ""
+

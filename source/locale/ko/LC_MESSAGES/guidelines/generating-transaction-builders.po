@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guidelines/generating-transaction-builders.rst:3
+msgid "Generating transaction builders"
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:5
+msgid "Learn how to generate transaction builders for your target SDK language."
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:9
+msgid "Background"
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:11
+msgid ""
+"The `catbuffer library "
+"<https://github.com/symbol/symbol/tree/main/catbuffer>`_ defines the "
+"protocol to serialize and deserialize |codename| entities. The library "
+"comes with code generators for different languages. SDKs and applications"
+" use the generated code to interact with REST transaction endpoint."
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:19
+msgid "|sdk| serialization module"
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:21
+msgid "The library accomplishes the following properties:"
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:23
+msgid "**Memory Efficiency**"
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:25
+msgid ""
+"Large networks compute a large number of transactions. Working with "
+"binary optimized in size makes the communication faster. Furthermore, "
+"reading entities from memory buffers—or just a part of them—is memory "
+"efficient."
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:29
+msgid "**Flexibility**"
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:31
+msgid ""
+"REST `transaction endpoints <https://symbol.github.io/symbol-"
+"openapi/v0.11.3/#operation/announceTransaction>`_ handle the calls to "
+"update the blockchain state. The serialized payload of a transaction is "
+"appended to the body of the POST call. These endpoints allow the addition"
+" of new functionality to the client-side without modifying the API "
+"contract."
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:35
+msgid "**Reusability**"
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:37
+msgid ""
+"Applications can embed the generated code without managing dependencies, "
+"which is particularly desirable in highly-secure environments. Besides, "
+"sharing a common codebase enables the addition of new features with less "
+"effort."
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:40
+msgid ""
+"The `schemas "
+"<https://github.com/symbol/symbol/tree/main/catbuffer/schemas/symbol>`_ "
+"define the entities' data structure. The library generates the leanest "
+"code necessary to serialize and deserialize defined entities."
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:45
+msgid "Installation"
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:47
+msgid "Clone the ``catbuffer-generators`` repository."
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:53
+msgid "Install the package requirements."
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:59
+msgid ""
+"Clone the ``catbuffer-schemas`` repository inside the ``catbuffer-"
+"generators`` folder."
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:67
+msgid "Usage"
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:70
+msgid ""
+"Under the ``catbuffer-schemas`` folder of the catbuffer repository, you "
+"can find the entities' data structure. With the help of a code generator,"
+" you can produce the leanest code necessary to serialize and deserialize "
+"those entities."
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:72
+msgid ""
+"For example, run the following command to generate C++ transaction "
+"builders for a :ref:`transfertransaction`:"
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:78
+msgid ""
+"You can also generate code for all the schemas running the following "
+"command under the ``catbuffer-generators`` directory:"
+msgstr ""
+
+#: ../../source/guidelines/generating-transaction-builders.rst:84
+msgid ""
+"The generator creates a new file for every schema under the "
+"``catbuffer/_generated/cpp_builder`` folder."
+msgstr ""
+

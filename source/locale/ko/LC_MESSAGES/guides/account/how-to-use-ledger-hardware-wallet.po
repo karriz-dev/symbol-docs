@@ -1,0 +1,380 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:9
+msgid "How to use your Ledger device with Symbol Wallet"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:11
+msgid ""
+"The Ledger Nano S and X are hardware wallets that support multiple "
+"cryptocurrencies, including Symbol."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:13
+msgid ""
+"A hardware wallet is a type of cryptocurrency wallet where you can store "
+"your private keys on a physical device. It's a secure and simultaneously "
+"user-friendly way to access your coins, as the private key is stored on "
+"the device and doesn't get leaked. Your coins are safe even when "
+"connected to an infected or malicious computer or a phishing/scam web "
+"page."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:15
+msgid ""
+"Symbol Wallet for Desktop allows you to send and receive Symbol assets "
+"using a Ledger hardware wallet. Along with providing support for XYM, the"
+" Ledger device can also offer support for tokens created on the Symbol "
+"blockchain."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:19
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:21
+msgid ""
+"Your Ledger device has been initialized. Select and click your model "
+"below for instructions on how to set up your device."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:23
+msgid ""
+"`Ledger S device set up <https://support.ledger.com/hc/en-"
+"us/articles/360000613793>`_"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:24
+msgid ""
+"`Ledger X device set up <https://support.ledger.com/hc/en-"
+"us/articles/360018784134>`_"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:26
+msgid ""
+"Your Ledger device’s firmware is up to date. Select and click your model "
+"below for instructions on how to update your device’s firmware."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:28
+msgid ""
+"`Ledger S device update <https://support.ledger.com/hc/en-"
+"us/articles/360002731113>`_"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:29
+msgid ""
+"`Ledger X device update <https://support.ledger.com/hc/en-"
+"us/articles/360013349800>`_"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:31
+msgid ""
+"`Ledger Live <https://www.ledger.com/ledger-live>`_ application is "
+"installed. Click `here <https://www.ledger.com/start-your-crypto-"
+"journey>`_ for instructions on how to get started."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:33
+msgid ""
+"`Symbol Wallet for Desktop <https://github.com/nemgrouplimited/symbol-"
+"desktop-wallet/releases/latest>`_ is installed."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:37
+msgid "Step 1: Install Symbol app on Ledger device"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:39
+msgid "Launch the Ledger Live app, then click **Manager** in the left side panel."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:41
+msgid "Connect and unlock your Ledger device."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:43
+msgid ""
+"Allow the Manager on your device by pressing both left and right buttons "
+"simultaneously."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:45
+msgid "Find Symbol in the App catalog."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:47
+msgid "Click the **Install** button."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:57
+msgid "Step 2: Open Symbol app on Ledger device"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:59
+msgid ""
+"Find the Symbol app in your Ledger device by pressing the left and right "
+"buttons."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:61
+msgid "Press both left and right buttons simultaneously to open the Symbol app."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:71
+msgid "Step 3: Launch the Symbol Wallet"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:73
+msgid "Launch the Symbol Wallet."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:75
+msgid "Click **Create a new profile** link."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:83
+msgid ""
+"Click the **Use Ledger** button. Make sure the Symbol app is loaded in "
+"your Ledger device."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:91
+msgid ""
+"Enter a profile name, select **Symbol Mainnet** (for purpose of this "
+"guide we used Testnet) network, enter a password and then click the "
+"**Next** button."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:99
+msgid ""
+"Ten accounts will be presented. Please choose at least one of them to "
+"continue. All accounts are derived from your Ledger device."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:107
+msgid ""
+"To confirm profile creation accept the Terms and click the **Next** to "
+"continue. Note that all transactions must be confirmed via your Ledger "
+"device NOT with your password."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:117
+msgid "Step 4: Send and receive XYM in the Ledger device"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:119
+msgid ""
+"After completing the steps mentioned above, navigate to the Symbol Wallet"
+" dashboard by clicking **Home** in the left side panel."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:121
+msgid ""
+"The dashboard shows all the transactions coming in and out of your Ledger"
+" device, your account balance, assets and block information."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:130
+msgid ""
+"**IMPORTANT**: When initializing a transaction in your Symbol Wallet, "
+"always verify if the data (e.g. Symbol address, XYM amount) matches with "
+"the corresponding data displayed on your Ledger device. If the two data "
+"match, you can proceed with the transaction; otherwise, you should NOT "
+"continue."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:134
+msgid "How to receive XYM"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:136
+msgid "Click **Accounts** in the left side panel."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:144
+msgid ""
+"Click the **Show on Ledger** button to verify your Symbol address. If the"
+" address in your Symbol Wallet matches with the address in your Ledger "
+"device, you can rest assured that it is true and genuine."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:164
+msgid "Once verified, you can now share your Symbol address with the sender."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:168
+msgid "How to send XYM"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:170
+msgid "Click **Transfer**."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:172
+msgid "Fill out the required fields."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:174
+msgid "**To** - the receiver’s XYM address."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:175
+msgid "**Amount of XYM** - the amount you are sending to the receiver."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:177
+msgid ""
+"**IMPORTANT**: If you are sending XYM to an exchange, you might need to "
+"add an unencrypted message. Please read carefully the instructions "
+"provided by the exchange."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:179
+msgid ""
+"Click the **Send** button. Note that there will be a fee for every "
+"transaction made."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:193
+msgid ""
+"Review each transaction detail in your Ledger device and press the right "
+"button to continue."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:195
+msgid "Recipient’s Symbol address"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:203
+msgid "Transaction Type"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:211
+msgid "Amount"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:219
+msgid "Message Type"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:227
+msgid "Message Text"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:235
+msgid "Fee"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:243
+msgid ""
+"If all data are correct, press both left and right buttons simultaneously"
+" to approve and sign the transaction."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:253
+msgid "How to view transaction details"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:255
+msgid ""
+"As mentioned above, you can view all the transactions coming in and out "
+"of your Ledger device through the Symbol Wallet dashboard."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:257
+msgid "Go to **Dashboard**."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:265
+msgid "Click the transaction you want to view."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:273
+msgid ""
+"You can also view the transaction details in the `Symbol Blockchain "
+"Explorer <https://symbol.fyi/>`_ by using the Hash data."
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:277
+msgid "Features"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:279
+msgid ""
+"Ledger device integration supports all features available via Symbol "
+"Wallet, e.g.:"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:281
+msgid "Send transactions"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:283
+msgid "Sign/Send multisignature transactions"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:285
+msgid "Create/Edit multisignature accounts"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:287
+msgid "Create/Edit namespaces"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:289
+msgid "Create/Edit mosaics"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:291
+msgid "Enable delegated harvesting"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:293
+msgid "Add/Remove aliases for account and mosaics"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:295
+msgid "Add metadata to account/mosaic/namespace"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:297
+msgid "Add/Remove account restrictions"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:301
+msgid "Contact Support"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:303
+msgid "For technical support, you may reach us at:"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:305
+msgid "Discord: https://discord.com/invite/xymcity"
+msgstr ""
+
+#: ../../source/guides/account/how-to-use-ledger-hardware-wallet.rst:307
+msgid "Telegram: @nemhelpdesk"
+msgstr ""
+

@@ -1,0 +1,276 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/guidelines/translating-the-documentation.rst:3
+msgid "Translating the documentation"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:5
+msgid ""
+"Symbol's awesome community actively localizes the contents of this site, "
+"and we're endlessly thankful for that."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:7
+msgid ""
+"The original text is in English and right now only the Japanese "
+"translation is complete enough to be public. Languages are made public "
+"when enough pages have been translated."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:9
+msgid ""
+"If you are planning on helping, make sure to join the |discord| server "
+"and enter the ``#docs-general`` channel. There is a ``#translation`` "
+"thread for just this purpose!"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:11
+msgid ""
+"|sitename| uses **Transifex**, a collaborative localization platform, to "
+"manage translations and make the process participative. Follow these "
+"instructions to start submitting your contributions."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:15
+msgid "Getting started for translators"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:17
+msgid ""
+"Create a new Transifex account `here "
+"<https://www.transifex.com/signup/?join_project=symboldocs>`_."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:19
+msgid ""
+"Join the `symbol-docs team "
+"<https://www.transifex.com/nemtech/symboldocs/>`_. Click on **Help "
+"Translate \"symbol-docs\"** button on the right side of the header, "
+"selecting the language you want to contribute."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:21
+msgid ""
+"Wait until the translation coordinator approves your request. Once "
+"accepted you will receive an email. At this moment, you will be able to "
+"start translating the docs."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:23
+msgid ""
+"Once you have joined the team, you can contribute either translating new "
+"content or reviewing translations provided by other users."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:25
+msgid ""
+"First time using Transifex? We recommend you to read the following guides"
+" from Transifex's documentation:"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:27
+msgid ""
+"`Getting started as a translator <https://docs.transifex.com/getting-"
+"started-1/translators>`_"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:28
+msgid ""
+"`Translating with the web editor <https://docs.transifex.com/translation"
+"/translating-with-the-web-editor>`_"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:32
+msgid "Please do **NOT** translate:"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:34
+msgid "Words in camel-case (like ``EntityBody``)"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:35
+msgid "Text between pipes (``|``)"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:36
+msgid "Text between colons (``:``)"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:37
+msgid "Text between single or double backticks (|bt|)"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:39
+msgid ""
+"**Exception**: You MUST translate everything inside backticks IF there "
+"are angle brackets inside the backticks too. What's inside the angle "
+"brackets must NOT be translated. See the last example below."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:41
+msgid "**Examples**:"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:44
+msgid "Original"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:44
+msgid "Translated"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:44
+msgid "Should translate?"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:46
+msgid "This is a test"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:46
+msgid "это проверка"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:46
+msgid "✅"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:47
+msgid "feeMultiplier"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:47
+#: ../../source/guidelines/translating-the-documentation.rst:48
+#: ../../source/guidelines/translating-the-documentation.rst:49
+#: ../../source/guidelines/translating-the-documentation.rst:50
+#: ../../source/guidelines/translating-the-documentation.rst:51
+#: ../../source/guidelines/translating-the-documentation.rst:52
+msgid "❌"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:48
+msgid "\\|codename\\|"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:49
+msgid "\\:ref\\:"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:50
+msgid "\\`keyword\\`"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:51
+msgid "\\`\\`keyword\\`\\`"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:52
+msgid "\\:doc\\:\\`blocks\\`"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:53
+msgid "\\:doc\\:\\`one block <blocks>\\`"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:53
+msgid "\\:doc\\:\\`один квартал <blocks>\\`"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:53
+msgid "✅/❌"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:58
+msgid "Notes for developers"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:60
+msgid ""
+"This guide explains how to interact with Transifex service using the "
+"``transifex-client`` tool."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:63
+msgid "Pull latest files"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:65
+msgid ""
+"Follow these instructions to download the latest translations from "
+"Transifex."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:67
+msgid "Install ``transifex-client``."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:73
+msgid ""
+"Download the latest translated files. Replace ``<lang>`` with your "
+"`language code <https://en.wikipedia.org/wiki/ISO_639-1>`_."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:79
+msgid "Compile the docs for the target language."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:83
+#: ../../source/guidelines/translating-the-documentation.rst:107
+msgid "Linux/Mac"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:89
+#: ../../source/guidelines/translating-the-documentation.rst:113
+msgid "Windows"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:97
+msgid "Push new literals"
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:99
+msgid "Follow these instructions to publish updated source literals to Transifex."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:101
+msgid ""
+"You will need explicit permissions from the Transifex project coordinator"
+" to push source files."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:103
+msgid ""
+"Generate the literals. For each documentation file, a .po file will be "
+"created under ``build/gettext``."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:119
+msgid "Push the source literals to Transifex."
+msgstr ""
+
+#: ../../source/guidelines/translating-the-documentation.rst:125
+msgid ""
+":doc:`Submit your changes <suggesting-changes>` into the symbol-docs "
+"repository."
+msgstr ""
+

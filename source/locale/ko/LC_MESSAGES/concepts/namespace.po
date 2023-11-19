@@ -1,0 +1,384 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018-present, NEM
+# This file is distributed under the same license as the symbol-docs
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: symbol-docs 0.22.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 21:32+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ko\n"
+"Language-Team: ko <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../source/concepts/namespace.rst:3
+msgid "Namespace"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:5
+msgid ""
+"Namespaces are **human-readable text strings** that can be used in place "
+"of an :ref:`address` or a :doc:`mosaic` ID."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:7
+msgid ""
+"They create an **on-chain unique place** for your project and your assets"
+" on the blockchain."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:11
+msgid "Properties"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:14
+msgid "Name"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:16
+msgid ""
+"Namespaces function similarly to internet domains. Creating a namespace "
+"starts with choosing a name that you will use to refer to an account or "
+"asset. The name must be **unique in the network**, and has a maximum "
+"length of **64** characters (the only allowed characters are ``a`` "
+"through ``z``, ``0`` through ``9``, ``_`` and ``-``)."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:21
+msgid "Duration"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:23
+msgid ""
+"At the time of the namespace registration, you must set the number of "
+"confirmed blocks you would like to rent the namespace for."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:25
+msgid ""
+"The public network defines a minimum namespace duration of **30** days "
+"and a maximum of **365** days, being these parameters :ref:`editable per "
+"network <config-network-properties>`."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:27
+msgid "You can use the following formula to convert approximately days to blocks:"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:29
+msgid ""
+"duration ≈ \\frac{numberOfDays * "
+"86400}{blockGenerationTargetTimeInSeconds}"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:33
+msgid "By default, ``blockGenerationTargetTimeInSeconds`` is **30** seconds."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:35
+msgid ""
+"During the **renting period**, the namespace creator can create "
+"subnamespaces, alias accounts and mosaics. The creator can also **extend "
+"the rental** by sending a :ref:`namespaceregistrationtransaction` with "
+"the desired number of additional blocks."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:38
+msgid ""
+"The network can define a **grace period** that enables the namespace "
+"creator to renew the namespace past the expiration date before it becomes"
+" publicly available for registration. |codename|'s public network has set"
+" the :ref:`grace period <config-network-properties>` to **30** days."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:41
+msgid ""
+"When the grace period ends, the namespace is **deleted**. At this point, "
+"the namespace becomes **available** for its registration again."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:48
+msgid "Namespace life-cycle"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:50
+msgid "Permissions by namespace status"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Action"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Namespace unregistered"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Namespace registered"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Grace Period"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Register a new namespace"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "✔️"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "❌"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Renew the namespace"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Create subnamespaces"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Link an alias to an address or mosaic"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Send a transaction using an alias"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:60
+msgid ""
+"Only namespaces created during the :doc:`nemesis block <block>` can have "
+"perpetual duration."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:64
+msgid "Subnamespaces"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:66
+msgid ""
+"On the internet, a domain can have a sub-domain. |codename| namespaces "
+"can have subnamespaces to identify and organize assets."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:73
+msgid "Organizing assets with namespaces"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:75
+msgid ""
+"In the :ref:`public network <config-network-properties>` namespaces can "
+"have up to **3** levels, i.e., a namespace and two levels of subnamespace"
+" domains. Each root namespace can have up to **256** subnamespaces."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:78
+msgid ""
+"A subnamespace does not have a duration by its own; it inherits the "
+"duration from its parent namespace."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:80
+msgid ""
+"You can :doc:`create multiple subnamespaces "
+"<../guides/namespace/registering-a-subnamespace>` with the same name in "
+"different namespaces. For example, you can create the subnamespaces "
+"``foo.bar`` and ``foo2.bar``, but the combination rootnamespace + "
+"subnamespace must remain unique."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:87
+msgid "Alias"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:89
+msgid ""
+":ref:`addressaliastransaction` link namespaces to accounts and mosaics. "
+"An alias or its linked asset can be used interchangeably when sending a "
+"transaction. Using the alias makes **long addresses rememberable** and "
+"**mosaics recognizable**."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:93
+msgid ""
+"The creator of the namespace can :doc:`link the namespace "
+"<../guides/namespace/link-a-namespace-to-a-mosaic>` to an account or "
+"mosaic. This link will be editable, so the creator may unlink a "
+"previously set alias and link the namespace to a different asset."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:96
+msgid ""
+"The block :doc:`receipts <receipt>` store the resolution of the alias for"
+" a given transaction. This is, what was the actual address or mosaic ID "
+"behind a namespace when a transaction was issued."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:98
+msgid "Alias transactions have the following restrictions:"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:100
+msgid ""
+"An account or mosaic can be linked to many namespaces but **a namespace "
+"can only be linked to one account or mosaic**."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:101
+msgid ""
+"An account can assign a namespace to any account that :doc:`permits "
+"receiving <account-restriction>` AddressAliasTransaction."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:102
+msgid ""
+"An account can only link the alias to a mosaic id when **the account is "
+"the creator of the mosaic**."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:108
+msgid "Rental fee"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:110
+msgid ""
+"An account willing to register a namespace or extend its duration has to "
+"pay a rental fee in addition to the :doc:`transaction fee <fees>`. Both "
+"fees will be deducted from the account's balance after the announcement "
+"of a valid :ref:`namespaceregistrationtransaction`."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:113
+msgid ""
+"The :doc:`REST Gateway <../api>` provides an endpoint to get an "
+"estimation of how much network currency will cost you to register a "
+"namespace:"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:117
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/namespace/GettingNamespaceRentalFee.ts`"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:122
+msgid ""
+":viewsource:`https://github.com/symbol/symbol-"
+"docs/blob/main/source/resources/examples/typescript/namespace/GettingNamespaceRentalFee.js`"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:127
+msgid ""
+"The default namespace rental fees are :ref:`configurable per network "
+"<config-network-properties>`, but the **network dynamically adjusts the "
+"namespace rental fees** over time."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:129
+msgid "Default values for public network"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Property"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Value"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Registering a namespace"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "**0.000001** |networkcurrency| per block."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Extending a namespace duration"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Creating a subnamespace"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "**0.0001** |networkcurrency|."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:137
+msgid ""
+"To calculate the effective rental fee, the network multiplies the default"
+" value set in the configuration by the network's :ref:`dynamic fee "
+"multiplier <fees_dynamic_multiplier>`."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:141
+msgid "Related transactions"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Id"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Type"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Description"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "0x414E"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid ":ref:`namespaceregistrationtransaction`"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Register a namespace to organize your assets."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "0x424E"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid ":ref:`addressaliastransaction`"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Attach a namespace name to an account."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "0x434E"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid ":ref:`mosaicaliastransaction`"
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:1
+msgid "Attach a namespace name to a mosaic."
+msgstr ""
+
+#: ../../source/concepts/namespace.rst:154
+msgid "Related guides"
+msgstr ""
+
